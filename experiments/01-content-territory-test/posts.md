@@ -8,135 +8,20 @@ Drafted in English for planning. Final scripts and captions go out in **Persian*
 - **Close** — the question the post ends with. It prompts comments and tells us who the audience is.
 - `[fill in]` — use a true detail from your own experience. If you don't have a true one, cut that point. Never invent.
 
+Two tracks: **Acquisition** (H3–H5) brings new people in and is what we're testing. **Trust** (H1/H2) turns visitors into followers and runs once a week alongside.
+
 Schedule and metrics: [`plan.md`](plan.md) · Tracking: [`tracker.csv`](tracker.csv)
 
 ---
 
-## H1 — Where do I start? (students, early career)
-
-### H1-1 · Reel · Week 1 Sat
-**If I were 20 in Iran with no money and no coding skills, here's what I'd do.**
-
-- **Hook:** "No money, no coding, no idea what to do. If I were 20 again in Iran, this is exactly how I'd start."
-- **Outline:**
-  1. Step 1 — find what you're good at. Don't know? A basic aptitude/personality test is a starting point, not an answer.
-  2. Step 2 — choose a field at the intersection of: what you're good at × what the market pays for × what you won't hate.
-  3. Step 3 — *before* committing 6 months, test it for 2 weeks (tease H1-2).
-  4. Step 4 — 6 months of serious learning → an internship (even unpaid) → junior role.
-  5. "The hardest part is the beginning. Most people never get past step 1 because they keep wondering."
-- **Close:** "What field are you stuck deciding between? Comment it — I'll pick a few and break them down."
-- **Note:** Strongest candidate for your signature "diagnosis" format. The replies are future content.
-
-### H1-2 · Carousel · Week 2 Wed
-**How to test if a field is worth 6 months of your life — in 2 weeks.**
-
-- **Hook:** "Don't give a field 6 months until you've given it 2 weeks."
-- **Outline:**
-  1. Most people pick a field from a YouTube video and quit after 3 months. That's 3 months lost.
-  2. Day 1–3: Look at 20 real job ads for this field. What skills keep repeating? What does it pay?
-  3. Day 4–7: Do a free beginner course's first modules. Track: did you lose track of time, or count the minutes?
-  4. Day 8–11: Build one tiny real thing (a design, a dashboard, a script, a landing page).
-  5. Day 12–13: Talk to one person who does this job. Ask what they wish they knew.
-  6. Day 14: Score it — Interest / Ability / Market / Iran-accessibility (1–5 each).
-  7. Score high → commit 6 months. Score low → you just saved 6 months. Both are wins.
-- **Close:** "Which field would you run this test on first?"
-- **Note:** Save-bait by design (a checklist). Good test of whether frameworks travel.
-
-### H1-3 · Reel · Week 3 Tue
-**I've hired developers for years. Here's what actually made juniors stand out.**
-
-- **Hook:** "I've built engineering teams from zero. The juniors I hired didn't have the best résumés."
-- **Outline:**
-  1. Context: built an 8-person team from scratch; reviewed a lot of candidates `[fill in: rough number]`.
-  2. What mattered more than certificates: `[fill in — e.g. something they'd actually built, how they explained a problem, how they handled "I don't know"]`.
-  3. What didn't matter as much as people think: `[fill in]`.
-  4. One thing a candidate did that got them hired: `[fill in: a true story, anonymized]`.
-- **Close:** "Are you applying for your first role? What's the hardest part so far?"
-- **Note:** Tests whether your *hiring-side* authority resonates with students.
-
-### H1-4 · Carousel · Week 4 Mon
-**How to self-learn anything (the method I actually use).**
-
-- **Hook:** "If I could teach every young Iranian one skill, it wouldn't be AI. It would be how to learn on your own."
-- **Outline:**
-  1. Nobody is coming to teach you everything. The people who move ahead learn by themselves.
-  2. Start with a real goal, not a topic. Not "learn Python" — "automate my weekly Excel report".
-  3. Find the minimum map: what are the 5–7 core concepts? (Ask AI for this, then check it.)
-  4. Learn just enough, then build immediately. Theory sticks after you've struggled.
-  5. Get stuck → search → ask AI → ask a person. In that order.
-  6. Explain what you learned to someone else. If you can't, you don't know it yet.
-  7. "The more you risk, the more you learn." Ship something small and imperfect.
-- **Close:** "What's something you taught yourself? How did you do it?"
-- **Note:** Core philosophy post — tests whether values content (not tactics) gets saved.
-
----
-
-## H2 — Real experience ("I've learned this the hard way")
-
-### H2-1 · Carousel · Week 1 Sun
-**7 things I learned building an engineering team from zero.**
-
-- **Hook:** "I built an 8-person engineering team from nothing. Here's what no management book told me."
-- **Outline:** one lesson per slide, 7 slides. Pick the 7 you believe most strongly. Prompts:
-  - First hire: what you'd do differently `[fill in]`
-  - The cost of a bad hire vs. a slow hire `[fill in]`
-  - Process: too early vs. too late `[fill in]`
-  - How you learned to say no to features/stakeholders `[fill in]`
-  - Communication between product and engineering `[fill in]`
-  - What actually made the team faster `[fill in]`
-  - The mistake that taught you the most `[fill in]`
-- **Close:** "Which of these have you seen at your own job?"
-- **Note:** Your most unique authority. Make every point specific; generic lessons will kill this test.
-
-### H2-2 · Reel · Week 2 Sat
-**How I decide if a feature is worth building.**
-
-- **Hook:** "Most features shouldn't be built. Here's the 4 questions I ask before anything goes to the dev team."
-- **Outline:**
-  1. What problem does this solve, and how do we *know* users have it? (data, not opinion)
-  2. How many users does it touch, and how much does it move a number we care about? (retention, revenue, conversion)
-  3. How confident are we — measured, or guessed?
-  4. What's the cheapest way to test it before building it fully?
-  5. A real example: `[fill in: a feature you killed or shrank, and why]`
-- **Close:** "Do you work on a product? What's a feature you think should never have been built?"
-- **Note:** Tests product-thinking content — the core of your long-term moat.
-
-### H2-3 · Carousel · Week 3 Wed
-**A product mistake that cost us `[fill in: time/money/users]` — and what I'd do now.**
-
-- **Hook:** "We spent `[X]` building something nobody used. Here's what went wrong."
-- **Outline:**
-  1. The context: what product, what we were trying to do `[fill in]`
-  2. The decision we made and why it seemed right `[fill in]`
-  3. The first sign it was wrong `[fill in]`
-  4. What it actually cost `[fill in]`
-  5. The real root cause (usually: we didn't test the assumption) `[fill in]`
-  6. What I do differently now
-  7. The one-line lesson
-- **Close:** "What's the most expensive mistake you've seen at work?"
-- **Note:** Vulnerability + specifics = trust. Anonymize the company if needed; keep the facts true.
-
-### H2-4 · Reel · Week 4 Tue
-**What actually happens the week after you launch a product.**
-
-- **Hook:** "You think launch day is the finish line. It's the day you find out everything you got wrong."
-- **Outline:**
-  1. The first real users don't use it the way you designed `[fill in: an example]`
-  2. The bug you never tested for `[fill in]`
-  3. The metric that matters in week 1 (usually activation, not signups)
-  4. What we did in the first 7 days `[fill in]`
-  5. "Launching is the start of learning, not the end of building."
-- **Close:** "Are you building something right now? What stage are you at?"
-- **Note:** Also a quiet signal-finder for builders in the audience (future product users).
-
----
+# Acquisition track (the experiment)
 
 ## H3 — Opportunity analysis ("Is this actually an opportunity?")
 
 Every H3 post follows the same frame:
 **Opportunity → Market → Skill → Difficulty → Competition → Iran constraints → Monetization → First experiment**
 
-### H3-1 · Reel · Week 1 Mon
+### H3-1 · Reel · Week 1 Sat
 **"Just freelance on Upwork" is bad advice for most Iranians. Here's what to look at instead.**
 
 - **Hook:** "Every 'make dollars from Iran' video says: go freelance on Upwork. Here's the problem."
@@ -148,7 +33,7 @@ Every H3 post follows the same frame:
 - **Close:** "Have you tried freelancing internationally? What happened?"
 - **Note:** A Reality Check hook with high share potential. The replies will map real Iran constraints for future content.
 
-### H3-2 · Carousel · Week 2 Sun
+### H3-2 · Carousel · Week 1 Wed
 **Is building automations for local businesses actually an opportunity?**
 
 - **Hook:** "Everyone says 'learn AI automation.' I ran the numbers on it for the Iranian market."
@@ -165,7 +50,7 @@ Every H3 post follows the same frame:
 - **Close:** "Business owners: what's the most repetitive task in your business?"
 - **Note:** Links students (H1) and owners (H5). Watch which group replies.
 
-### H3-3 · Reel · Week 3 Sat
+### H3-3 · Reel · Week 2 Tue
 **Is selling AI chatbots to online shops actually an opportunity?**
 
 - **Hook:** "'Sell AI chatbots to businesses and make money' — let's check if that's true."
@@ -178,7 +63,7 @@ Every H3 post follows the same frame:
 - **Close:** "Would you trust a bot to answer your customers? Why or why not?"
 - **Note:** Tests the analytical anti-hype angle on a hyped topic.
 
-### H3-4 · Carousel · Week 4 Wed
+### H3-4 · Carousel · Week 3 Sun
 **Is building a SaaS for Iranian businesses actually an opportunity?**
 
 - **Hook:** "I've grown a SaaS to 1,000+ customers. Here's my honest take on building one for Iranian businesses."
@@ -195,11 +80,24 @@ Every H3 post follows the same frame:
 - **Close:** "If you could have one tool built for your business or job, what would it be?"
 - **Note:** Directly feeds the long-term product direction. The replies are a product-idea list.
 
+### H3-5 · Reel · Week 4 Sat
+**Is "make money creating AI content" actually an opportunity?**
+
+- **Hook:** "'Make money with AI content' is everywhere right now. Let's check if it's real."
+- **Outline:**
+  1. The pitch: AI makes the content, you get paid. The reality: if anyone can make it in 5 minutes, nobody pays much for it.
+  2. Where money actually is: not in *making* content, but in knowing what content sells for a specific business (strategy, editing, judgment).
+  3. Iran angle: the local demand is real (Instagram-first businesses), but prices are low and competition is huge.
+  4. Who it works for: people who pair AI with a real skill (design, copywriting, marketing), not people with AI alone.
+  5. Verdict: `[your honest take]` + the first experiment you'd run.
+- **Close:** "Have you tried selling AI-made content? What happened?"
+- **Note:** A hyped topic with a lot of search interest. Tests whether anti-hype analysis can travel on a hype keyword.
+
 ---
 
 ## H4 — Building with AI & tools ("Tool → System", "Let's build it")
 
-### H4-1 · Carousel · Week 1 Tue
+### H4-1 · Carousel · Week 1 Sun
 **ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
 
 - **Hook:** "4 tools, 0 code, and my leads qualify themselves. Here's the system."
@@ -215,7 +113,7 @@ Every H3 post follows the same frame:
 - **Close:** "What's a process you'd want to automate like this?"
 - **Note:** Build this for real before posting — a real screenshot is the whole point.
 
-### H4-2 · Reel · Week 2 Mon
+### H4-2 · Reel · Week 2 Sat
 **Let's build it: `[a small useful Telegram bot]` in under an hour.**
 
 - **Hook:** "I'm going to build a Telegram bot that `[does X]` in under an hour. Let's see if I can."
@@ -227,7 +125,7 @@ Every H3 post follows the same frame:
 - **Close:** "What should I build next? Most-liked comment wins."
 - **Note:** Tests the "real builder" identity. The "what next" CTA creates a feedback loop.
 
-### H4-3 · Carousel · Week 3 Sun
+### H4-3 · Carousel · Week 2 Wed
 **You don't need 12 AI tools. You need 3 skills.**
 
 - **Hook:** "Stop collecting AI tools. They'll all be replaced next year. These 3 skills won't."
@@ -241,7 +139,7 @@ Every H3 post follows the same frame:
 - **Close:** "How many AI tools have you signed up for and never used again?"
 - **Note:** A Reality Check on the AI-tools niche itself. Tests the anti-hype positioning.
 
-### H4-4 · Reel · Week 4 Sat
+### H4-4 · Reel · Week 3 Tue
 **I tested `[a trending AI tool]` on a real task. Honest result.**
 
 - **Hook:** "Everyone's calling `[tool]` a game-changer. I used it on a real task from my work. Here's what happened."
@@ -255,11 +153,24 @@ Every H3 post follows the same frame:
 - **Close:** "Which tool should I test next?"
 - **Note:** Choose the tool in week 4 so it's genuinely current. Tests the "why does this matter" news angle.
 
+### H4-5 · Reel · Week 4 Sun
+**You asked, I built it: `[the top request from H4-2's comments]`.**
+
+- **Hook:** "Last week I asked what I should build. `[Name]` asked for `[X]`. Here it is."
+- **Outline:**
+  1. Show the comment that asked for it (with permission, or blur the name).
+  2. The problem in one sentence.
+  3. Sped-up build: tools used, the key decision, the part that broke.
+  4. Show it working on a real example.
+  5. Honest limits: what it doesn't do yet.
+- **Close:** "Want to use it? Comment 'send' and I'll share it." (Only if you can actually share it.)
+- **Note:** Tests the audience → build loop from the strategy. The "send" count is an early sign of product demand.
+
 ---
 
 ## H5 — Business systems (business owners)
 
-### H5-1 · Reel · Week 1 Wed
+### H5-1 · Reel · Week 1 Tue
 **Your Instagram shop has presence, not a sales system.**
 
 - **Hook:** "You have followers, you post every day, and sales are still low. Here's why."
@@ -268,10 +179,10 @@ Every H3 post follows the same frame:
   2. The ladder: Presence → Sales system → Optimization → Automation → Data → Scale. Most businesses skip steps.
   3. Signs you have presence but no system: DMs answered late, no follow-up, no idea what % of chats buy.
   4. The first fix: `[fill in: one concrete action you'd recommend]`.
-- **Close:** "Business owners: which step of the ladder are you stuck on?"
+- **Close:** "Business owners: which step of the ladder are you stuck on?" Plus a second line: "DM me 'audit' and I'll diagnose a few businesses publicly."
 - **Note:** Directly tests whether business owners find you and respond.
 
-### H5-2 · Carousel · Week 2 Tue
+### H5-2 · Carousel · Week 2 Sun
 **5 numbers every small online business should track.**
 
 - **Hook:** "If you don't know these 5 numbers, you're running your business blind."
@@ -286,7 +197,7 @@ Every H3 post follows the same frame:
 - **Close:** "Which of these do you currently track? Be honest."
 - **Note:** Data is one of your strengths. Very saveable.
 
-### H5-3 · Reel · Week 3 Mon
+### H5-3 · Reel · Week 3 Sat
 **Your cheapest sale is the person who almost bought.**
 
 - **Hook:** "You're paying for new customers while ignoring the ones who already said 'maybe.'"
@@ -299,7 +210,7 @@ Every H3 post follows the same frame:
 - **Close:** "Do you follow up with people who didn't buy? How?"
 - **Note:** Tests remarketing as a topic — also a possible future automation product.
 
-### H5-4 · Carousel · Week 4 Sun
+### H5-4 · Carousel · Week 3 Wed
 **3 things any small business can automate this week.**
 
 - **Hook:** "You don't need a developer or a big budget. You can automate these 3 things this week."
@@ -313,3 +224,141 @@ Every H3 post follows the same frame:
   7. **CTA slide:** "DM me 'audit' with what your business does. I'll pick 3 and diagnose them publicly."
 - **Close:** "What would you automate first?"
 - **Note:** The "audit" CTA is the real test: it measures intent, gives you diagnosis content, and uncovers real business problems.
+
+### H5-5 · Reel · Week 4 Tue
+**Business diagnosis #1: `[a real follower's business]`.**
+
+- **Hook:** "A `[type of business]` owner sent me their business. Here's what I think is actually wrong."
+- **Outline:**
+  1. The business in one line (anonymized unless they agree to be named).
+  2. What they think the problem is.
+  3. Diagnosis: where it breaks on the ladder (Presence → Sales → Optimization → Automation → Data → Scale).
+  4. Reality check: the one thing they're doing wrong or overlooking.
+  5. The first 3 actions, in order.
+- **Close:** "Want your business diagnosed next? DM me 'audit'."
+- **Note:** Your natural Diagnosis + Reality Check role as a repeatable format. Needs "audit" DMs from H5-1 and H5-4 first. Get the owner's permission before posting.
+
+---
+
+# Trust track (one per week, pin the best)
+
+## Trust — Real experience and "where do I start?"
+
+These aren't competing for reach. Their job: when someone arrives from an acquisition post, the profile shows who you are and why to trust you. Pin the best 3 as they go up.
+
+### H1-1 · Reel · Week 1 Mon
+**If I were 20 in Iran with no money and no coding skills, here's what I'd do.**
+
+- **Hook:** "No money, no coding, no idea what to do. If I were 20 again in Iran, this is exactly how I'd start."
+- **Outline:**
+  1. Step 1 — find what you're good at. Don't know? A basic aptitude/personality test is a starting point, not an answer.
+  2. Step 2 — choose a field at the intersection of: what you're good at × what the market pays for × what you won't hate.
+  3. Step 3 — *before* committing 6 months, test it for 2 weeks (full method in a later post).
+  4. Step 4 — 6 months of serious learning → an internship (even unpaid) → junior role.
+  5. "The hardest part is the beginning. Most people never get past step 1 because they keep wondering."
+- **Close:** "What field are you stuck deciding between? Comment it — I'll pick a few and break them down."
+- **Note:** Strongest candidate for your signature "diagnosis" format. The replies are future content.
+
+### H2-1 · Carousel · Week 2 Mon
+**7 things I learned building an engineering team from zero.**
+
+- **Hook:** "I built an 8-person engineering team from nothing. Here's what no management book told me."
+- **Outline:** one lesson per slide, 7 slides. Pick the 7 you believe most strongly. Prompts:
+  - First hire: what you'd do differently `[fill in]`
+  - The cost of a bad hire vs. a slow hire `[fill in]`
+  - Process: too early vs. too late `[fill in]`
+  - How you learned to say no to features/stakeholders `[fill in]`
+  - Communication between product and engineering `[fill in]`
+  - What actually made the team faster `[fill in]`
+  - The mistake that taught you the most `[fill in]`
+- **Close:** "Which of these have you seen at your own job?"
+- **Note:** Your most unique authority. Make every point specific; generic lessons will kill this test.
+
+### H1-4 · Carousel · Week 3 Mon
+**How to self-learn anything (the method I actually use).**
+
+- **Hook:** "If I could teach every young Iranian one skill, it wouldn't be AI. It would be how to learn on your own."
+- **Outline:**
+  1. Nobody is coming to teach you everything. The people who move ahead learn by themselves.
+  2. Start with a real goal, not a topic. Not "learn Python" — "automate my weekly Excel report".
+  3. Find the minimum map: what are the 5–7 core concepts? (Ask AI for this, then check it.)
+  4. Learn just enough, then build immediately. Theory sticks after you've struggled.
+  5. Get stuck → search → ask AI → ask a person. In that order.
+  6. Explain what you learned to someone else. If you can't, you don't know it yet.
+  7. "The more you risk, the more you learn." Ship something small and imperfect.
+- **Close:** "What's something you taught yourself? How did you do it?"
+- **Note:** Core philosophy post — tests whether values content (not tactics) gets saved.
+
+### H2-2 · Reel · Week 4 Mon
+**How I decide if a feature is worth building.**
+
+- **Hook:** "Most features shouldn't be built. Here's the 4 questions I ask before anything goes to the dev team."
+- **Outline:**
+  1. What problem does this solve, and how do we *know* users have it? (data, not opinion)
+  2. How many users does it touch, and how much does it move a number we care about? (retention, revenue, conversion)
+  3. How confident are we — measured, or guessed?
+  4. What's the cheapest way to test it before building it fully?
+  5. A real example: `[fill in: a feature you killed or shrank, and why]`
+- **Close:** "Do you work on a product? What's a feature you think should never have been built?"
+- **Note:** Tests product-thinking content — the core of your long-term moat.
+
+### H2-3 · Carousel · Week 4 Wed
+**A product mistake that cost us `[fill in: time/money/users]` — and what I'd do now.**
+
+- **Hook:** "We spent `[X]` building something nobody used. Here's what went wrong."
+- **Outline:**
+  1. The context: what product, what we were trying to do `[fill in]`
+  2. The decision we made and why it seemed right `[fill in]`
+  3. The first sign it was wrong `[fill in]`
+  4. What it actually cost `[fill in]`
+  5. The real root cause (usually: we didn't test the assumption) `[fill in]`
+  6. What I do differently now
+  7. The one-line lesson
+- **Close:** "What's the most expensive mistake you've seen at work?"
+- **Note:** Vulnerability + specifics = trust. Anonymize the company if needed; keep the facts true.
+
+---
+
+## Backlog (trust, for after the experiment)
+
+Written and ready, not scheduled in Experiment 01.
+
+### H1-2 · Carousel
+**How to test if a field is worth 6 months of your life — in 2 weeks.**
+
+- **Hook:** "Don't give a field 6 months until you've given it 2 weeks."
+- **Outline:**
+  1. Most people pick a field from a YouTube video and quit after 3 months. That's 3 months lost.
+  2. Day 1–3: Look at 20 real job ads for this field. What skills keep repeating? What does it pay?
+  3. Day 4–7: Do a free beginner course's first modules. Track: did you lose track of time, or count the minutes?
+  4. Day 8–11: Build one tiny real thing (a design, a dashboard, a script, a landing page).
+  5. Day 12–13: Talk to one person who does this job. Ask what they wish they knew.
+  6. Day 14: Score it — Interest / Ability / Market / Iran-accessibility (1–5 each).
+  7. Score high → commit 6 months. Score low → you just saved 6 months. Both are wins.
+- **Close:** "Which field would you run this test on first?"
+- **Note:** Save-bait by design (a checklist). Good test of whether frameworks travel.
+
+### H1-3 · Reel
+**I've hired developers for years. Here's what actually made juniors stand out.**
+
+- **Hook:** "I've built engineering teams from zero. The juniors I hired didn't have the best résumés."
+- **Outline:**
+  1. Context: built an 8-person team from scratch; reviewed a lot of candidates `[fill in: rough number]`.
+  2. What mattered more than certificates: `[fill in — e.g. something they'd actually built, how they explained a problem, how they handled "I don't know"]`.
+  3. What didn't matter as much as people think: `[fill in]`.
+  4. One thing a candidate did that got them hired: `[fill in: a true story, anonymized]`.
+- **Close:** "Are you applying for your first role? What's the hardest part so far?"
+- **Note:** Tests whether your *hiring-side* authority resonates with students.
+
+### H2-4 · Reel
+**What actually happens the week after you launch a product.**
+
+- **Hook:** "You think launch day is the finish line. It's the day you find out everything you got wrong."
+- **Outline:**
+  1. The first real users don't use it the way you designed `[fill in: an example]`
+  2. The bug you never tested for `[fill in]`
+  3. The metric that matters in week 1 (usually activation, not signups)
+  4. What we did in the first 7 days `[fill in]`
+  5. "Launching is the start of learning, not the end of building."
+- **Close:** "Are you building something right now? What stage are you at?"
+- **Note:** Also a quiet signal-finder for builders in the audience (future product users).
