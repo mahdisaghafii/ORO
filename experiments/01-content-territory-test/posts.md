@@ -3,8 +3,10 @@
 Drafted in English for planning. Final scripts and captions go out in **Persian** (English technical terms are fine).
 
 **How to read each post:**
-- **Hook** — Reel: the first 3 seconds on camera. Carousel: the text on slide 1.
+- **Hook** — Reel: the first 3 seconds (on camera, or the opening visual). Carousel: the text on slide 1.
 - **Outline** — Reel: talking points in order. Carousel: one line per slide.
+- **Visual** — what's on screen, where it matters (screen recording, on-screen text, diagram).
+- All acquisition posts are Reels, since Reels reach the most non-followers. Carousels are used in the trust track, where saves matter more.
 - **Close** — the question the post ends with. It prompts comments and tells us who the audience is.
 - `[fill in]` — use a true detail from your own experience. If you don't have a true one, cut that point. Never invent.
 
@@ -33,22 +35,20 @@ Every H3 post follows the same frame:
 - **Close:** "Have you tried freelancing internationally? What happened?"
 - **Note:** A Reality Check hook with high share potential. The replies will map real Iran constraints for future content.
 
-### H3-2 · Carousel · Week 1 Wed
+### H3-2 · Reel · Week 1 Wed
 **Is building automations for local businesses actually an opportunity?**
 
-- **Hook:** "Everyone says 'learn AI automation.' I ran the numbers on it for the Iranian market."
-- **Outline (one slide each):**
-  1. **Opportunity:** Small businesses do repetitive work by hand — orders, DMs, invoices, reports.
-  2. **Market:** Online shops, clinics, agencies, schools. `[fill in: your honest sense of demand]`
-  3. **Skill:** n8n/Node-RED, APIs, basic logic, and — most important — understanding the business process.
-  4. **Difficulty:** Tools are learnable in weeks. Selling and scoping are the hard parts.
-  5. **Competition:** Low for quality work; many people sell "bots," few solve real problems.
-  6. **Iran constraints:** Paid in rials. Some APIs are blocked; self-hosted n8n and local services help.
-  7. **Monetization:** Setup fee + monthly maintenance. `[fill in: realistic ranges only if you know them]`
-  8. **First experiment:** Automate one process for one business you know, free, in exchange for a testimonial.
-  9. **Verdict:** `[your honest take]`
+- **Hook:** "Everyone says 'learn AI automation.' Let's check if it's actually an opportunity in Iran."
+- **Visual:** The 8-point frame as an on-screen scorecard that fills in as you talk (Market ✓, Difficulty ~, Iran constraints !, …). The scorecard carries the detail; your voice covers only what matters.
+- **Outline:**
+  1. The opportunity: small businesses still do orders, DMs, invoices and reports by hand.
+  2. The honest part: the tools (n8n, Node-RED) take weeks to learn. Selling and scoping the work is what's hard.
+  3. Iran angle: you're paid in rials; some APIs are blocked, so self-hosted n8n and local services matter.
+  4. Competition: lots of people sell "bots," few solve a real business process.
+  5. First experiment: automate one process for one business you know, free, for a testimonial.
+  6. Verdict: `[your honest take]`
 - **Close:** "Business owners: what's the most repetitive task in your business?"
-- **Note:** Links students (H1) and owners (H5). Watch which group replies.
+- **Note:** Links students and owners. Watch which group replies. Carousel version later for the trust track (saves).
 
 ### H3-3 · Reel · Week 2 Tue
 **Is selling AI chatbots to online shops actually an opportunity?**
@@ -63,22 +63,19 @@ Every H3 post follows the same frame:
 - **Close:** "Would you trust a bot to answer your customers? Why or why not?"
 - **Note:** Tests the analytical anti-hype angle on a hyped topic.
 
-### H3-4 · Carousel · Week 3 Sun
+### H3-4 · Reel · Week 3 Sun
 **Is building a SaaS for Iranian businesses actually an opportunity?**
 
-- **Hook:** "I've grown a SaaS to 1,000+ customers. Here's my honest take on building one for Iranian businesses."
-- **Outline (frame slides):**
-  1. **Opportunity:** Local businesses need tools built for local workflows, payments, and language.
-  2. **Market:** `[fill in]`
-  3. **Skill:** Product thinking > coding. You can start with no-code/low-code.
-  4. **Difficulty:** Building is easier than ever. Distribution and retention are the hard parts.
-  5. **Competition:** `[fill in]`
-  6. **Iran constraints:** Rial pricing, willingness to pay, local payment gateways, infrastructure.
-  7. **Monetization:** Subscriptions are hard; setup + service often works first.
-  8. **First experiment:** Sell the service manually first. Automate into software after 5 paying customers.
-  9. **Verdict:** `[your honest take]`
+- **Hook:** "I've grown a SaaS to 1,000+ customers. Should you build one for Iranian businesses? Honest answer."
+- **Visual:** Same on-screen scorecard format as H3-2, so the series is recognizable.
+- **Outline:**
+  1. The opportunity: local businesses need tools built for local workflows, payments and language.
+  2. The trap: building is easier than ever. Getting customers and keeping them is the hard part.
+  3. Iran angle: rial pricing, low willingness to pay for subscriptions, local payment gateways.
+  4. What works first: sell the service manually. Turn it into software after 5 paying customers.
+  5. Verdict: `[your honest take]`, plus one thing you learned from your own SaaS `[fill in]`.
 - **Close:** "If you could have one tool built for your business or job, what would it be?"
-- **Note:** Directly feeds the long-term product direction. The replies are a product-idea list.
+- **Note:** Feeds the long-term product direction. The replies are a product-idea list. Carousel version later for the trust track.
 
 ### H3-5 · Reel · Week 4 Sat
 **Is "make money creating AI content" actually an opportunity?**
@@ -97,21 +94,18 @@ Every H3 post follows the same frame:
 
 ## H4 — Building with AI & tools ("Tool → System", "Let's build it")
 
-### H4-1 · Carousel · Week 1 Sun
+### H4-1 · Reel · Week 1 Sun
 **ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
 
-- **Hook:** "4 tools, 0 code, and my leads qualify themselves. Here's the system."
+- **Hook:** Open on the result: a hot lead alert arriving on your phone. "This lead qualified itself. 4 tools, no code. Here's how."
+- **Visual:** Screen recording of the real flow, with a simple diagram overlay: Telegram → n8n → AI score → Sheet → alert.
 - **Outline:**
   1. The problem: leads come in, nobody answers fast, good ones get lost.
-  2. Diagram slide: Telegram form → n8n → AI scores the lead → Google Sheet → alert for hot leads.
-  3. Step 1: capturing the lead (Telegram bot).
-  4. Step 2: AI asks 3 qualifying questions and scores the answer.
-  5. Step 3: everything is logged in a sheet automatically.
-  6. Step 4: hot leads ping you instantly.
-  7. Real screenshots of the working flow `[build it first — show the real thing]`
-  8. Access note: which parts work from Iran and alternatives if an API is blocked.
+  2. Walk the flow once, fast: a lead messages the Telegram bot, AI asks 3 questions and scores the answers, it's logged in a sheet, and hot leads ping you.
+  3. Show it running on a real test lead `[build it first — show the real thing]`.
+  4. Access note: which parts work from Iran, and the alternative if an API is blocked.
 - **Close:** "What's a process you'd want to automate like this?"
-- **Note:** Build this for real before posting — a real screenshot is the whole point.
+- **Note:** Opening on the result, not the setup, is what holds viewers in the first 3 seconds.
 
 ### H4-2 · Reel · Week 2 Sat
 **Let's build it: `[a small useful Telegram bot]` in under an hour.**
@@ -125,17 +119,16 @@ Every H3 post follows the same frame:
 - **Close:** "What should I build next? Most-liked comment wins."
 - **Note:** Tests the "real builder" identity. The "what next" CTA creates a feedback loop.
 
-### H4-3 · Carousel · Week 2 Wed
+### H4-3 · Reel · Week 2 Wed
 **You don't need 12 AI tools. You need 3 skills.**
 
-- **Hook:** "Stop collecting AI tools. They'll all be replaced next year. These 3 skills won't."
+- **Hook:** Scroll quickly through a real "top 10 AI tools" list, then stop. "Stop collecting AI tools. These 3 skills matter more."
 - **Outline:**
-  1. Every week there's a "top 10 AI tools" list. Saving it doesn't make you capable.
-  2. Skill 1: Describing a problem clearly (good prompts are just clear thinking).
-  3. Skill 2: Connecting tools into a system (automation thinking).
-  4. Skill 3: Judging output (knowing when the AI is wrong).
-  5. Example: the same task done by a "tool collector" vs. someone with these skills.
-  6. "Tools change. Thinking compounds."
+  1. Saving tool lists doesn't make you capable. Most of those tools will change or disappear.
+  2. Skill 1: describing a problem clearly. Good prompts are just clear thinking.
+  3. Skill 2: connecting tools into a system (automation thinking).
+  4. Skill 3: judging output — knowing when the AI is wrong.
+  5. "Tools change. Thinking compounds."
 - **Close:** "How many AI tools have you signed up for and never used again?"
 - **Note:** A Reality Check on the AI-tools niche itself. Tests the anti-hype positioning.
 
@@ -182,20 +175,20 @@ Every H3 post follows the same frame:
 - **Close:** "Business owners: which step of the ladder are you stuck on?" Plus a second line: "DM me 'audit' and I'll diagnose a few businesses publicly."
 - **Note:** Directly tests whether business owners find you and respond.
 
-### H5-2 · Carousel · Week 2 Sun
+### H5-2 · Reel · Week 2 Sun
 **5 numbers every small online business should track.**
 
-- **Hook:** "If you don't know these 5 numbers, you're running your business blind."
+- **Hook:** "If you only look at revenue, you're running your business blind. Here are 5 numbers to check instead."
+- **Visual:** Each number appears on screen as you say it, building into a simple Google Sheet by the end.
 - **Outline:**
-  1. Why most small businesses only look at revenue — and why that's not enough.
-  2. **Conversion rate:** % of conversations/visitors who buy.
-  3. **Average order value:** how much each customer spends per order.
-  4. **Repeat purchase rate:** % of customers who buy again.
-  5. **Customer acquisition cost:** what you spend to get one customer.
-  6. **Response time:** how fast you answer DMs (it directly hits conversion).
-  7. How to track all 5 with just a Google Sheet.
+  1. **Conversion rate:** what % of chats/visitors buy.
+  2. **Average order value:** how much each customer spends per order.
+  3. **Repeat purchase rate:** what % buy again.
+  4. **Customer acquisition cost:** what one customer costs you to get.
+  5. **Response time:** how fast you answer DMs. It directly hits conversion.
+  6. Show the finished sheet: "All 5 fit in one Google Sheet."
 - **Close:** "Which of these do you currently track? Be honest."
-- **Note:** Data is one of your strengths. Very saveable.
+- **Note:** Data is one of your strengths. Carousel version later for the trust track (very saveable).
 
 ### H5-3 · Reel · Week 3 Sat
 **Your cheapest sale is the person who almost bought.**
@@ -210,20 +203,19 @@ Every H3 post follows the same frame:
 - **Close:** "Do you follow up with people who didn't buy? How?"
 - **Note:** Tests remarketing as a topic — also a possible future automation product.
 
-### H5-4 · Carousel · Week 3 Wed
+### H5-4 · Reel · Week 3 Wed
 **3 things any small business can automate this week.**
 
-- **Hook:** "You don't need a developer or a big budget. You can automate these 3 things this week."
+- **Hook:** "No developer, no big budget. You can automate these 3 things this week."
+- **Visual:** A quick screen demo of each one working.
 - **Outline:**
-  1. Why automation isn't just for big companies.
-  2. **Automation 1:** FAQ auto-replies in DMs (prices, delivery, sizes).
-  3. **Automation 2:** Order status updates to customers.
-  4. **Automation 3:** A weekly sales summary sent to you automatically.
-  5. Tools for each (Iran-accessible options).
-  6. What not to automate: complaints, custom requests, anything that needs a human touch.
-  7. **CTA slide:** "DM me 'audit' with what your business does. I'll pick 3 and diagnose them publicly."
+  1. **FAQ auto-replies** in DMs: prices, delivery, sizes.
+  2. **Order status updates** sent to customers automatically.
+  3. **A weekly sales summary** sent to you.
+  4. One line on tools (Iran-accessible options), and what *not* to automate: complaints, custom requests.
+  5. End card: "DM me 'audit' with what your business does. I'll pick a few and diagnose them publicly."
 - **Close:** "What would you automate first?"
-- **Note:** The "audit" CTA is the real test: it measures intent, gives you diagnosis content, and uncovers real business problems.
+- **Note:** The "audit" CTA is the real test: it measures intent, feeds H5-5, and uncovers real business problems. Carousel version later for the trust track.
 
 ### H5-5 · Reel · Week 4 Tue
 **Business diagnosis #1: `[a real follower's business]`.**

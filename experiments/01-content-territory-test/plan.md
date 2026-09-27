@@ -37,9 +37,9 @@ Real experience (H2) and "where do I start?" (H1). Their job is to make the prof
 |----------|----------|
 | Language | Persian, English technical terms where natural |
 | Face | On camera in Reels; photo/avatar consistent on carousels |
-| Formats | Each acquisition territory: 3 Reels + 2 carousels |
+| Formats | Acquisition: all Reels (they reach the most non-followers). Trust: Reels or carousels |
 | Reel length | 30–60 s |
-| Carousel length | 6–9 slides |
+| Carousel length | 6–9 slides (trust track only) |
 | Visual template | One carousel template, one Reel caption style — don't redesign mid-test |
 | Posting time | Same time every posting day (pick one, e.g. 20:00 Tehran) |
 | Posting days | Sat, Sun, Mon, Tue, Wed |
@@ -54,10 +54,12 @@ R = Reel, C = Carousel. Post IDs refer to [`posts.md`](posts.md).
 
 | | Sat | Sun | Mon (trust) | Tue | Wed |
 |---|---|---|---|---|---|
-| **Week 1** | H3-1 (R) | H4-1 (C) | H1-1 (R) | H5-1 (R) | H3-2 (C) |
-| **Week 2** | H4-2 (R) | H5-2 (C) | H2-1 (C) | H3-3 (R) | H4-3 (C) |
-| **Week 3** | H5-3 (R) | H3-4 (C) | H1-4 (C) | H4-4 (R) | H5-4 (C) |
+| **Week 1** | H3-1 (R) | H4-1 (R) | H1-1 (R) | H5-1 (R) | H3-2 (R) |
+| **Week 2** | H4-2 (R) | H5-2 (R) | H2-1 (C) | H3-3 (R) | H4-3 (R) |
+| **Week 3** | H5-3 (R) | H3-4 (R) | H1-4 (C) | H4-4 (R) | H5-4 (R) |
 | **Week 4** | H3-5 (R) | H4-5 (R) | H2-2 (R) | H5-5 (R) | H2-3 (C) |
+
+**Production:** 17 Reels in 4 weeks is a lot. Batch-film each week's Reels in one session (e.g. Thursday after the review) and edit through the week.
 
 Dependencies: **H4-5** builds the top request from H4-2's comments. **H5-5** diagnoses a business from the "audit" DMs asked for in H5-1 and H5-4.
 
