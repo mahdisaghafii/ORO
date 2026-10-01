@@ -55,7 +55,7 @@ Instagram's search returns 5 accounts per keyword. Many keywords return off-topi
 
 ## Selection (Phase 1 result)
 
-Shortlisted from ~95 accounts checked (search results + "similar accounts" suggestions from mahdi.fooladvand1, mahbodpour, kianipour.ir, sepehrtalk, madadi_ai and others). Final Persian set: **24 accounts** (10 big, 11 mid, 3 small). See `accounts.csv`.
+Shortlisted from ~95 accounts checked (search results + "similar accounts" suggestions from mahdi.fooladvand1, mahbodpour, kianipour.ir, sepehrtalk, madadi_ai and others). Final Persian set: **25 accounts** (10 big, 12 mid, 3 small; aidaasoufi added later at the owner's suggestion). See `accounts.csv`.
 
 - **Excluded seeds:** `ali_balighi` (a musician/composer, off-niche), `doostansalam` (personal interview page, reels under 1K views), `farid.hasheminezhad` (handle not found).
 - **Small tier is under target (3 vs 8–10).** Small accounts are hard to surface: Instagram search ranks big accounts first, and several small candidates (hooshprompt, sagharnazari.ai, kamyar.nourbakhsh, campaign.namjoo, n8nfarsi) had no Reels or no visible outliers. Two clear small-account breakouts were found (hana_techh, shahoosh_ai), plus one brand-new account (mahdiss_ai: 15.5K followers from only 3 Reels), listed as mid by follower count but analysed as a "rising" case.
