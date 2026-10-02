@@ -1,138 +1,169 @@
-# Experiment 01 — Acquisition Test
+# Experiment 01 — 2-Week Acquisition Test
 
-**Duration:** 4 weeks · **Volume:** 20 posts (5/week) · **Question:** Which content territory brings the most new people in, and who are they?
+**Duration:** 2 weeks (+ a prep week before) · **Volume:** 11 posts · **Question:** Which content territory brings the most new people in, and who are they?
 
-Source strategy: [`strategy/brand-interview.md`](../../strategy/brand-interview.md)
+Sources:
+- Strategy: [`strategy/brand-interview.md`](../../strategy/brand-interview.md)
+- Instagram research: [`research/2026-10-instagram/report.md`](../../research/2026-10-instagram/report.md)
+- Post ideas: [`content-pool.md`](content-pool.md) · Drafts: [`posts.md`](posts.md) · Tracking: [`tracker.csv`](tracker.csv)
 
 ---
 
 ## 1. Why this experiment
 
-Content does two different jobs:
-
-- **Acquisition** gets the account in front of people who don't know you yet: shared, recommended, found.
+Content does two jobs:
+- **Acquisition** gets you in front of people who don't know you yet.
 - **Trust** turns a visitor into a follower once they land on your profile.
 
-This follows the audience journey in the strategy: **Discovery → Trust → Capability → Building → Product**.
+We test three **acquisition** territories against each other and run a small trust track alongside. Two weeks gives each territory **3 posts**. That's a small sample, so read the result as a **direction, not proof**. Round 2 confirms the winner.
 
-We test **acquisition** territories against each other, because that's where we don't know what works. Trust content runs alongside at a steady pace, is judged differently, and isn't part of the comparison.
+## 2. The 11 posts
 
-## 2. Two tracks
+### Acquisition (the experiment) — 9 Reels, 3 per territory
 
-### Acquisition track (the experiment) — 15 posts, 5 per territory
+| Territory | Posts | We believe… |
+|---|---|---|
+| **H3** Opportunity analysis | H3-1 "Just freelance on Upwork" is bad advice · H3-6 "Build and sell AI agents": real? · H3-8 Remote work for foreign companies, honestly | Honest, Iran-aware takes on hyped opportunities get shared, because the niche is full of distrusted money content. |
+| **H4** Building with AI & tools | H4-1 Lead-qualification machine · H4-10 Invoices → spreadsheet in 2 minutes · H4-7 Run AI on your laptop with no internet | Real builds with time, cost and Iran-feasibility spread further than tool lists. Nobody in the niche owns this. |
+| **H5** Business systems | H5-6 If Instagram disappeared tomorrow · H5-9 Pricing at 70%+ inflation · H5-11 What an AI support agent can and can't do | Owners share concrete systems and reveal problems we can turn into products. |
 
-| ID | Territory | Series | Likely audience | We believe… |
-|----|-----------|--------|-----------------|-------------|
-| **H3** | Opportunity analysis | "Is this actually an opportunity?" | Ambitious generalists, students | Honest, Iran-aware breakdowns of hyped opportunities get shared. |
-| **H4** | Building with AI & tools | "Tool → System" / "Let's build it" | Builders, tinkerers | Showing real builds spreads further than listing tools. |
-| **H5** | Business systems | Diagnosis for businesses | Business owners | Owners share concrete sales/automation/data advice, and reveal problems we can productize. |
+### Trust (alongside) — 2 posts, 1 per week
 
-### Trust track (runs alongside) — 5 posts, 1 per week
+H1-6 Skills I'd learn first in 2026 from zero · H2-3 A product mistake that cost us `[X]`. Pin both as they go up, plus the best acquisition post.
 
-Real experience (H2) and "where do I start?" (H1). Their job is to make the profile convincing when an acquisition post sends someone there. **Pin the best 3** as they go up. Remaining H1/H2 posts are in the backlog in [`posts.md`](posts.md).
+All 11 are fully drafted in [`posts.md`](posts.md).
 
-## 3. Controlled variables (keep these fixed)
+## 3. Week 0 — prep (before the first post)
 
-| Variable | Fixed as |
-|----------|----------|
-| Language | Persian, English technical terms where natural |
-| Face | On camera in Reels; photo/avatar consistent on carousels |
-| Formats | Acquisition: all Reels (they reach the most non-followers). Trust: Reels or carousels |
-| Reel length | 30–60 s |
-| Carousel length | 6–9 slides (trust track only) |
-| Visual template | One carousel template, one Reel caption style — don't redesign mid-test |
-| Posting time | Same time every posting day (pick one, e.g. 20:00 Tehran) |
-| Posting days | Sat, Sun, Mon, Tue, Wed |
-| CTA | Every post ends with one specific question (listed per post) |
+Several posts need real builds and tests. **Don't start posting until these are done.**
 
-If you must break a rule (e.g. a post is late), log it in the tracker `notes` column.
+**Decisions**
+- [ ] **Owned channel:** Telegram, Bale, or both. This is where templates and full workflows live, and your backup if Instagram is cut again. Write it into the posts where they say `[channel]`.
+- [ ] **Posting time:** pick one (e.g. 20:00 Tehran) and keep it for all 11 posts.
 
-## 4. Schedule
+**Profile**
+- [ ] Name, photo, and a one-line bio that says what you do (e.g. "I build with AI and automation, and show what actually works. Persian.") plus the channel link.
+- [ ] If your channel supports separate invite links (Telegram does), make **one link per post**, so you can see which post brought people in.
 
-Monday is always the trust post. Acquisition territories rotate across the other days.
-R = Reel, C = Carousel. Post IDs refer to [`posts.md`](posts.md).
+**Builds and tests** (record time taken, cost, and what broke for each one — the posts depend on it)
+- [ ] **H4-1** lead-qualification workflow, working end to end
+- [ ] **H4-10** invoice → spreadsheet test, on real Persian invoices (printed and handwritten)
+- [ ] **H4-7** offline AI on a normal laptop, with a Persian test
+- [ ] **H5-9** pricing sheet (replacement cost + margin alert)
+- [ ] **H5-11** AI support test on ~50 real customer questions (a friend's shop, with permission)
+- [ ] Fill every `[fill in]` in H2-3, H3-1, H3-6 and H3-8 with true details, or cut the point
 
-| | Sat | Sun | Mon (trust) | Tue | Wed |
-|---|---|---|---|---|---|
-| **Week 1** | H3-1 (R) | H4-1 (R) | H1-1 (R) | H5-1 (R) | H3-2 (R) |
-| **Week 2** | H4-2 (R) | H5-2 (R) | H2-1 (C) | H3-3 (R) | H4-3 (R) |
-| **Week 3** | H5-3 (R) | H3-4 (R) | H1-4 (C) | H4-4 (R) | H5-4 (R) |
-| **Week 4** | H3-5 (R) | H4-5 (R) | H2-2 (R) | H5-5 (R) | H2-3 (C) |
+**Production**
+- [ ] One visual style: first-frame text style, split-screen layout, subtitle style
+- [ ] A subtitle tool that handles Persian well (burned-in subtitles are asked for in the comments)
+- [ ] Film week 1's Reels in one or two sessions
+- [ ] Seed list: friends, LinkedIn, groups where you can share each post
 
-**Production:** 17 Reels in 4 weeks is a lot. Batch-film each week's Reels in one session (e.g. Thursday after the review) and edit through the week.
+## 4. Rules for every post (from the research)
 
-Dependencies: **H4-5** builds the top request from H4-2's comments. **H5-5** diagnoses a business from the "audit" DMs asked for in H5-1 and H5-4.
+These are fixed for all 11 posts so that topic is the only variable.
 
-## 5. Metrics
+| Rule | Fixed as |
+|---|---|
+| Language | Persian, English technical terms where natural. Burned-in Persian subtitles |
+| Format | Acquisition: Reels, 35–60 s (up to ~90 s if the story holds). Trust: Reel or carousel |
+| On screen | Your face + real proof (split screen with the workflow, dashboard, tool or sheet) |
+| First frame | The hook as on-screen text, plus the result or a strong visual — never the setup |
+| Feasibility | Every tool post says in the first seconds: free or paid? Works in Iran / needs a VPN? Needs a foreign card? Persian support? |
+| No gating | Full steps in the caption. No "comment WORD to get it" |
+| Call to action | "Send this to someone who…" plus one specific question |
+| Heavier assets | Templates and workflow files go in your `[channel]` (link in bio), not Instagram DMs |
+| Honesty | Only real results, with real time and cost. No income claims. Label anything sponsored (none planned) |
 
-Record each post's numbers **7 days after posting** (so every post gets the same window) in [`tracker.csv`](tracker.csv).
+**Avoid:** "secret codes", "10x", "you shouldn't ask ChatGPT this" · dollar-income site lists · AI entertainment · hidden prices · giveaways.
 
-### Acquisition posts (H3–H5)
+## 5. Schedule
+
+Week 1 runs Saturday to Thursday (6 posts), week 2 Saturday to Wednesday (5 posts). Same time every day.
+
+| | Sat | Sun | Mon | Tue | Wed | Thu |
+|---|---|---|---|---|---|---|
+| **Week 1** | H4-1 | H5-6 | H3-1 | H1-6 (trust) | H4-10 | H3-6 |
+| **Week 2** | H5-9 | H4-7 | H2-3 (trust) | H3-8 | H5-11 | — |
+
+Week 1 opens with the research's two strongest picks (H4-1, H5-6). The final numbers are in on **week 3 Saturday**, 72 hours after the last post.
+
+## 6. Metrics
+
+Record each post's numbers **72 hours after posting** in [`tracker.csv`](tracker.csv). Every post gets the same window.
+
+### Acquisition posts
 
 **Primary — does it spread?**
-- **Share rate** = shares / reach. Shares are what push a post to new people.
-- **Non-follower reach %**: from Instagram insights. How much of the reach came from people who don't follow you yet.
+- **Share rate** = shares / reach. Shares (DM sends) are Instagram's strongest signal for reaching non-followers.
+- **Non-follower reach %** from Instagram insights.
+
+**Diagnostic — is the hook working?**
+- **Skip rate** (from Reel insights): the share of viewers who swipe away in the first 3 seconds. High skip rate = weak hook or first frame.
+- **Average watch time.**
 
 **Secondary — does it convert?**
 - **Follow rate** = follows / reach
 - **Save rate** = saves / reach
+- **Channel joins** from that post's invite link
 
-### Trust posts (H1/H2)
+### Trust posts
 
-Not judged on reach. Look at:
-- **Save rate** and **conversation rate** = (comments + DMs) / reach
-- The quality of comments and DMs: are people telling you their situation, asking for advice?
+Not judged on reach. Look at save rate, conversation rate ((comments + DMs) / reach), and the quality of what people tell you.
 
 ### Account level (weekly)
-- **Profile conversion** = new follows / profile visits for the week. This is how well the trust track (and pinned posts) does its job.
+- **Profile conversion** = new follows / profile visits
 
-### Qualitative (for both tracks)
-- **Who responded**: tag each commenter/DM as student / employee / owner / other (check their profile or ask). This answers the audience question.
-- **Best questions received**: copy them into the `notes` column. These are future posts and product problems.
+### Qualitative (both tracks)
+- **Who responded:** tag each commenter/DM as student / employee / owner / other.
+- **Best questions and requests:** copy them into the `notes` column. They become round 2 posts and product ideas.
+- **Template requests:** count how many people ask for a template or workflow file. This is the first signal for the ops-kit product idea.
 
 Ignore likes and raw views for decisions.
 
-## 6. Early-account caveats
+## 7. Caveats
 
-- Reach will be low and noisy. **Seed** each post: share it to your own network (friends, LinkedIn, Telegram groups, Stories).
-- Week 1 will be skewed by people who already know you. Look at it, but weight weeks 2–4 more.
+- New account: reach will be low and noisy. **Seed** every post with your own network.
 - Seeding inflates reach from people you know, so non-follower reach % matters more than raw reach.
-- One viral post can distort a territory. Compare territories by the **median** of their 5 posts, not the average.
+- 3 posts per territory is a small sample, and one viral post can distort it. Compare by **median**, and treat a close result as a tie.
+- Platform risk is real: Instagram is blocked in Iran and was cut for months this year. That's why the owned channel is set up in Week 0.
 
-## 7. Parallel track — 10 audience conversations
+## 8. Parallel — 5 audience conversations
 
-While posting, have 10 short (15 min) conversations with people in the target audience. Mix: ~4 students/early career, ~3 employees, ~3 business owners. Recruit via DMs from commenters or your network.
+During the 2 weeks, have 5 short (15 min) conversations: ~2 students/early career, ~1 employee, ~2 business owners. Recruit from commenters and your network.
 
-Questions:
-1. What are you trying to change in your work/income right now?
+1. What are you trying to change in your work or income right now?
 2. What have you already tried? What happened?
 3. Where do you get stuck?
 4. Whose content do you follow for this? Why do you trust them?
 5. If I could help with one thing, what would it be?
 
-Log key quotes in `conversations.md` (create when you start). Don't pitch anything.
+Log key quotes in `conversations.md` (create it when you start). Don't pitch anything.
 
-## 8. Weekly review (30 min, every Thursday)
+## 9. Mid-point check (end of week 1, ~30 min)
 
-1. Fill in the tracker for posts that reached their 7-day mark.
-2. Note the week's profile visits and new follows (account level).
-3. Note top and bottom acquisition post of the week and one guess *why*.
-4. Copy the best audience questions into a backlog.
-5. Pin/unpin: keep the strongest 3 trust posts pinned.
-6. Don't change the plan mid-experiment unless something is clearly broken.
+1. Fill in the tracker for posts past their 72-hour mark.
+2. Check skip rates. If one post's skip rate is far worse than the rest, note what was different about its first frame.
+3. Copy the best questions into a backlog.
+4. Don't change topics or rules mid-test unless something is clearly broken.
 
-## 9. Decision at end of week 4
+## 10. Decision (week 3 Saturday)
 
 1. Rank H3, H4, H5 by **median share rate**. Tie-break with non-follower reach %, then follow rate.
-2. **Top territory** becomes the main acquisition engine. **Second** stays as a supporting pillar. **Third** is paused or becomes occasional, unless it brought the audience you want most (see 3).
-3. Check who showed up: which audience group responded most to each territory, and does it match the long-term product direction (SaaS / B2B automation)?
-4. Check the trust track: did profile conversion hold or improve? Which trust posts got saved and started conversations?
-5. Design Experiment 02 inside the winning territory — test one new variable (format, hook style, or length).
+2. Check **who** showed up for each territory, and whether it matches the long-term direction (tools and automation for small businesses).
+3. **Winner** becomes the main acquisition territory in round 2. **Second** stays as a supporting pillar. **Third** is paused, unless it brought the audience you want most.
+4. Trust track: did profile conversion hold? Which post got saved and started conversations?
+5. Product signal: how many template/workflow requests and channel joins? If there's demand, start building the first version of the small-business ops kit (see report section 6.5).
+6. Plan round 2 (2 weeks) inside the winning territory. Candidates from [`content-pool.md`](content-pool.md):
+   - Posts that need round 1 input first: H4-5 "You asked, I built it", H5-5 "Business diagnosis #1"
+   - Research ideas: H3-14 "I tested the 13 sites that pay dollars", H5-13 "Why your 'comment the word' DM never arrived", H4-14 the Divar alert bot, H4-15 the feasibility table
+   - Test one new variable inside the winner (hook style, length, or format)
 
-## 10. Content principles (from the strategy)
+## 11. Content principles (from the strategy)
 
 - No fake income claims, no get-rich-quick framing, no generic AI hype.
-- Only share real experience — where a post has `[fill in]`, use a true story or skip that point.
+- Only share real experience. Where a post has `[fill in]`, use a true story or cut that point.
 - Never promote KYC circumvention, fake residency, borrowed accounts, or hiding identity.
-- Be upfront about Iran access constraints on any tool you show; prefer tools the audience can actually use (open-source, self-hostable, free tiers that work).
+- Be upfront about Iran access constraints on any tool you show; prefer tools the audience can actually use.
+- Topics touching the shutdown, the economy or emigration are practical business and career advice, not political commentary.
 - Voice: "I tested this. Here's what happened." Not "You NEED to know this!"
