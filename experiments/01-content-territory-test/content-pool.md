@@ -28,7 +28,7 @@ Every post idea in one place, **updated with the Instagram research** ([`researc
 | ★14 | H1-1 | If I were 20 in Iran with no money or code | Situation question; speaks to the stay-or-leave tension |
 | ★15 | H4-6 | I vibe-coded `[a real tool]`: honest result | Vibe coding is argued about in the comments. A real test settles it |
 
-**Selected for Experiment 01 (2-week test, 11 posts):** H4-1, H4-10, H4-7 · H5-6, H5-9, H5-11 · H3-6, H3-1, H3-8 · trust: H1-6, H2-3. All 11 are fully drafted in [`posts.md`](posts.md) and scheduled in [`plan.md`](plan.md). Strong round 2 candidates: 🆕 H3-14, 🆕 H5-13, 🆕 H4-14, 🆕 H4-15, plus H4-5 and H5-5 once round 1 brings requests.
+**On the menu for round 1 (11 posts):** H4-1, H4-10, H4-7 · H5-6, H5-9, H5-11 · H3-6, H3-1, H3-8 · trust: H1-6, H2-3. All 11 have scripts in [`scripts.md`](scripts.md). Strong round 2 candidates: 🆕 H3-14, 🆕 H5-13, 🆕 H4-14, 🆕 H4-15, plus H4-5 and H5-5 once round 1 brings requests.
 
 ---
 

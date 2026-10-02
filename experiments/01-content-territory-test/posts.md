@@ -1,6 +1,6 @@
 # Experiment 01 — Posts
 
-Drafted in English for planning, with a **Persian hook draft** for each scheduled post. Final scripts and captions go out in Persian.
+Drafted in English for planning, with a **Persian hook draft** for each post on the menu. Final scripts and captions go out in Persian.
 
 Plan: [`plan.md`](plan.md) · All ideas: [`content-pool.md`](content-pool.md) · Tracking: [`tracker.csv`](tracker.csv) · Research: [`report.md`](../../research/2026-10-instagram/report.md)
 
@@ -19,13 +19,11 @@ All posts follow the rules in [`plan.md`](plan.md) section 4.
 
 ---
 
-# Scheduled — the 11 posts of the 2-week test
+# On the menu — the 11 posts of the first round
 
-In posting order. Every post has a word-for-word Persian script in [`scripts.md`](scripts.md). **📜 Script ready** = record now. **📜 Script written (fill in results)** = record after the build or test, once the real numbers are in.
+No fixed order: pick from the menu in [`scripts.md`](scripts.md). Every post has a word-for-word Persian script in [`scripts.md`](scripts.md). **📜 Script ready** = record now. **📜 Script written (fill in results)** = record after the build or test, once the real numbers are in.
 
-## Week 1
-
-### H5-6 · Reel · Week 1 Sat · Acquisition (H5) · 📜 Script ready
+### H5-6 · Reel · Acquisition (H5) · 📜 Script ready
 **If Instagram disappeared tomorrow, would your business survive?**
 
 - **Hook (EN):** "If Instagram disappeared tomorrow, how many of your customers could you still message?"
@@ -43,7 +41,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to a shop owner who sells only on Instagram." + "If Instagram went down today, where would your customers find you?"
 - **Note:** frame it as business risk, not politics. Nobody in the niche covers this.
 
-### H3-1 · Reel · Week 1 Sun · Acquisition (H3) · 📜 Script ready
+### H3-1 · Reel · Acquisition (H3) · 📜 Script ready
 **"Just freelance on Upwork" is bad advice for most Iranians. Here's what to look at instead.**
 
 - **Hook (EN):** "Every 'make dollars from Iran' video says: go freelance on Upwork. Here's the problem nobody mentions."
@@ -59,7 +57,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to someone who's been stuck on freelancing platforms for months." + "Have you tried freelancing internationally? What happened?"
 - **Note:** directly counters the niche's most distrusted content cluster.
 
-### H3-6 · Reel · Week 1 Mon · Acquisition (H3) · 📜 Script ready
+### H3-6 · Reel · Acquisition (H3) · 📜 Script ready
 **"Build and sell AI agents": is it real for Iranians?**
 
 - **Hook (EN):** "Everyone's selling courses on 'build AI agents and sell them'. I looked at who's actually getting paid."
@@ -77,7 +75,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to a friend who just bought an agent course." + "Have you ever sold an automation? What happened?"
 - **Note:** a contrarian take on a wave that's everywhere. Say "what I see", not "everyone who sells courses is lying".
 
-### H1-6 · Reel · Week 1 Tue · Trust · 📜 Script ready
+### H1-6 · Reel · Trust · 📜 Script ready
 **The skills I'd learn first in 2026 if I started from zero.**
 
 - **Hook (EN):** "If I started from zero in 2026, these are the `[3]` things I'd learn first. Coding isn't first."
@@ -93,7 +91,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to someone who doesn't know where to start." + "What are you learning right now?"
 - **Note:** a trust post. Pin it. The career-question format performs in this niche.
 
-### H5-9 · Reel · Week 1 Wed · Acquisition (H5) · 📜 Script ready
+### H5-9 · Reel · Acquisition (H5) · 📜 Script ready
 **Pricing when inflation is 70%+: how to update prices without losing customers.**
 
 - **Hook (EN):** "Prices went up again. Most shops make one of two mistakes."
@@ -109,7 +107,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to a shop owner who's afraid to change prices." + "How often do you update your prices now?"
 - **Prep:** none. The sheet isn't needed to record this; build it only if people ask for it. It would become part of the ops kit.
 
-### H4-7 · Reel · Week 1 Thu · Acquisition (H4) · 📜 Script written (fill in results)
+### H4-7 · Reel · Acquisition (H4) · 📜 Script written (fill in results)
 **Run AI on your laptop with no internet.**
 
 - **Hook (EN):** "No internet. No VPN. This AI still works, on a normal laptop."
@@ -126,9 +124,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to someone whose work stops when the internet does." + "What would you use an offline AI for?"
 - **Prep:** test it on a mid-range laptop, including in Persian. How: guide 1 in [`build-guides.md`](build-guides.md). Answers the top question in the niche: "does it work in Iran / without a VPN?"
 
-## Week 2
-
-### H4-10 · Reel · Week 2 Sat · Acquisition (H4) · 📜 Script written (fill in results)
+### H4-10 · Reel · Acquisition (H4) · 📜 Script written (fill in results)
 **A pile of invoices → one clean spreadsheet in 2 minutes.**
 
 - **Hook (EN):** "I turned `[30]` photos of invoices into one clean spreadsheet in `[2]` minutes. Here's where it got the numbers wrong."
@@ -145,7 +141,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to the friend who still types invoices by hand." + "What paperwork eats your week?"
 - **Prep:** test on real Persian invoices, both printed and handwritten. How: guide 2 in [`build-guides.md`](build-guides.md). The research's #2 pick: a money/time-saving demo is the strongest educational pattern.
 
-### H3-8 · Reel · Week 2 Sun · Acquisition (H3) · 📜 Script ready
+### H3-8 · Reel · Acquisition (H3) · 📜 Script ready
 **"Remote migration": working for foreign companies from your room, honestly.**
 
 - **Hook (EN):** "Some people in Iran work for foreign companies without leaving their room. Here's what it actually takes."
@@ -161,7 +157,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close:** "Send this to a friend who's trying to find remote work." + "What's stopping you right now?"
 - **Note:** big demand in the niche (one career account had 9 viral Reels out of 30). The emigration topic splits comments, so keep it practical.
 
-### H2-3 · Carousel · Week 2 Mon · Trust · 📜 Script written (fill in results)
+### H2-3 · Carousel · Trust · 📜 Script written (fill in results)
 **A product mistake that cost us `[fill in: time/money/users]`, and what I'd do now.**
 
 - **Hook (slide 1, EN):** "We spent `[X]` building something nobody used. Here's what went wrong."
@@ -178,7 +174,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
 - **Close (caption):** "What's the most expensive mistake you've seen at work?"
 - **Note:** a trust post. Pin it. Owner and builder stories got the best comments in the research. Anonymize the company if needed; keep the facts true.
 
-### H4-1 · Reel · Week 2 Tue · Acquisition (H4) · 📜 Script written (fill in results)
+### H4-1 · Reel · Acquisition (H4) · 📜 Script written (fill in results)
 **ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
 
 - **Hook (EN):** "A customer messaged. I didn't touch it. The system checked them and scored them. 4 tools, no code."
@@ -193,9 +189,9 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
   5. Real numbers: build time `[X]`, monthly cost `[X]`.
 - **Caption:** the full steps (each node, the scoring prompt, the sheet columns), cost and feasibility notes. If people ask for the workflow file, count the requests and share it only once it's ready.
 - **Close:** "Send this to someone who loses customers because they reply late." + "What process would you automate like this?"
-- **Prep:** build it for real before Week 2 Tue. How: guide 6 in [`build-guides.md`](build-guides.md). The research's #1 pick: real builds get "I want it" comments, not "is it real?".
+- **Prep:** build it for real before you record. How: guide 6 in [`build-guides.md`](build-guides.md). The research's #1 pick: real builds get "I want it" comments, not "is it real?".
 
-### H5-11 · Reel · Week 2 Wed · Acquisition (H5) · 📜 Script written (fill in results)
+### H5-11 · Reel · Acquisition (H5) · 📜 Script written (fill in results)
 **What an AI support agent can and can't do for a small shop.**
 
 - **Hook (EN):** "I gave `[50]` real customer questions to an AI. Here's where it was great, and where it would have embarrassed the shop."
@@ -210,7 +206,7 @@ In posting order. Every post has a word-for-word Persian script in [`scripts.md`
   5. Setup: give it your product sheet and a clear "hand over to a human" rule.
 - **Caption:** the test results and the setup steps.
 - **Close:** "Send this to someone thinking of putting a bot on their DMs." + "Would you trust a bot with your customers?"
-- **Prep:** run the test on a friend's shop data, with their permission, before Week 2 Wed. How: guide 5 in [`build-guides.md`](build-guides.md).
+- **Prep:** run the test on a friend's shop data, with their permission, before you record. How: guide 5 in [`build-guides.md`](build-guides.md).
 
 ---
 

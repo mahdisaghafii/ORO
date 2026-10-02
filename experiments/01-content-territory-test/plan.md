@@ -1,6 +1,6 @@
-# Experiment 01 — 2-Week Acquisition Test
+# Experiment 01 — Acquisition Test (Round 1)
 
-**Duration:** 2 weeks (start recording today) · **Volume:** 11 posts · **Question:** Which content territory brings the most new people in, and who are they?
+**Pace:** your own (about 2 weeks at 5 posts a week) · **Volume:** 11 posts · **Question:** Which content territory brings the most new people in, and who are they?
 
 Sources:
 - Strategy: [`strategy/brand-interview.md`](../../strategy/brand-interview.md)
@@ -15,7 +15,7 @@ Content does two jobs:
 - **Acquisition** gets you in front of people who don't know you yet.
 - **Trust** turns a visitor into a follower once they land on your profile.
 
-We test three **acquisition** territories against each other and run a small trust track alongside. Two weeks gives each territory **3 posts**. That's a small sample, so read the result as a **direction, not proof**. Round 2 confirms the winner.
+We test three **acquisition** territories against each other and run a small trust track alongside. This round gives each territory **3 posts**. That's a small sample, so read the result as a **direction, not proof**. Round 2 confirms the winner.
 
 ## 2. The 11 posts
 
@@ -27,7 +27,7 @@ We test three **acquisition** territories against each other and run a small tru
 | **H4** Building with AI & tools | H4-1 Lead-qualification machine · H4-10 Invoices → spreadsheet in 2 minutes · H4-7 Run AI on your laptop with no internet | Real builds with time, cost and Iran-feasibility spread further than tool lists. Nobody in the niche owns this. |
 | **H5** Business systems | H5-6 If Instagram disappeared tomorrow · H5-9 Pricing at 70%+ inflation · H5-11 What an AI support agent can and can't do | Owners share concrete systems and reveal problems we can turn into products. |
 
-### Trust (alongside) — 2 posts, 1 per week
+### Trust (alongside) — 2 posts, about every 4–5 posts
 
 H1-6 Skills I'd learn first in 2026 from zero · H2-3 A product mistake that cost us `[X]`. Pin both as they go up, plus the best acquisition post.
 
@@ -37,21 +37,21 @@ All 11 are fully drafted in [`posts.md`](posts.md).
 
 **Record today:** 6 posts have word-for-word Persian scripts in [`scripts.md`](scripts.md) and need no build: H5-6, H3-1, H3-6, H1-6, H5-9, H3-8.
 
-**Build before their post date** (step-by-step instructions in [`build-guides.md`](build-guides.md)):
+**Build before recording** (step-by-step instructions in [`build-guides.md`](build-guides.md)):
 
-| Build | For | Needed by | Time |
-|---|---|---|---|
-| Offline AI on your laptop | H4-7 | Week 1 Thu | ~1 h |
-| Invoice photos → spreadsheet test | H4-10 | Week 2 Sat | ~1–2 h |
-| Lead-qualification workflow | H4-1 | Week 2 Tue | ~3–5 h |
-| AI support test (50 real questions) | H5-11 | Week 2 Wed | ~3 h |
+| Build | For | Time |
+|---|---|---|
+| Offline AI on your laptop | H4-7 | ~1 h |
+| Invoice photos → spreadsheet test | H4-10 | ~1–2 h |
+| Lead-qualification workflow | H4-1 | ~3–5 h |
+| AI support test (50 real questions) | H5-11 | ~3 h |
 
 For each build, write down the real time, cost and what broke. The posts depend on those numbers.
 
-**Needs your story:** H2-3 (Week 2 Mon). Answer the 5 questions at the end of [`scripts.md`](scripts.md).
+**Needs your story:** H2-3. Answer the 5 questions at the end of [`scripts.md`](scripts.md).
 
 **Before the first post**
-- [ ] **Posting time:** pick one (e.g. 20:00 Tehran) and keep it for all 11 posts.
+- [ ] **Posting time:** pick a rough time of day (e.g. around 20:00 Tehran) and stick close to it.
 - [ ] **Profile:** name, photo, and a one-line bio that says what you do (e.g. "I build with AI and automation, and show what actually works.").
 - [ ] **One visual style:** first-frame text, split-screen layout, subtitle style. A subtitle tool that handles Persian well.
 - [ ] **Seed list:** friends, LinkedIn, groups where you can share each post.
@@ -77,16 +77,16 @@ These are fixed for all 11 posts so that topic is the only variable.
 
 **Avoid:** "secret codes", "10x", "you shouldn't ask ChatGPT this" · dollar-income site lists · AI entertainment · hidden prices · giveaways.
 
-## 5. Schedule
+## 5. How to pick — no calendar
 
-Week 1 runs Saturday to Thursday (6 posts), week 2 Saturday to Wednesday (5 posts). Same time every day.
+Pick any ready post from the menu in [`scripts.md`](scripts.md), record it, post it. Four rules keep the results comparable:
 
-| | Sat | Sun | Mon | Tue | Wed | Thu |
-|---|---|---|---|---|---|---|
-| **Week 1** | H5-6 | H3-1 | H3-6 | H1-6 (trust) | H5-9 | H4-7 |
-| **Week 2** | H4-10 | H3-8 | H2-3 (trust) | H4-1 | H5-11 | — |
+1. **Don't post the same group twice in a row** (H3, H4, H5).
+2. **Aim for 3 posts from each group** across the round's ~11 posts.
+3. **A trust post about every 4–5 posts.** Pin it.
+4. **Roughly the same time of day** for every post.
 
-Week 1 starts with the posts that are ready to record. Posts that need builds come later, so the builds have time. The final numbers are in on **week 3 Saturday**, 72 hours after the last post.
+About 5 posts a week gets the round done in ~2 weeks, but go at the pace that lets you keep quality up.
 
 ## 6. Metrics
 
@@ -130,7 +130,7 @@ Ignore likes and raw views for decisions.
 
 ## 8. Parallel — 5 audience conversations
 
-During the 2 weeks, have 5 short (15 min) conversations: ~2 students/early career, ~1 employee, ~2 business owners. Recruit from commenters and your network.
+During this round, have 5 short (15 min) conversations: ~2 students/early career, ~1 employee, ~2 business owners. Recruit from commenters and your network.
 
 1. What are you trying to change in your work or income right now?
 2. What have you already tried? What happened?
@@ -140,21 +140,21 @@ During the 2 weeks, have 5 short (15 min) conversations: ~2 students/early caree
 
 Log key quotes in `conversations.md` (create it when you start). Don't pitch anything.
 
-## 9. Mid-point check (end of week 1, ~30 min)
+## 9. Mid-point check (after ~6 posts, ~30 min)
 
 1. Fill in the tracker for posts past their 72-hour mark.
 2. Check skip rates. If one post's skip rate is far worse than the rest, note what was different about its first frame.
 3. Copy the best questions into a backlog.
 4. Don't change topics or rules mid-test unless something is clearly broken.
 
-## 10. Decision (week 3 Saturday)
+## 10. Decision (when each group has 3 posts with 72-hour numbers)
 
 1. Rank H3, H4, H5 by **median share rate**. Tie-break with non-follower reach %, then follow rate.
 2. Check **who** showed up for each territory, and whether it matches the long-term direction (tools and automation for small businesses).
 3. **Winner** becomes the main acquisition territory in round 2. **Second** stays as a supporting pillar. **Third** is paused, unless it brought the audience you want most.
 4. Trust track: did profile conversion hold? Which post got saved and started conversations?
 5. Product signal: how many template requests (comments like «شیت» or «قیمت») and, if you have one, channel joins? If there's demand, start building the first version of the small-business ops kit (see report section 6.5).
-6. Plan round 2 (2 weeks) inside the winning territory. Candidates from [`content-pool.md`](content-pool.md):
+6. Fill the round 2 menu (~11 posts) mostly from the winning territory. Candidates from [`content-pool.md`](content-pool.md):
    - Posts that need round 1 input first: H4-5 "You asked, I built it", H5-5 "Business diagnosis #1"
    - Research ideas: H3-14 "I tested the 13 sites that pay dollars", H5-13 "Why your 'comment the word' DM never arrived", H4-14 the Divar alert bot, H4-15 the feasibility table
    - Test one new variable inside the winner (hook style, length, or format)

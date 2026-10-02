@@ -1,33 +1,49 @@
-# Recording Scripts — All 11 Posts
+# Post Menu
 
-Word-for-word Persian scripts for every post in the 2-week test. **Posts 1–6 need no build: record them today.** Posts 7–11 are fully written too; fill in the real results after each build or test.
+Pick a post, record it, post it. No calendar.
 
-**How to use:**
+Every post below has a word-for-word Persian script further down this file: what you say (🗣), what's on screen (🎬), and the caption.
+
+## ✅ Ready — record any of these now
+
+| # | Post | Group | Note |
+|---|---|---|---|
+| 1 | اگه فردا اینستاگرام نباشه | H5 · Business | — |
+| 2 | «برو آپورک» توصیه‌ی بدیه | H3 · Opportunity | Check the 3 paths are what you believe |
+| 3 | «ایجنت بساز و بفروش» واقعیه؟ | H3 · Opportunity | — |
+| 4 | اگه از صفر شروع می‌کردم | Trust | Pin it after posting |
+| 5 | قیمت‌گذاری وقتی تورم بالاست | H5 · Business | — |
+| 6 | کار ریموت برای شرکت خارجی، صادقانه | H3 · Opportunity | Optional line from your own experience |
+
+## 🔧 Needs a build or test first — then record
+
+The script is written. Do the build, then put the real results where it says «[X]».
+
+| # | Post | Group | Do this first |
+|---|---|---|---|
+| 7 | هوش مصنوعی بدون اینترنت | H4 · Building | Guide 1 in [`build-guides.md`](build-guides.md) (~1 h) |
+| 8 | فاکتورها ← یه فایل اکسل | H4 · Building | Guide 2 (~1–2 h) |
+| 9 | اشتباهی که برامون گرون تموم شد | Trust · carousel | Your real story (5 questions in section 9) |
+| 10 | سیستمی که مشتری‌ها رو خودش بررسی می‌کنه | H4 · Building | Guide 6 (~3–5 h) |
+| 11 | هوش مصنوعی جای پشتیبان مغازه؟ | H5 · Business | Guide 5 (~3 h) |
+
+## How to pick (4 simple rules)
+
+These keep the results comparable. Everything else is your choice.
+
+1. **Don't post the same group twice in a row** (H3, H4, H5). Mix them.
+2. **Aim for 3 posts from each group** (H3, H4, H5) across the first ~11 posts.
+3. **Post a trust post about every 4–5 posts**, and pin it.
+4. **Post at roughly the same time of day** each time.
+
+After posting: add a row to [`tracker.csv`](tracker.csv) with the date, and fill in the numbers 72 hours later.
+
+## How to use the scripts
+
 - 🎬 = what's on screen (add in editing). 🗣 = what you say. Each 🗣 line is one take; record line by line and cut together.
 - Times are a guide. Persian speech runs about 2.5 words a second, so each script is 50–70 seconds.
 - These are drafts in a direct, honest voice. **Change any line that doesn't sound like you.** If something isn't true for you, cut it.
 - Nothing here promises a product, channel or file that doesn't exist. Where a template would help, the post asks whether people want one ("I'll make it if enough people want it"). Count those comments in the tracker (`template_requests`). It's your first product signal.
-
-**Record today (in posting order):**
-
-| Order | Post | Needs from you |
-|---|---|---|
-| 1 | H5-6 · If Instagram disappeared tomorrow | Nothing |
-| 2 | H3-1 · "Just go Upwork" is bad advice | Confirm the 3 paths match what you believe |
-| 3 | H3-6 · "Build and sell AI agents" | Nothing |
-| 4 | H1-6 · 4 things I'd learn first (trust) | Nothing |
-| 5 | H5-9 · Pricing under inflation | Nothing |
-| 6 | H3-8 · Remote work, honestly | Optional: one line from your own experience |
-
-**Record after the build or test** (scripts are written; fill in the «[X]» results):
-
-| Order | Post | Needs from you |
-|---|---|---|
-| 7 | H4-7 · Offline AI | Guide 1 (~1 h) |
-| 8 | H4-10 · Invoices → spreadsheet | Guide 2 (~1–2 h) |
-| 9 | H2-3 · Product mistake (trust, carousel) | Your real story (5 questions) |
-| 10 | H4-1 · Lead-qualification system | Guide 6 (~3–5 h) |
-| 11 | H5-11 · AI as shop support | Guide 5 (~3 h) |
 
 **Recording tips:**
 - Look at the lens, not the screen. Record the hook line 3–4 times with different energy and pick the best.
@@ -309,7 +325,7 @@ The words are ready. Only the **real results** are missing: replace every «[X]�
 
 ---
 
-## 7. H4-7 · هوش مصنوعی بدون اینترنت (Week 1 Thu)
+## 7. H4-7 · هوش مصنوعی بدون اینترنت
 
 **Build first:** guide 1 in [`build-guides.md`](build-guides.md) (~1 hour).
 
@@ -363,7 +379,7 @@ The words are ready. Only the **real results** are missing: replace every «[X]�
 
 ---
 
-## 8. H4-10 · فاکتورها ← یه فایل اکسل (Week 2 Sat)
+## 8. H4-10 · فاکتورها ← یه فایل اکسل
 
 **Test first:** guide 2 in [`build-guides.md`](build-guides.md) (~1–2 hours).
 
@@ -409,7 +425,7 @@ The words are ready. Only the **real results** are missing: replace every «[X]�
 
 ---
 
-## 9. H2-3 · اشتباهی که برامون گرون تموم شد (Week 2 Mon · Trust · carousel)
+## 9. H2-3 · اشتباهی که برامون گرون تموم شد (Trust · carousel)
 
 **Needs your real story.** Fill each «[…]» with the true detail, or send me the 5 answers below and I'll write it for you.
 
@@ -453,7 +469,7 @@ The words are ready. Only the **real results** are missing: replace every «[X]�
 
 ---
 
-## 10. H4-1 · سیستمی که مشتری‌ها رو خودش بررسی می‌کنه (Week 2 Tue)
+## 10. H4-1 · سیستمی که مشتری‌ها رو خودش بررسی می‌کنه
 
 **Build first:** guide 6 in [`build-guides.md`](build-guides.md) (~3–5 hours).
 
@@ -504,7 +520,7 @@ The words are ready. Only the **real results** are missing: replace every «[X]�
 
 ---
 
-## 11. H5-11 · هوش مصنوعی جای پشتیبان مغازه؟ (Week 2 Wed)
+## 11. H5-11 · هوش مصنوعی جای پشتیبان مغازه؟
 
 **Test first:** guide 5 in [`build-guides.md`](build-guides.md) (~3 hours, with a friend's shop and their permission).
 
