@@ -7,13 +7,14 @@ Planning and experiments for a practical technology personal brand on Instagram 
 
 - New chat? Paste [`CONTEXT.md`](CONTEXT.md) first: a one-page summary of the whole project.
 
-
 1. [`experiments/01-content-territory-test/scripts.md`](experiments/01-content-territory-test/scripts.md): **the post menu.** Pick a post, record it, post it. Word-for-word Persian scripts for all 11 (7 ready now, 4 after their builds).
 2. [`experiments/01-content-territory-test/build-guides.md`](experiments/01-content-territory-test/build-guides.md): how to build what the other posts need.
 3. [`experiments/01-content-territory-test/plan.md`](experiments/01-content-territory-test/plan.md): rules for every post, how to measure, how to decide.
 
 ## Contents
 
+- [`CONTEXT.md`](CONTEXT.md): one-page project summary to paste into a new chat.
+- [`CLAUDE.md`](CLAUDE.md): guidance for Claude Code sessions working in this repo.
 - **Strategy**
   - [`strategy/brand-interview.md`](strategy/brand-interview.md): positioning, audience, voice and long-term direction, from the brand interview.
 - **Research**
