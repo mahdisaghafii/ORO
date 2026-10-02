@@ -5,7 +5,7 @@ Planning and experiments for a practical technology personal brand on Instagram 
 
 ## Start here
 
-1. [`experiments/01-content-territory-test/scripts.md`](experiments/01-content-territory-test/scripts.md): word-for-word Persian scripts for the 6 posts you can record now.
+1. [`experiments/01-content-territory-test/scripts.md`](experiments/01-content-territory-test/scripts.md): word-for-word Persian scripts for all 11 posts (6 ready to record now, 5 after their builds).
 2. [`experiments/01-content-territory-test/build-guides.md`](experiments/01-content-territory-test/build-guides.md): how to build what the other posts need.
 3. [`experiments/01-content-territory-test/plan.md`](experiments/01-content-territory-test/plan.md): the 2-week test: schedule, rules, metrics.
 

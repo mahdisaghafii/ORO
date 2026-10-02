@@ -21,7 +21,7 @@ All posts follow the rules in [`plan.md`](plan.md) section 4.
 
 # Scheduled — the 11 posts of the 2-week test
 
-In posting order. Posts marked **📜 Script ready** have a word-for-word Persian script in [`scripts.md`](scripts.md) and can be recorded now. The others need a build or test first.
+In posting order. Every post has a word-for-word Persian script in [`scripts.md`](scripts.md). **📜 Script ready** = record now. **📜 Script written (fill in results)** = record after the build or test, once the real numbers are in.
 
 ## Week 1
 
@@ -109,7 +109,7 @@ In posting order. Posts marked **📜 Script ready** have a word-for-word Persia
 - **Close:** "Send this to a shop owner who's afraid to change prices." + "How often do you update your prices now?"
 - **Prep:** none. The sheet isn't needed to record this; build it only if people ask for it. It would become part of the ops kit.
 
-### H4-7 · Reel · Week 1 Thu · Acquisition (H4)
+### H4-7 · Reel · Week 1 Thu · Acquisition (H4) · 📜 Script written (fill in results)
 **Run AI on your laptop with no internet.**
 
 - **Hook (EN):** "No internet. No VPN. This AI still works, on a normal laptop."
@@ -128,7 +128,7 @@ In posting order. Posts marked **📜 Script ready** have a word-for-word Persia
 
 ## Week 2
 
-### H4-10 · Reel · Week 2 Sat · Acquisition (H4)
+### H4-10 · Reel · Week 2 Sat · Acquisition (H4) · 📜 Script written (fill in results)
 **A pile of invoices → one clean spreadsheet in 2 minutes.**
 
 - **Hook (EN):** "I turned `[30]` photos of invoices into one clean spreadsheet in `[2]` minutes. Here's where it got the numbers wrong."
@@ -161,7 +161,7 @@ In posting order. Posts marked **📜 Script ready** have a word-for-word Persia
 - **Close:** "Send this to a friend who's trying to find remote work." + "What's stopping you right now?"
 - **Note:** big demand in the niche (one career account had 9 viral Reels out of 30). The emigration topic splits comments, so keep it practical.
 
-### H2-3 · Carousel · Week 2 Mon · Trust
+### H2-3 · Carousel · Week 2 Mon · Trust · 📜 Script written (fill in results)
 **A product mistake that cost us `[fill in: time/money/users]`, and what I'd do now.**
 
 - **Hook (slide 1, EN):** "We spent `[X]` building something nobody used. Here's what went wrong."
@@ -178,7 +178,7 @@ In posting order. Posts marked **📜 Script ready** have a word-for-word Persia
 - **Close (caption):** "What's the most expensive mistake you've seen at work?"
 - **Note:** a trust post. Pin it. Owner and builder stories got the best comments in the research. Anonymize the company if needed; keep the facts true.
 
-### H4-1 · Reel · Week 2 Tue · Acquisition (H4)
+### H4-1 · Reel · Week 2 Tue · Acquisition (H4) · 📜 Script written (fill in results)
 **ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
 
 - **Hook (EN):** "A customer messaged. I didn't touch it. The system checked them and scored them. 4 tools, no code."
@@ -195,7 +195,7 @@ In posting order. Posts marked **📜 Script ready** have a word-for-word Persia
 - **Close:** "Send this to someone who loses customers because they reply late." + "What process would you automate like this?"
 - **Prep:** build it for real before Week 2 Tue. How: guide 6 in [`build-guides.md`](build-guides.md). The research's #1 pick: real builds get "I want it" comments, not "is it real?".
 
-### H5-11 · Reel · Week 2 Wed · Acquisition (H5)
+### H5-11 · Reel · Week 2 Wed · Acquisition (H5) · 📜 Script written (fill in results)
 **What an AI support agent can and can't do for a small shop.**
 
 - **Hook (EN):** "I gave `[50]` real customer questions to an AI. Here's where it was great, and where it would have embarrassed the shop."

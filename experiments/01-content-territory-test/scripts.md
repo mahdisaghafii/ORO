@@ -1,6 +1,6 @@
-# Recording Scripts — Ready to Record
+# Recording Scripts — All 11 Posts
 
-Word-for-word Persian scripts for the posts that need **no build or test**. You can record all of these today.
+Word-for-word Persian scripts for every post in the 2-week test. **Posts 1–6 need no build: record them today.** Posts 7–11 are fully written too; fill in the real results after each build or test.
 
 **How to use:**
 - 🎬 = what's on screen (add in editing). 🗣 = what you say. Each 🗣 line is one take; record line by line and cut together.
@@ -19,7 +19,15 @@ Word-for-word Persian scripts for the posts that need **no build or test**. You 
 | 5 | H5-9 · Pricing under inflation | Nothing |
 | 6 | H3-8 · Remote work, honestly | Optional: one line from your own experience |
 
-**Record later, after the build or test:** H4-7 (offline AI — about an hour to set up), H4-10 (invoice test), H4-1 (lead workflow), H5-11 (AI support test). **H2-3 needs your real story** — see the end of this file.
+**Record after the build or test** (scripts are written; fill in the «[X]» results):
+
+| Order | Post | Needs from you |
+|---|---|---|
+| 7 | H4-7 · Offline AI | Guide 1 (~1 h) |
+| 8 | H4-10 · Invoices → spreadsheet | Guide 2 (~1–2 h) |
+| 9 | H2-3 · Product mistake (trust, carousel) | Your real story (5 questions) |
+| 10 | H4-1 · Lead-qualification system | Guide 6 (~3–5 h) |
+| 11 | H5-11 · AI as shop support | Guide 5 (~3 h) |
 
 **Recording tips:**
 - Look at the lens, not the screen. Record the hook line 3–4 times with different energy and pick the best.
@@ -295,12 +303,250 @@ Word-for-word Persian scripts for the posts that need **no build or test**. You 
 
 ---
 
-## Needs your story: H2-3 · اشتباهی که برامون گرون تموم شد (Trust, carousel)
+## Scripts that need a build or test first
 
-I can't write this one without the real facts. Send me these 5 things, in a sentence each, and I'll turn them into the carousel text:
+The words are ready. Only the **real results** are missing: replace every «[X]» or «[…]» with what actually happened in your build or test (see [`build-guides.md`](build-guides.md)). Where the result could go either way, there are two versions of the line. Keep the one that's true.
 
+---
+
+## 7. H4-7 · هوش مصنوعی بدون اینترنت (Week 1 Thu)
+
+**Build first:** guide 1 in [`build-guides.md`](build-guides.md) (~1 hour).
+
+**🎬 First frame:** your laptop with the Wi-Fi icon crossed out, and the text: «بدون اینترنت. بدون فیلترشکن.»
+
+**[0–3s]**
+🗣 اینترنت قطعه. فیلترشکن هم ندارم. ولی این هوش مصنوعی داره جواب می‌ده.
+
+**[3–8s]**
+🎬 screen recording: you turning the Wi-Fi off.
+🗣 ببین، وای‌فای خاموشه. این مدل روی خود لپ‌تاپم اجرا می‌شه.
+
+**[8–22s]**
+🎬 typing a Persian task, the answer appearing (sped up).
+🗣 یه متن واقعی بهش دادم و گفتم تو سه خط خلاصه‌ش کن.
+🗣 *If it went well:* خلاصه‌ش واقعاً قابل استفاده بود.
+🗣 *If it struggled:* خلاصه کرد، ولی [یه جاش رو اشتباه فهمید / فارسیش یه کم خشک بود].
+
+**[22–32s]**
+🎬 «فارسی: [X] از ۵ · سرعت: [کند / قابل قبول]»
+🗣 راستش رو بخوای، از مدل‌های آنلاین بزرگ ضعیف‌تر و کندتره. فارسیش رو اگه بخوام نمره بدم، [X] از پنج.
+
+**[32–45s]**
+🎬 the three uses appear one by one.
+🗣 ولی برای سه تا کار عالیه:
+🗣 وقتی اینترنت قطعه.
+🗣 وقتی با متن‌های خصوصی کار می‌کنی و نمی‌خوای جایی آپلودشون کنی.
+🗣 و برای پیش‌نویس سریع.
+
+**[45–58s]**
+🎬 «۸ گیگ رم: Qwen3 4B یا Gemma 3 4B · ۱۶ گیگ: Qwen3 8B یا Gemma 3 12B»
+🗣 راه‌اندازیش سه قدمه. LM Studio یا Ollama رو نصب کن. یه مدل متناسب با رمِ لپ‌تاپت انتخاب کن. یه بار دانلودش کن. بعدش دیگه اینترنت لازم نداره.
+
+**[58–64s]**
+🗣 اینو بفرست برای کسی که وقتی اینترنت قطع می‌شه، کارش می‌خوابه. تو بودی، باهاش چیکار می‌کردی؟
+
+**Caption:**
+> هوش مصنوعی که بدون اینترنت و فیلترشکن روی لپ‌تاپ خودت کار می‌کنه.
+>
+> راه‌اندازی:
+> ۱. LM Studio یا Ollama رو نصب کن.
+> ۲. یه مدل متناسب با رم انتخاب کن:
+> — ۸ گیگ: Qwen3 4B یا Gemma 3 4B
+> — ۱۶ گیگ: Qwen3 8B یا Gemma 3 12B
+> ۳. یه بار دانلودش کن (حدود [X] گیگ). از اون به بعد آفلاین کار می‌کنه.
+>
+> صادقانه: از مدل‌های آنلاین ضعیف‌تر و کندتره. فارسیش به نظرم [X] از ۵.
+> به درد این کارها می‌خوره: روزهای قطعی اینترنت، متن‌های خصوصی، پیش‌نویس سریع.
+>
+> رایگانه · کارت خارجی لازم نداره · فقط برای دانلود اول اینترنت لازمه.
+
+---
+
+## 8. H4-10 · فاکتورها ← یه فایل اکسل (Week 2 Sat)
+
+**Test first:** guide 2 in [`build-guides.md`](build-guides.md) (~1–2 hours).
+
+**🎬 First frame:** a messy pile of paper invoices, then a hard cut to the clean spreadsheet. Text: «[۳۰] فاکتور ← ۱ فایل اکسل»
+
+**[0–4s]**
+🗣 [سی] تا عکس فاکتور رو تو [دو] دقیقه کردم یه فایل اکسل مرتب. ولی چند جا عددها رو اشتباه خوند.
+
+**[4–12s]**
+🗣 اگه هنوز فاکتورها رو دستی وارد می‌کنی، این کار هر هفته [X ساعت] ازت وقت می‌گیره.
+
+**[12–28s]**
+🎬 screen recording: uploading the photos, the table appearing, pasting into the spreadsheet (sped up).
+🗣 عکس‌ها رو دادم به [اسم ابزار] و گفتم یه جدول بساز: تاریخ، شرح کالا، تعداد، قیمت واحد و مبلغ کل. و این نتیجه‌ست.
+
+**[28–42s]**
+🎬 the wrong cells highlighted in red.
+🗣 حالا قسمت مهمش: از [X] تا عدد، [Y] تاش رو اشتباه خوند. بیشترش تو [دست‌خط / عکس‌های تار / عددهای فارسی] بود.
+
+**[42–52s]**
+🎬 «جمع ستون = جمع فاکتورها؟»
+🗣 برای همین همیشه یه کار رو بکن: جمع ستون مبلغ رو با جمع واقعی فاکتورها مقایسه کن. اگه یکی نبود، می‌دونی کجا رو باید چک کنی.
+
+**[52–60s]**
+🎬 «دستی: [X] · با هوش مصنوعی + چک: [Y]»
+🗣 دستی [X] طول می‌کشید. با هوش مصنوعی و چک کردن، [Y]. [رایگان بود / هزینه‌ش X شد].
+
+**[60–66s]**
+🗣 اینو بفرست برای دوستی که هنوز فاکتورها رو دستی وارد می‌کنه. کدوم کاغذبازی بیشترین وقتت رو می‌گیره؟
+
+**Caption:**
+> [۳۰] فاکتور، [۲] دقیقه، یه فایل اکسل. ولی بدون چک کردن بهش اعتماد نکن.
+>
+> مراحل:
+> ۱. از هر فاکتور یه عکس صاف و روشن بگیر.
+> ۲. عکس‌ها رو بده به یه هوش مصنوعی که عکس می‌خونه ([اسم ابزار]).
+> ۳. این دستور رو بده:
+> «از این عکس‌های فاکتور، یک جدول بساز با ستون‌های تاریخ، فروشنده، شرح کالا، تعداد، قیمت واحد، مبلغ کل. عددها را دقیقاً همان‌طور که در عکس هست بنویس. اگر عددی خوانا نیست، بنویس «ناخوانا». خروجی را CSV بده.»
+> ۴. خروجی رو بچسبون تو اکسل یا گوگل‌شیت.
+> ۵. جمع ستون مبلغ رو با جمع واقعی فاکتورها مقایسه کن.
+>
+> تو تست من: [Y] اشتباه از [X] عدد، بیشتر تو [دست‌خط / عکس تار].
+
+---
+
+## 9. H2-3 · اشتباهی که برامون گرون تموم شد (Week 2 Mon · Trust · carousel)
+
+**Needs your real story.** Fill each «[…]» with the true detail, or send me the 5 answers below and I'll write it for you.
+
+**Slide 1 (hook):**
+> [X] [وقت / پول] گذاشتیم و چیزی ساختیم که تقریباً هیچ‌کس ازش استفاده نکرد.
+
+**Slide 2:**
+> ماجرا: [محصول یا پروژه]. می‌خواستیم [هدف].
+
+**Slide 3:**
+> تصمیم: [چی ساختیم].
+> اون موقع منطقی به نظر می‌رسید، چون [دلیل].
+
+**Slide 4:**
+> اولین نشونه که یه چیزی درست نیست: [نشونه].
+
+**Slide 5:**
+> هزینه‌ش: [وقت / پول / کاربر].
+
+**Slide 6:**
+> ریشه‌ی واقعی: [مثلاً: فرضمون رو قبل از ساختن تست نکردیم].
+
+**Slide 7:**
+> الان چیکار می‌کنم: [کار متفاوت — مثلاً: قبل از ساختن، با کمترین هزینه تستش می‌کنم].
+
+**Slide 8:**
+> درس: [یک خط].
+> اینو بفرست برای کسی که الان داره یه چیزی می‌سازه.
+
+**Caption:**
+> [یک جمله از ماجرا].
+>
+> گرون‌ترین اشتباهی که سر کار دیدی چی بوده؟
+
+**The 5 questions** (a sentence each is enough):
 1. What product or project was it? (You can leave the company name out.)
 2. What did you decide to build, and why did it seem right at the time?
 3. What was the first sign it was wrong?
 4. What did it cost — time, money, users?
 5. What do you do differently now?
+
+---
+
+## 10. H4-1 · سیستمی که مشتری‌ها رو خودش بررسی می‌کنه (Week 2 Tue)
+
+**Build first:** guide 6 in [`build-guides.md`](build-guides.md) (~3–5 hours).
+
+**🎬 First frame:** your phone receiving the alert «🔥 مشتری جدی — امتیاز ۹ از ۱۰», with the text: «مشتری خودش بررسی شد.»
+
+**[0–4s]**
+🗣 یه مشتری فرم رو پر کرد. من هیچ کاری نکردم. سیستم خودش بررسیش کرد و بهم خبر داد.
+
+**[4–12s]**
+🗣 مشکل بیشتر کسب‌وکارها اینه: پیام زیاد میاد، دیر جواب می‌دن، و مشتری‌های جدی وسط بقیه گم می‌شن.
+
+**[12–30s]**
+🎬 split screen: your face below, the workflow above. Each step lights up as you say it.
+🗣 این‌طوری کار می‌کنه.
+🗣 مشتری یه فرم کوتاه پر می‌کنه: چی لازم داره، بودجه‌ش چقدره، کی می‌خواد شروع کنه.
+🗣 هوش مصنوعی جواب‌ها رو می‌خونه و از یک تا ده امتیاز می‌ده.
+🗣 همه‌چی تو یه شیت ثبت می‌شه.
+🗣 و اگه امتیاز بالا باشه، همون لحظه بهم خبر می‌ده.
+
+**[30–42s]**
+🎬 a screenshot of the error, then the fix.
+🗣 اولش [مثلاً: هوش مصنوعی به‌جای یه جواب مرتب، کلی متن اضافه برمی‌گردوند]. با [راه‌حل] درستش کردم.
+
+**[42–50s]**
+🎬 «ساخت: [X] ساعت · هزینه‌ی ماهانه: [X]»
+🗣 ساختنش [X] ساعت طول کشید و هزینه‌ی ماهانه‌ش [X] ـه.
+
+**[50–56s]**
+🎬 «n8n: [رایگان روی لپ‌تاپ / …] · هوش مصنوعی: [کدوم] · از ایران: [جواب داد / با محدودیت]»
+🗣 با n8n ساختمش. [یه جمله درباره‌ی اینکه از ایران چی جواب داد و چی نه].
+
+**[56–63s]**
+🗣 اینو بفرست برای کسی که مشتری‌هاش رو به‌خاطر دیر جواب دادن از دست می‌ده. تو کدوم کار رو این‌طوری خودکار می‌کردی؟
+
+**Caption:**
+> مشتری فرم رو پر می‌کنه ← هوش مصنوعی امتیاز می‌ده ← تو شیت ثبت می‌شه ← اگه جدی بود، بهت خبر می‌ده.
+>
+> مراحل:
+> ۱. n8n ([نسخه‌ای که استفاده کردی]).
+> ۲. یه Form Trigger با ۴ سوال: نیاز، بودجه، زمان شروع، شماره.
+> ۳. یه نود هوش مصنوعی با این دستور: «جواب‌ها را بخوان و فقط JSON برگردان: امتیاز ۱ تا ۱۰، دلیل در یک جمله، و اینکه مشتری جدی است یا نه.»
+> ۴. نود Google Sheets برای ثبت.
+> ۵. یه IF: اگه مشتری جدی بود، پیام یا ایمیل بفرست.
+>
+> زمان ساخت: [X] ساعت · هزینه: [X] · چیزی که خراب شد: [X]
+
+**Optional demand line** (only if you'd really share the file): «اگه فایل این ورک‌فلو رو می‌خواید، کامنت بذارید «ورک‌فلو». اگه به اندازه‌ی کافی بخواید، مرتبش می‌کنم و می‌ذارم.»
+
+---
+
+## 11. H5-11 · هوش مصنوعی جای پشتیبان مغازه؟ (Week 2 Wed)
+
+**Test first:** guide 5 in [`build-guides.md`](build-guides.md) (~3 hours, with a friend's shop and their permission).
+
+**🎬 First frame:** split screen: a customer question, and the AI's wrong answer marked in red. Text: «[۵۰] سوال واقعی مشتری ← هوش مصنوعی»
+
+**[0–4s]**
+🗣 [پنجاه] تا سوال واقعی مشتری رو دادم به هوش مصنوعی. این‌جاها عالی بود، این‌جاها آبروی مغازه رو می‌برد.
+
+**[4–12s]**
+🗣 اطلاعات یه فروشگاه واقعی رو بهش دادم: قیمت‌ها، ارسال، سایزها. و گفتم فقط بر اساس همین جواب بده.
+
+**[12–22s]**
+🎬 «✅ [X] · 🟡 [X] · ❌ [X] · 🚩 [X]»
+🗣 از [پنجاه] تا، [X] تا رو درست جواب داد. برای سوال‌های تکراری مثل قیمت و زمان ارسال، واقعاً خوب بود.
+
+**[22–36s]**
+🎬 the 1–2 worst answers on screen (anonymized), marked 🚩.
+🗣 ولی [X] بار یه چیزی از خودش ساخت. مثلاً [نمونه‌ی واقعی — مثلاً یه زمان ارسال گفت که اصلاً وجود نداشت].
+🗣 و با مشتری عصبانی، [چطور برخورد کرد].
+
+**[36–50s]**
+🎬 «تکراری ← هوش مصنوعی · پول، شکایت، استثنا ← آدم»
+🗣 پس قانونش اینه: سوال‌های تکراری رو بده به هوش مصنوعی. پول، شکایت و هر چیز استثنایی رو آدم جواب بده. و همیشه به مشتری بگو داره با ربات حرف می‌زنه.
+
+**[50–56s]**
+🗣 با [ابزار] تست کردم. [هزینه‌ش X بود]، و فارسیش [خوب / قابل قبول / ضعیف] بود.
+
+**[56–62s]**
+🗣 اینو بفرست برای کسی که می‌خواد یه ربات بذاره رو دایرکتش. تو به یه ربات اعتماد می‌کنی که با مشتری‌هات حرف بزنه؟
+
+**Caption:**
+> [۵۰] سوال واقعی مشتری رو به هوش مصنوعی دادم.
+>
+> نتیجه: ✅ [X] درست · 🟡 [X] نصفه · ❌ [X] غلط · 🚩 [X] بار از خودش چیزی ساخت.
+>
+> قانون:
+> — سوال‌های تکراری (قیمت، ارسال، سایز) ← هوش مصنوعی
+> — پول، شکایت، استثنا ← آدم
+> — همیشه به مشتری بگو داره با ربات حرف می‌زنه
+>
+> اگه می‌خوای امتحانش کنی: اطلاعات مغازه‌ت رو تو یه متن جمع کن و به هوش مصنوعی بگو «فقط بر اساس همین اطلاعات جواب بده؛ اگه جواب رو نداری، بگو باید از همکارم بپرسم.»
+>
+> ابزار: [X] · هزینه: [X] · فارسی: [X]
+
+**Note:** blur every name, number and shop detail in the screenshots. Get the shop owner's OK before posting.
