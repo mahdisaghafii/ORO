@@ -23,19 +23,19 @@ We test three **acquisition** territories against each other and run a small tru
 
 | Territory | Posts | We believe… |
 |---|---|---|
-| **H3** Opportunity analysis | H3-1 "Just freelance on Upwork" is bad advice · H3-6 "Build and sell AI agents": real? · H3-8 Remote work for foreign companies, honestly | Honest, Iran-aware takes on hyped opportunities get shared, because the niche is full of distrusted money content. |
+| **H3** Opportunity analysis | H3-15 "They rejected me because I'm Iranian"? Check these 4 CV mistakes first · H3-12 Is junior developer still a good way in? · H3-8 Remote work for foreign companies, honestly | Honest, Iran-aware career and opportunity takes get shared, because the niche is full of distrusted money content and career content performs. |
 | **H4** Building with AI & tools | H4-1 Lead-qualification machine · H4-10 Invoices → spreadsheet in 2 minutes · H4-7 Run AI on your laptop with no internet | Real builds with time, cost and Iran-feasibility spread further than tool lists. Nobody in the niche owns this. |
-| **H5** Business systems | H5-6 If Instagram disappeared tomorrow · H5-9 Pricing at 70%+ inflation · H5-11 What an AI support agent can and can't do | Owners share concrete systems and reveal problems we can turn into products. |
+| **H5** Business systems | H5-6 If Instagram disappeared tomorrow · H5-13 Why the promised DM never arrived · H5-11 What an AI support agent can and can't do | Owners share concrete systems and reveal problems we can turn into products. |
 
 ### Trust (alongside) — 2 posts, about every 4–5 posts
 
-H1-6 Skills I'd learn first in 2026 from zero · H2-3 A product mistake that cost us `[X]`. Pin both as they go up, plus the best acquisition post.
+H1-6 Skills I'd learn first in 2026 from zero · H1-7 Stay or leave? How to decide with a 2-week test. Pin both as they go up, plus the best acquisition post.
 
-All 11 are fully drafted in [`posts.md`](posts.md).
+All 11 have word-for-word scripts in [`scripts.md`](scripts.md). Replaced posts are saved in [`scripts-saved.md`](scripts-saved.md).
 
 ## 3. Prep — what's ready and what needs building
 
-**Record today:** 6 posts have word-for-word Persian scripts in [`scripts.md`](scripts.md) and need no build: H5-6, H3-1, H3-6, H1-6, H5-9, H3-8.
+**Record today:** 7 posts need no build: H5-6, H3-15, H3-12, H1-6, H5-13, H3-8, H1-7.
 
 **Build before recording** (step-by-step instructions in [`build-guides.md`](build-guides.md)):
 
@@ -47,8 +47,6 @@ All 11 are fully drafted in [`posts.md`](posts.md).
 | AI support test (50 real questions) | H5-11 | ~3 h |
 
 For each build, write down the real time, cost and what broke. The posts depend on those numbers.
-
-**Needs your story:** H2-3. Answer the 5 questions at the end of [`scripts.md`](scripts.md).
 
 **Before the first post**
 - [ ] **Posting time:** pick a rough time of day (e.g. around 20:00 Tehran) and stick close to it.
@@ -156,7 +154,8 @@ Log key quotes in `conversations.md` (create it when you start). Don't pitch any
 5. Product signal: how many template requests (comments like «شیت» or «قیمت») and, if you have one, channel joins? If there's demand, start building the first version of the small-business ops kit (see report section 6.5).
 6. Fill the round 2 menu (~11 posts) mostly from the winning territory. Candidates from [`content-pool.md`](content-pool.md):
    - Posts that need round 1 input first: H4-5 "You asked, I built it", H5-5 "Business diagnosis #1"
-   - Research ideas: H3-14 "I tested the 13 sites that pay dollars", H5-13 "Why your 'comment the word' DM never arrived", H4-14 the Divar alert bot, H4-15 the feasibility table
+   - Research ideas: H3-14 "I tested the 13 sites that pay dollars", H4-14 the Divar alert bot, H4-15 the feasibility table
+   - Saved scripts in [`scripts-saved.md`](scripts-saved.md): H3-1, H3-6, H5-9, H2-3
    - Test one new variable inside the winner (hook style, length, or format)
 
 ## 11. Content principles (from the strategy)

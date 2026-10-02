@@ -41,39 +41,21 @@ No fixed order: pick from the menu in [`scripts.md`](scripts.md). Every post has
 - **Close:** "Send this to a shop owner who sells only on Instagram." + "If Instagram went down today, where would your customers find you?"
 - **Note:** frame it as business risk, not politics. Nobody in the niche covers this.
 
-### H3-1 · Reel · Acquisition (H3) · 📜 Script ready
-**"Just freelance on Upwork" is bad advice for most Iranians. Here's what to look at instead.**
+### H3-15 · Reel · Acquisition (H3) · 📜 Script ready
+**"They rejected me because I'm Iranian"? Check these 4 CV mistakes first.**
 
-- **Hook (EN):** "Every 'make dollars from Iran' video says: go freelance on Upwork. Here's the problem nobody mentions."
-- **Hook (FA draft):** «همه‌ی ویدیوهای "درآمد دلاری" می‌گن برو آپورک فریلنسری کن. یه مشکلی داره که هیچ‌کس نمی‌گه.»
-- **First frame:** you, with a typical "dollar income" claim on screen crossed out.
-- **Visual:** the H3 scorecard (Market · Skill · Difficulty · Competition · Iran constraints · Money · First experiment) filling in as you talk. Same style in every H3 post.
-- **Outline:**
-  1. The reality: nationality and payment restrictions, account closures, clients who back out when they learn where you are. Many people spend months and get nothing.
-  2. I won't tell you to hide who you are or use someone else's account. That's not a foundation for a career.
-  3. Where location is less of a blocker: `[pick 2–3 you genuinely believe in — e.g. building your own products, selling global-level skills to local businesses, teams that already know and accept where you are]`.
-  4. "The question isn't 'which platform', it's 'what value can I create where the door is actually open?'"
-- **Caption:** the 2–3 alternatives with one first step each.
-- **Close:** "Send this to someone who's been stuck on freelancing platforms for months." + "Have you tried freelancing internationally? What happened?"
-- **Note:** directly counters the niche's most distrusted content cluster.
+- **Hook (FA):** «قبل از اینکه بگی «چون ایرانی‌ام ردم کردن»، این چهار تا رو تو رزومه‌ت چک کن.»
+- **Points:** results instead of duties · one line of context next to each Iranian company · links to real work · state your location clearly, with your overlap hours. Don't hide it.
+- **Close:** "Send this to a friend applying for jobs abroad." + "Have you ever found out why you were rejected?"
+- **Note:** uses your hiring experience. A CV Reel got 296K in the research, with this exact pain in the comments.
 
-### H3-6 · Reel · Acquisition (H3) · 📜 Script ready
-**"Build and sell AI agents": is it real for Iranians?**
+### H3-12 · Reel · Acquisition (H3) · 📜 Script ready
+**Is junior developer still a good way into tech, now that AI writes so much code?**
 
-- **Hook (EN):** "Everyone's selling courses on 'build AI agents and sell them'. I looked at who's actually getting paid."
-- **Hook (FA draft):** «همه دارن دوره‌ی "ایجنت هوش مصنوعی بساز و بفروش" می‌فروشن. بررسی کردم ببینم کی واقعاً پول درمیاره.»
-- **First frame:** the H3 scorecard, with the hook as text.
-- **Outline:**
-  1. The pitch: learn n8n, build agents, sell them to businesses.
-  2. Who would actually buy one here: a business with a repeated process and a budget.
-  3. What they really pay for: a solved process (fewer hours, fewer errors), not "an agent".
-  4. The hard parts: finding clients, scoping the work, maintenance, API and payment limits in Iran.
-  5. Who's getting paid right now: `[your honest read — in the research, course sellers were far more visible than agent sellers]`.
-  6. First experiment: one business, one process, measure the hours saved.
-  7. Verdict: `[your honest take]`.
-- **Caption:** the scorecard as text, plus the first experiment step by step.
-- **Close:** "Send this to a friend who just bought an agent course." + "Have you ever sold an automation? What happened?"
-- **Note:** a contrarian take on a wave that's everywhere. Say "what I see", not "everyone who sells courses is lying".
+- **Hook (FA):** «وقتی هوش مصنوعی این‌همه کد می‌نویسه، هنوز برنامه‌نویس جونیور شدن راه خوبیه؟»
+- **Points:** still a way in, but not the old one · what a junior has that AI doesn't: understanding the problem, checking AI code, debugging · side doors: QA, data analysis, automation.
+- **Close:** "Send this to someone learning to code who's worried." + "Do you think AI will replace juniors?"
+- **Note:** your opinion, said as one. A debated topic, which is good for reach.
 
 ### H1-6 · Reel · Trust · 📜 Script ready
 **The skills I'd learn first in 2026 if I started from zero.**
@@ -91,21 +73,13 @@ No fixed order: pick from the menu in [`scripts.md`](scripts.md). Every post has
 - **Close:** "Send this to someone who doesn't know where to start." + "What are you learning right now?"
 - **Note:** a trust post. Pin it. The career-question format performs in this niche.
 
-### H5-9 · Reel · Acquisition (H5) · 📜 Script ready
-**Pricing when inflation is 70%+: how to update prices without losing customers.**
+### H5-13 · Reel · Acquisition (H5) · 📜 Script ready
+**Why the DM you were promised for commenting never arrived.**
 
-- **Hook (EN):** "Prices went up again. Most shops make one of two mistakes."
-- **Hook (FA draft):** «قیمت‌ها دوباره رفت بالا. بیشتر مغازه‌ها یکی از این دو تا اشتباه رو می‌کنن.»
-- **First frame:** two crossed-out price tags, with the hook as text.
-- **Outline:**
-  1. **Mistake 1:** raising everything at once, so regular customers notice and leave.
-  2. **Mistake 2:** waiting too long, then selling below what it costs to restock.
-  3. **The rule:** price on what it will cost you to *buy it again*, not what you paid.
-  4. **How:** small, frequent updates · start with low-attention items · protect the few items customers compare prices on · bundles instead of discounts.
-  5. **Show the sheet:** cost per item, today's restock cost, margin, and an alert when the margin drops below `[X]%`.
-- **Caption:** the method step by step and the sheet columns, plus the same demand-test line (comment «قیمت»).
-- **Close:** "Send this to a shop owner who's afraid to change prices." + "How often do you update your prices now?"
-- **Prep:** none. The sheet isn't needed to record this; build it only if people ask for it. It would become part of the ops kit.
+- **Hook (FA):** «کامنت گذاشتی «لینک»، گفتن براش دایرکت می‌فرستیم… و هیچ‌وقت نیومد. می‌دونی چرا؟»
+- **Points:** comment bots + Instagram limiting message volume · comments also help the post get seen · check your message requests · for sellers: offer a second way to deliver · "on this page, everything is in the caption".
+- **Close:** "Send this to someone still waiting for that link." + "How many times have you commented and got nothing?"
+- **Note:** don't name or show real accounts. One of the most common complaints in the research.
 
 ### H4-7 · Reel · Acquisition (H4) · 📜 Script written (fill in results)
 **Run AI on your laptop with no internet.**
@@ -157,22 +131,13 @@ No fixed order: pick from the menu in [`scripts.md`](scripts.md). Every post has
 - **Close:** "Send this to a friend who's trying to find remote work." + "What's stopping you right now?"
 - **Note:** big demand in the niche (one career account had 9 viral Reels out of 30). The emigration topic splits comments, so keep it practical.
 
-### H2-3 · Carousel · Trust · 📜 Script written (fill in results)
-**A product mistake that cost us `[fill in: time/money/users]`, and what I'd do now.**
+### H1-7 · Reel · Trust · 📜 Script ready
+**Stay or leave? How to decide with a 2-week test.**
 
-- **Hook (slide 1, EN):** "We spent `[X]` building something nobody used. Here's what went wrong."
-- **Hook (FA draft):** «[X] وقت/پول گذاشتیم و چیزی ساختیم که هیچ‌کس ازش استفاده نکرد. این‌جا اشتباه کردیم.»
-- **Slides:**
-  1. Hook
-  2. The context: what product, what we were trying to do `[fill in]`
-  3. The decision we made and why it seemed right `[fill in]`
-  4. The first sign it was wrong `[fill in]`
-  5. What it actually cost `[fill in]`
-  6. The real root cause (usually: we didn't test the assumption) `[fill in]`
-  7. What I do differently now
-  8. The one-line lesson + "Send this to someone building something right now"
-- **Close (caption):** "What's the most expensive mistake you've seen at work?"
-- **Note:** a trust post. Pin it. Owner and builder stories got the best comments in the research. Anonymize the company if needed; keep the facts true.
+- **Hook (FA):** «بمونم یا برم؟ من جواب این سؤال رو برای تو نمی‌دونم. ولی می‌دونم چطوری می‌شه تصمیم بهتری گرفت.»
+- **Points:** most people decide on feeling, not information · a 2-week test: read 10 real job ads where you want to go · talk to 2 people who went · write down the real cost · take one small step here and see how much of the problem it solves.
+- **Close:** "Send this to someone in the middle of this decision." + "Where are you in this question right now?"
+- **Note:** doesn't tell anyone to stay or leave. Calm tone; the topic splits comments. Pin it.
 
 ### H4-1 · Reel · Acquisition (H4) · 📜 Script written (fill in results)
 **ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
@@ -219,6 +184,79 @@ Research notes on these:
 - **H5-1, H5-4, H5-5:** only use the "audit" request once you have a channel or form to receive it. Don't route it through Instagram DMs.
 - **H4-3, H4-4, H3-5:** the research found these formats crowded. Low priority.
 - **H4-5, H5-5:** need audience input from round 1 first.
+
+## Saved from the round 1 menu
+
+Replaced on the menu; full Persian scripts are in [`scripts-saved.md`](scripts-saved.md).
+
+### H3-1 · Reel  (script saved in [`scripts-saved.md`](scripts-saved.md))
+**"Just freelance on Upwork" is bad advice for most Iranians. Here's what to look at instead.**
+
+- **Hook (EN):** "Every 'make dollars from Iran' video says: go freelance on Upwork. Here's the problem nobody mentions."
+- **Hook (FA draft):** «همه‌ی ویدیوهای "درآمد دلاری" می‌گن برو آپورک فریلنسری کن. یه مشکلی داره که هیچ‌کس نمی‌گه.»
+- **First frame:** you, with a typical "dollar income" claim on screen crossed out.
+- **Visual:** the H3 scorecard (Market · Skill · Difficulty · Competition · Iran constraints · Money · First experiment) filling in as you talk. Same style in every H3 post.
+- **Outline:**
+  1. The reality: nationality and payment restrictions, account closures, clients who back out when they learn where you are. Many people spend months and get nothing.
+  2. I won't tell you to hide who you are or use someone else's account. That's not a foundation for a career.
+  3. Where location is less of a blocker: `[pick 2–3 you genuinely believe in — e.g. building your own products, selling global-level skills to local businesses, teams that already know and accept where you are]`.
+  4. "The question isn't 'which platform', it's 'what value can I create where the door is actually open?'"
+- **Caption:** the 2–3 alternatives with one first step each.
+- **Close:** "Send this to someone who's been stuck on freelancing platforms for months." + "Have you tried freelancing internationally? What happened?"
+- **Note:** directly counters the niche's most distrusted content cluster.
+
+### H3-6 · Reel  (script saved in [`scripts-saved.md`](scripts-saved.md))
+**"Build and sell AI agents": is it real for Iranians?**
+
+- **Hook (EN):** "Everyone's selling courses on 'build AI agents and sell them'. I looked at who's actually getting paid."
+- **Hook (FA draft):** «همه دارن دوره‌ی "ایجنت هوش مصنوعی بساز و بفروش" می‌فروشن. بررسی کردم ببینم کی واقعاً پول درمیاره.»
+- **First frame:** the H3 scorecard, with the hook as text.
+- **Outline:**
+  1. The pitch: learn n8n, build agents, sell them to businesses.
+  2. Who would actually buy one here: a business with a repeated process and a budget.
+  3. What they really pay for: a solved process (fewer hours, fewer errors), not "an agent".
+  4. The hard parts: finding clients, scoping the work, maintenance, API and payment limits in Iran.
+  5. Who's getting paid right now: `[your honest read — in the research, course sellers were far more visible than agent sellers]`.
+  6. First experiment: one business, one process, measure the hours saved.
+  7. Verdict: `[your honest take]`.
+- **Caption:** the scorecard as text, plus the first experiment step by step.
+- **Close:** "Send this to a friend who just bought an agent course." + "Have you ever sold an automation? What happened?"
+- **Note:** a contrarian take on a wave that's everywhere. Say "what I see", not "everyone who sells courses is lying".
+
+### H5-9 · Reel  (script saved in [`scripts-saved.md`](scripts-saved.md))
+**Pricing when inflation is 70%+: how to update prices without losing customers.**
+
+- **Hook (EN):** "Prices went up again. Most shops make one of two mistakes."
+- **Hook (FA draft):** «قیمت‌ها دوباره رفت بالا. بیشتر مغازه‌ها یکی از این دو تا اشتباه رو می‌کنن.»
+- **First frame:** two crossed-out price tags, with the hook as text.
+- **Outline:**
+  1. **Mistake 1:** raising everything at once, so regular customers notice and leave.
+  2. **Mistake 2:** waiting too long, then selling below what it costs to restock.
+  3. **The rule:** price on what it will cost you to *buy it again*, not what you paid.
+  4. **How:** small, frequent updates · start with low-attention items · protect the few items customers compare prices on · bundles instead of discounts.
+  5. **Show the sheet:** cost per item, today's restock cost, margin, and an alert when the margin drops below `[X]%`.
+- **Caption:** the method step by step and the sheet columns, plus the same demand-test line (comment «قیمت»).
+- **Close:** "Send this to a shop owner who's afraid to change prices." + "How often do you update your prices now?"
+- **Prep:** none. The sheet isn't needed to record this; build it only if people ask for it. It would become part of the ops kit.
+
+### H2-3 · Carousel  (script saved in [`scripts-saved.md`](scripts-saved.md))
+**A product mistake that cost us `[fill in: time/money/users]`, and what I'd do now.**
+
+- **Hook (slide 1, EN):** "We spent `[X]` building something nobody used. Here's what went wrong."
+- **Hook (FA draft):** «[X] وقت/پول گذاشتیم و چیزی ساختیم که هیچ‌کس ازش استفاده نکرد. این‌جا اشتباه کردیم.»
+- **Slides:**
+  1. Hook
+  2. The context: what product, what we were trying to do `[fill in]`
+  3. The decision we made and why it seemed right `[fill in]`
+  4. The first sign it was wrong `[fill in]`
+  5. What it actually cost `[fill in]`
+  6. The real root cause (usually: we didn't test the assumption) `[fill in]`
+  7. What I do differently now
+  8. The one-line lesson + "Send this to someone building something right now"
+- **Close (caption):** "What's the most expensive mistake you've seen at work?"
+- **Note:** a trust post. Pin it. Owner and builder stories got the best comments in the research. Anonymize the company if needed; keep the facts true.
+
+---
 
 ## H3 — Opportunity analysis
 
