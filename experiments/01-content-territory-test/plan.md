@@ -1,11 +1,11 @@
 # Experiment 01 — 2-Week Acquisition Test
 
-**Duration:** 2 weeks (+ a prep week before) · **Volume:** 11 posts · **Question:** Which content territory brings the most new people in, and who are they?
+**Duration:** 2 weeks (start recording today) · **Volume:** 11 posts · **Question:** Which content territory brings the most new people in, and who are they?
 
 Sources:
 - Strategy: [`strategy/brand-interview.md`](../../strategy/brand-interview.md)
 - Instagram research: [`research/2026-10-instagram/report.md`](../../research/2026-10-instagram/report.md)
-- Post ideas: [`content-pool.md`](content-pool.md) · Drafts: [`posts.md`](posts.md) · Tracking: [`tracker.csv`](tracker.csv)
+- Post ideas: [`content-pool.md`](content-pool.md) · Drafts: [`posts.md`](posts.md) · Scripts: [`scripts.md`](scripts.md) · Builds: [`build-guides.md`](build-guides.md) · Tracking: [`tracker.csv`](tracker.csv)
 
 ---
 
@@ -33,31 +33,31 @@ H1-6 Skills I'd learn first in 2026 from zero · H2-3 A product mistake that cos
 
 All 11 are fully drafted in [`posts.md`](posts.md).
 
-## 3. Week 0 — prep (before the first post)
+## 3. Prep — what's ready and what needs building
 
-Several posts need real builds and tests. **Don't start posting until these are done.**
+**Record today:** 6 posts have word-for-word Persian scripts in [`scripts.md`](scripts.md) and need no build: H5-6, H3-1, H3-6, H1-6, H5-9, H3-8.
 
-**Decisions**
-- [ ] **Owned channel:** Telegram, Bale, or both. This is where templates and full workflows live, and your backup if Instagram is cut again. Write it into the posts where they say `[channel]`.
+**Build before their post date** (step-by-step instructions in [`build-guides.md`](build-guides.md)):
+
+| Build | For | Needed by | Time |
+|---|---|---|---|
+| Offline AI on your laptop | H4-7 | Week 1 Thu | ~1 h |
+| Invoice photos → spreadsheet test | H4-10 | Week 2 Sat | ~1–2 h |
+| Lead-qualification workflow | H4-1 | Week 2 Tue | ~3–5 h |
+| AI support test (50 real questions) | H5-11 | Week 2 Wed | ~3 h |
+
+For each build, write down the real time, cost and what broke. The posts depend on those numbers.
+
+**Needs your story:** H2-3 (Week 2 Mon). Answer the 5 questions at the end of [`scripts.md`](scripts.md).
+
+**Before the first post**
 - [ ] **Posting time:** pick one (e.g. 20:00 Tehran) and keep it for all 11 posts.
+- [ ] **Profile:** name, photo, and a one-line bio that says what you do (e.g. "I build with AI and automation, and show what actually works.").
+- [ ] **One visual style:** first-frame text, split-screen layout, subtitle style. A subtitle tool that handles Persian well.
+- [ ] **Seed list:** friends, LinkedIn, groups where you can share each post.
 
-**Profile**
-- [ ] Name, photo, and a one-line bio that says what you do (e.g. "I build with AI and automation, and show what actually works. Persian.") plus the channel link.
-- [ ] If your channel supports separate invite links (Telegram does), make **one link per post**, so you can see which post brought people in.
-
-**Builds and tests** (record time taken, cost, and what broke for each one — the posts depend on it)
-- [ ] **H4-1** lead-qualification workflow, working end to end
-- [ ] **H4-10** invoice → spreadsheet test, on real Persian invoices (printed and handwritten)
-- [ ] **H4-7** offline AI on a normal laptop, with a Persian test
-- [ ] **H5-9** pricing sheet (replacement cost + margin alert)
-- [ ] **H5-11** AI support test on ~50 real customer questions (a friend's shop, with permission)
-- [ ] Fill every `[fill in]` in H2-3, H3-1, H3-6 and H3-8 with true details, or cut the point
-
-**Production**
-- [ ] One visual style: first-frame text style, split-screen layout, subtitle style
-- [ ] A subtitle tool that handles Persian well (burned-in subtitles are asked for in the comments)
-- [ ] Film week 1's Reels in one or two sessions
-- [ ] Seed list: friends, LinkedIn, groups where you can share each post
+**Later, not needed to start**
+- Your own channel (Telegram, Bale, or both). Set it up once there's something to put in it, such as the first template people ask for. See guide 7 in [`build-guides.md`](build-guides.md).
 
 ## 4. Rules for every post (from the research)
 
@@ -72,7 +72,7 @@ These are fixed for all 11 posts so that topic is the only variable.
 | Feasibility | Every tool post says in the first seconds: free or paid? Works in Iran / needs a VPN? Needs a foreign card? Persian support? |
 | No gating | Full steps in the caption. No "comment WORD to get it" |
 | Call to action | "Send this to someone who…" plus one specific question |
-| Heavier assets | Templates and workflow files go in your `[channel]` (link in bio), not Instagram DMs |
+| Nothing that doesn't exist | Never offer a template, file or channel you haven't made. To test demand, ask: "comment X if you'd use a ready-made one; if enough people want it, I'll make it". Count the requests |
 | Honesty | Only real results, with real time and cost. No income claims. Label anything sponsored (none planned) |
 
 **Avoid:** "secret codes", "10x", "you shouldn't ask ChatGPT this" · dollar-income site lists · AI entertainment · hidden prices · giveaways.
@@ -83,10 +83,10 @@ Week 1 runs Saturday to Thursday (6 posts), week 2 Saturday to Wednesday (5 post
 
 | | Sat | Sun | Mon | Tue | Wed | Thu |
 |---|---|---|---|---|---|---|
-| **Week 1** | H4-1 | H5-6 | H3-1 | H1-6 (trust) | H4-10 | H3-6 |
-| **Week 2** | H5-9 | H4-7 | H2-3 (trust) | H3-8 | H5-11 | — |
+| **Week 1** | H5-6 | H3-1 | H3-6 | H1-6 (trust) | H5-9 | H4-7 |
+| **Week 2** | H4-10 | H3-8 | H2-3 (trust) | H4-1 | H5-11 | — |
 
-Week 1 opens with the research's two strongest picks (H4-1, H5-6). The final numbers are in on **week 3 Saturday**, 72 hours after the last post.
+Week 1 starts with the posts that are ready to record. Posts that need builds come later, so the builds have time. The final numbers are in on **week 3 Saturday**, 72 hours after the last post.
 
 ## 6. Metrics
 
@@ -105,7 +105,7 @@ Record each post's numbers **72 hours after posting** in [`tracker.csv`](tracker
 **Secondary — does it convert?**
 - **Follow rate** = follows / reach
 - **Save rate** = saves / reach
-- **Channel joins** from that post's invite link
+- **Channel joins** (once you have a channel)
 
 ### Trust posts
 
@@ -117,7 +117,7 @@ Not judged on reach. Look at save rate, conversation rate ((comments + DMs) / re
 ### Qualitative (both tracks)
 - **Who responded:** tag each commenter/DM as student / employee / owner / other.
 - **Best questions and requests:** copy them into the `notes` column. They become round 2 posts and product ideas.
-- **Template requests:** count how many people ask for a template or workflow file. This is the first signal for the ops-kit product idea.
+- **Template requests:** count comments asking for the sheet or workflow (e.g. «شیت», «قیمت»). This is the first signal for the ops-kit product idea. If enough people ask, build it with [`build-guides.md`](build-guides.md) and share it.
 
 Ignore likes and raw views for decisions.
 
@@ -126,7 +126,7 @@ Ignore likes and raw views for decisions.
 - New account: reach will be low and noisy. **Seed** every post with your own network.
 - Seeding inflates reach from people you know, so non-follower reach % matters more than raw reach.
 - 3 posts per territory is a small sample, and one viral post can distort it. Compare by **median**, and treat a close result as a tie.
-- Platform risk is real: Instagram is blocked in Iran and was cut for months this year. That's why the owned channel is set up in Week 0.
+- Platform risk is real: Instagram is blocked in Iran and was cut for months this year. That's why you'll set up your own channel once there's something to put in it.
 
 ## 8. Parallel — 5 audience conversations
 
@@ -153,7 +153,7 @@ Log key quotes in `conversations.md` (create it when you start). Don't pitch any
 2. Check **who** showed up for each territory, and whether it matches the long-term direction (tools and automation for small businesses).
 3. **Winner** becomes the main acquisition territory in round 2. **Second** stays as a supporting pillar. **Third** is paused, unless it brought the audience you want most.
 4. Trust track: did profile conversion hold? Which post got saved and started conversations?
-5. Product signal: how many template/workflow requests and channel joins? If there's demand, start building the first version of the small-business ops kit (see report section 6.5).
+5. Product signal: how many template requests (comments like «شیت» or «قیمت») and, if you have one, channel joins? If there's demand, start building the first version of the small-business ops kit (see report section 6.5).
 6. Plan round 2 (2 weeks) inside the winning territory. Candidates from [`content-pool.md`](content-pool.md):
    - Posts that need round 1 input first: H4-5 "You asked, I built it", H5-5 "Business diagnosis #1"
    - Research ideas: H3-14 "I tested the 13 sites that pay dollars", H5-13 "Why your 'comment the word' DM never arrived", H4-14 the Divar alert bot, H4-15 the feasibility table

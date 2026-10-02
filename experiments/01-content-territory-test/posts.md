@@ -12,7 +12,8 @@ Plan: [`plan.md`](plan.md) · All ideas: [`content-pool.md`](content-pool.md) ·
 - **Caption** — full steps go here. No "comment WORD" gates.
 - **Close** — "Send this to someone who…" plus one question.
 - `[fill in]` / `[X]` — use a true detail or a real number from your own build or test. If you don't have one, cut that point. Never invent.
-- `[channel]` — your owned Telegram/Bale channel (decided in Week 0).
+- **Nothing is promised that doesn't exist yet.** No channel, template or file is offered. Where a template would help, the post asks whether people want one; count those requests (`template_requests` in the tracker) and build it only if there's demand.
+- **Word-for-word Persian scripts** for the posts you can record now are in [`scripts.md`](scripts.md).
 
 All posts follow the rules in [`plan.md`](plan.md) section 4.
 
@@ -20,28 +21,11 @@ All posts follow the rules in [`plan.md`](plan.md) section 4.
 
 # Scheduled — the 11 posts of the 2-week test
 
-In posting order.
+In posting order. Posts marked **📜 Script ready** have a word-for-word Persian script in [`scripts.md`](scripts.md) and can be recorded now. The others need a build or test first.
 
 ## Week 1
 
-### H4-1 · Reel · Week 1 Sat · Acquisition (H4)
-**ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
-
-- **Hook (EN):** "A customer messaged. I didn't touch it. The system checked them and scored them. 4 tools, no code."
-- **Hook (FA draft):** «مشتری پیام داد، من دست نزدم، سیستم خودش بررسیش کرد و امتیاز داد. ۴ تا ابزار، بدون کدنویسی.»
-- **First frame:** your phone receiving the "hot lead" alert, with the hook as on-screen text.
-- **Feasibility (on screen, first 5 s):** n8n `[self-hosted free / cloud paid]` · AI model `[which one, cost, needs foreign card?]` · Telegram `[needs VPN in Iran — Bale alternative?]` · Google Sheets `[works from Iran?]`. Fill in from your actual build.
-- **Outline:**
-  1. The problem: leads come in, nobody answers fast, good ones get lost.
-  2. The result first: show a real test lead going through and the alert arriving.
-  3. Walk the flow once, fast, as a split screen: message → AI asks 3 questions and scores the answers → row in the sheet → alert for hot leads.
-  4. What broke while building it `[fill in]`, and how you fixed it.
-  5. Real numbers: build time `[X]`, monthly cost `[X]`.
-- **Caption:** the full steps (each node, the scoring prompt, the sheet columns), cost and feasibility notes. "The workflow file is in `[channel]` — link in bio."
-- **Close:** "Send this to someone who loses customers because they reply late." + "What process would you automate like this?"
-- **Prep:** build it for real (Week 0). The research's #1 pick: real builds get "I want it" comments, not "is it real?".
-
-### H5-6 · Reel · Week 1 Sun · Acquisition (H5)
+### H5-6 · Reel · Week 1 Sat · Acquisition (H5) · 📜 Script ready
 **If Instagram disappeared tomorrow, would your business survive?**
 
 - **Hook (EN):** "If Instagram disappeared tomorrow, how many of your customers could you still message?"
@@ -55,11 +39,11 @@ In posting order.
      - Open a second channel: `[Bale / Telegram / SMS / a simple website]`.
      - Keep one simple customer sheet: name, number, what they bought, when.
   4. What not to do: spam the list. Message only when you have something useful.
-- **Caption:** the 3 steps in detail and the customer-sheet columns. "A ready-made customer sheet is in `[channel]`."
+- **Caption:** the 3 steps in detail and the customer-sheet columns, plus: "If a ready-made sheet would help, comment «شیت». If enough people want it, I'll make it and share it free." (demand test, not a promise)
 - **Close:** "Send this to a shop owner who sells only on Instagram." + "If Instagram went down today, where would your customers find you?"
 - **Note:** frame it as business risk, not politics. Nobody in the niche covers this.
 
-### H3-1 · Reel · Week 1 Mon · Acquisition (H3)
+### H3-1 · Reel · Week 1 Sun · Acquisition (H3) · 📜 Script ready
 **"Just freelance on Upwork" is bad advice for most Iranians. Here's what to look at instead.**
 
 - **Hook (EN):** "Every 'make dollars from Iran' video says: go freelance on Upwork. Here's the problem nobody mentions."
@@ -75,40 +59,7 @@ In posting order.
 - **Close:** "Send this to someone who's been stuck on freelancing platforms for months." + "Have you tried freelancing internationally? What happened?"
 - **Note:** directly counters the niche's most distrusted content cluster.
 
-### H1-6 · Reel · Week 1 Tue · Trust
-**The skills I'd learn first in 2026 if I started from zero.**
-
-- **Hook (EN):** "If I started from zero in 2026, these are the `[3]` things I'd learn first. Coding isn't first."
-- **Hook (FA draft):** «اگه سال ۲۰۲۶ از صفر شروع می‌کردم، اول این [۳] تا رو یاد می‌گرفتم. برنامه‌نویسی اولیش نیست.»
-- **First frame:** you, with the hook as text and a numbered list appearing.
-- **Outline** (suggested from your interview; keep only what you truly believe, and change the hook if coding *is* first for you):
-  1. **How to learn on your own:** use AI as a tutor, then check it. This is the skill under every other skill.
-  2. **One skill the market pays for**, chosen with a 2-week test, not a YouTube video.
-  3. **Enough English** to read documentation and talk to a client.
-  4. **Proof of work:** small real projects you can show.
-  5. "The hardest part is the beginning. Most people never start because they keep wondering."
-- **Caption:** one resource or first action per skill.
-- **Close:** "Send this to someone who doesn't know where to start." + "What are you learning right now?"
-- **Note:** a trust post. Pin it. The career-question format performs in this niche.
-
-### H4-10 · Reel · Week 1 Wed · Acquisition (H4)
-**A pile of invoices → one clean spreadsheet in 2 minutes.**
-
-- **Hook (EN):** "I turned `[30]` photos of invoices into one clean spreadsheet in `[2]` minutes. Here's where it got the numbers wrong."
-- **Hook (FA draft):** «[۳۰] تا عکس فاکتور رو تو [۲] دقیقه کردم یه فایل اکسل مرتب. ولی چند جا عددها رو اشتباه خوند.»
-- **First frame:** a messy pile of paper invoices, then a hard cut to the finished spreadsheet.
-- **Feasibility (on screen):** which tool or model `[X]` · free or paid `[X]` · works from Iran `[X]` · reads Persian printed `[✓/✗]` and handwritten `[✓/✗]`.
-- **Outline:**
-  1. The pain: typing invoices by hand takes `[X hours]` a week.
-  2. The demo: photos in, spreadsheet out (screen recording, sped up).
-  3. The honest part: where it misread numbers `[fill in]`.
-  4. How to check it: compare the column total with the invoice totals.
-  5. Real time and cost.
-- **Caption:** the exact steps and the prompt you used, plus the check method.
-- **Close:** "Send this to the friend who still types invoices by hand." + "What paperwork eats your week?"
-- **Prep:** test on real Persian invoices, both printed and handwritten. The research's #2 pick: a money/time-saving demo is the strongest educational pattern.
-
-### H3-6 · Reel · Week 1 Thu · Acquisition (H3)
+### H3-6 · Reel · Week 1 Mon · Acquisition (H3) · 📜 Script ready
 **"Build and sell AI agents": is it real for Iranians?**
 
 - **Hook (EN):** "Everyone's selling courses on 'build AI agents and sell them'. I looked at who's actually getting paid."
@@ -126,9 +77,23 @@ In posting order.
 - **Close:** "Send this to a friend who just bought an agent course." + "Have you ever sold an automation? What happened?"
 - **Note:** a contrarian take on a wave that's everywhere. Say "what I see", not "everyone who sells courses is lying".
 
-## Week 2
+### H1-6 · Reel · Week 1 Tue · Trust · 📜 Script ready
+**The skills I'd learn first in 2026 if I started from zero.**
 
-### H5-9 · Reel · Week 2 Sat · Acquisition (H5)
+- **Hook (EN):** "If I started from zero in 2026, these are the `[3]` things I'd learn first. Coding isn't first."
+- **Hook (FA draft):** «اگه سال ۲۰۲۶ از صفر شروع می‌کردم، اول این [۳] تا رو یاد می‌گرفتم. برنامه‌نویسی اولیش نیست.»
+- **First frame:** you, with the hook as text and a numbered list appearing.
+- **Outline** (suggested from your interview; keep only what you truly believe, and change the hook if coding *is* first for you):
+  1. **How to learn on your own:** use AI as a tutor, then check it. This is the skill under every other skill.
+  2. **One skill the market pays for**, chosen with a 2-week test, not a YouTube video.
+  3. **Enough English** to read documentation and talk to a client.
+  4. **Proof of work:** small real projects you can show.
+  5. "The hardest part is the beginning. Most people never start because they keep wondering."
+- **Caption:** one resource or first action per skill.
+- **Close:** "Send this to someone who doesn't know where to start." + "What are you learning right now?"
+- **Note:** a trust post. Pin it. The career-question format performs in this niche.
+
+### H5-9 · Reel · Week 1 Wed · Acquisition (H5) · 📜 Script ready
 **Pricing when inflation is 70%+: how to update prices without losing customers.**
 
 - **Hook (EN):** "Prices went up again. Most shops make one of two mistakes."
@@ -140,11 +105,11 @@ In posting order.
   3. **The rule:** price on what it will cost you to *buy it again*, not what you paid.
   4. **How:** small, frequent updates · start with low-attention items · protect the few items customers compare prices on · bundles instead of discounts.
   5. **Show the sheet:** cost per item, today's restock cost, margin, and an alert when the margin drops below `[X]%`.
-- **Caption:** the method step by step and the sheet columns. "The pricing sheet is in `[channel]`."
+- **Caption:** the method step by step and the sheet columns, plus the same demand-test line (comment «قیمت»).
 - **Close:** "Send this to a shop owner who's afraid to change prices." + "How often do you update your prices now?"
-- **Prep:** build the sheet (Week 0). It becomes part of the ops kit.
+- **Prep:** none. The sheet isn't needed to record this; build it only if people ask for it. It would become part of the ops kit.
 
-### H4-7 · Reel · Week 2 Sun · Acquisition (H4)
+### H4-7 · Reel · Week 1 Thu · Acquisition (H4)
 **Run AI on your laptop with no internet.**
 
 - **Hook (EN):** "No internet. No VPN. This AI still works, on a normal laptop."
@@ -159,7 +124,42 @@ In posting order.
   5. Setup in 3 steps: install Ollama or LM Studio, pick a model by your RAM, download once.
 - **Caption:** step-by-step setup, model names by RAM size (8 GB / 16 GB / 32 GB), download sizes.
 - **Close:** "Send this to someone whose work stops when the internet does." + "What would you use an offline AI for?"
-- **Prep:** test it on a mid-range laptop, including in Persian. Answers the top question in the niche: "does it work in Iran / without a VPN?"
+- **Prep:** test it on a mid-range laptop, including in Persian. How: guide 1 in [`build-guides.md`](build-guides.md). Answers the top question in the niche: "does it work in Iran / without a VPN?"
+
+## Week 2
+
+### H4-10 · Reel · Week 2 Sat · Acquisition (H4)
+**A pile of invoices → one clean spreadsheet in 2 minutes.**
+
+- **Hook (EN):** "I turned `[30]` photos of invoices into one clean spreadsheet in `[2]` minutes. Here's where it got the numbers wrong."
+- **Hook (FA draft):** «[۳۰] تا عکس فاکتور رو تو [۲] دقیقه کردم یه فایل اکسل مرتب. ولی چند جا عددها رو اشتباه خوند.»
+- **First frame:** a messy pile of paper invoices, then a hard cut to the finished spreadsheet.
+- **Feasibility (on screen):** which tool or model `[X]` · free or paid `[X]` · works from Iran `[X]` · reads Persian printed `[✓/✗]` and handwritten `[✓/✗]`.
+- **Outline:**
+  1. The pain: typing invoices by hand takes `[X hours]` a week.
+  2. The demo: photos in, spreadsheet out (screen recording, sped up).
+  3. The honest part: where it misread numbers `[fill in]`.
+  4. How to check it: compare the column total with the invoice totals.
+  5. Real time and cost.
+- **Caption:** the exact steps and the prompt you used, plus the check method.
+- **Close:** "Send this to the friend who still types invoices by hand." + "What paperwork eats your week?"
+- **Prep:** test on real Persian invoices, both printed and handwritten. How: guide 2 in [`build-guides.md`](build-guides.md). The research's #2 pick: a money/time-saving demo is the strongest educational pattern.
+
+### H3-8 · Reel · Week 2 Sun · Acquisition (H3) · 📜 Script ready
+**"Remote migration": working for foreign companies from your room, honestly.**
+
+- **Hook (EN):** "Some people in Iran work for foreign companies without leaving their room. Here's what it actually takes."
+- **Hook (FA draft):** «بعضیا از ایران، از تو اتاقشون، برای شرکت‌های خارجی کار می‌کنن. این چیزیه که واقعاً لازمه.»
+- **First frame:** the H3 scorecard, with the hook as text.
+- **Outline:**
+  1. It's real, but not easy. The people doing it mostly have experience, English, and proof of work.
+  2. The honest barriers: payment, companies that won't hire from Iran, unreliable internet.
+  3. What I won't recommend: hiding where you are, fake residency, borrowed accounts.
+  4. What improves the odds: `[fill in from your work with international teams — e.g. teams that already know where you are, a strong portfolio, a reliable work setup, clear communication]`.
+  5. First step: `[one concrete action]`.
+- **Caption:** the barriers and the first steps as a list. No legal advice.
+- **Close:** "Send this to a friend who's trying to find remote work." + "What's stopping you right now?"
+- **Note:** big demand in the niche (one career account had 9 viral Reels out of 30). The emigration topic splits comments, so keep it practical.
 
 ### H2-3 · Carousel · Week 2 Mon · Trust
 **A product mistake that cost us `[fill in: time/money/users]`, and what I'd do now.**
@@ -178,21 +178,22 @@ In posting order.
 - **Close (caption):** "What's the most expensive mistake you've seen at work?"
 - **Note:** a trust post. Pin it. Owner and builder stories got the best comments in the research. Anonymize the company if needed; keep the facts true.
 
-### H3-8 · Reel · Week 2 Tue · Acquisition (H3)
-**"Remote migration": working for foreign companies from your room, honestly.**
+### H4-1 · Reel · Week 2 Tue · Acquisition (H4)
+**ChatGPT + n8n + Telegram + Google Sheets = a lead-qualification machine.**
 
-- **Hook (EN):** "Some people in Iran work for foreign companies without leaving their room. Here's what it actually takes."
-- **Hook (FA draft):** «بعضیا از ایران، از تو اتاقشون، برای شرکت‌های خارجی کار می‌کنن. این چیزیه که واقعاً لازمه.»
-- **First frame:** the H3 scorecard, with the hook as text.
+- **Hook (EN):** "A customer messaged. I didn't touch it. The system checked them and scored them. 4 tools, no code."
+- **Hook (FA draft):** «مشتری پیام داد، من دست نزدم، سیستم خودش بررسیش کرد و امتیاز داد. ۴ تا ابزار، بدون کدنویسی.»
+- **First frame:** your phone receiving the "hot lead" alert, with the hook as on-screen text.
+- **Feasibility (on screen, first 5 s):** n8n `[self-hosted free / cloud paid]` · AI model `[which one, cost, needs foreign card?]` · Telegram `[needs VPN in Iran — Bale alternative?]` · Google Sheets `[works from Iran?]`. Fill in from your actual build.
 - **Outline:**
-  1. It's real, but not easy. The people doing it mostly have experience, English, and proof of work.
-  2. The honest barriers: payment, companies that won't hire from Iran, unreliable internet.
-  3. What I won't recommend: hiding where you are, fake residency, borrowed accounts.
-  4. What improves the odds: `[fill in from your work with international teams — e.g. teams that already know where you are, a strong portfolio, a reliable work setup, clear communication]`.
-  5. First step: `[one concrete action]`.
-- **Caption:** the barriers and the first steps as a list. No legal advice.
-- **Close:** "Send this to a friend who's trying to find remote work." + "What's stopping you right now?"
-- **Note:** big demand in the niche (one career account had 9 viral Reels out of 30). The emigration topic splits comments, so keep it practical.
+  1. The problem: leads come in, nobody answers fast, good ones get lost.
+  2. The result first: show a real test lead going through and the alert arriving.
+  3. Walk the flow once, fast, as a split screen: message → AI asks 3 questions and scores the answers → row in the sheet → alert for hot leads.
+  4. What broke while building it `[fill in]`, and how you fixed it.
+  5. Real numbers: build time `[X]`, monthly cost `[X]`.
+- **Caption:** the full steps (each node, the scoring prompt, the sheet columns), cost and feasibility notes. If people ask for the workflow file, count the requests and share it only once it's ready.
+- **Close:** "Send this to someone who loses customers because they reply late." + "What process would you automate like this?"
+- **Prep:** build it for real before Week 2 Tue. How: guide 6 in [`build-guides.md`](build-guides.md). The research's #1 pick: real builds get "I want it" comments, not "is it real?".
 
 ### H5-11 · Reel · Week 2 Wed · Acquisition (H5)
 **What an AI support agent can and can't do for a small shop.**
@@ -209,7 +210,7 @@ In posting order.
   5. Setup: give it your product sheet and a clear "hand over to a human" rule.
 - **Caption:** the test results and the setup steps.
 - **Close:** "Send this to someone thinking of putting a bot on their DMs." + "Would you trust a bot with your customers?"
-- **Prep:** run the test on a friend's shop data, with their permission (Week 0).
+- **Prep:** run the test on a friend's shop data, with their permission, before Week 2 Wed. How: guide 5 in [`build-guides.md`](build-guides.md).
 
 ---
 
@@ -219,7 +220,7 @@ Written earlier and kept for later rounds. **Before using one, apply the plan's 
 
 Research notes on these:
 - **H4-2:** lead the hook with the outcome, not "let's build".
-- **H5-1, H5-4, H5-5:** the "audit" request now goes through your `[channel]` (bot or form), not Instagram DMs.
+- **H5-1, H5-4, H5-5:** only use the "audit" request once you have a channel or form to receive it. Don't route it through Instagram DMs.
 - **H4-3, H4-4, H3-5:** the research found these formats crowded. Low priority.
 - **H4-5, H5-5:** need audience input from round 1 first.
 
@@ -351,7 +352,7 @@ Every H3 post uses the same scorecard: **Opportunity → Market → Skill → Di
   2. The ladder: Presence → Sales system → Optimization → Automation → Data → Scale. Most businesses skip steps.
   3. Signs you have presence but no system: DMs answered late, no follow-up, no idea what % of chats buy.
   4. The first fix: `[fill in: one concrete action you'd recommend]`.
-- **Close:** "Business owners: which step of the ladder are you stuck on?" Plus a second line: "Send 'audit' to my `[channel]` and I'll diagnose a few businesses publicly."
+- **Close:** "Business owners: which step of the ladder are you stuck on?" Plus a second line: "Send 'audit' to my `[channel — set up first]` and I'll diagnose a few businesses publicly."
 - **Note:** Directly tests whether business owners find you and respond.
 
 ### H5-2 · Reel
@@ -392,7 +393,7 @@ Every H3 post uses the same scorecard: **Opportunity → Market → Skill → Di
   2. **Order status updates** sent to customers automatically.
   3. **A weekly sales summary** sent to you.
   4. One line on tools (Iran-accessible options), and what *not* to automate: complaints, custom requests.
-  5. End card: "Send 'audit' to my `[channel]` with what your business does. I'll pick a few and diagnose them publicly."
+  5. End card: "Send 'audit' to my `[channel — set up first]` with what your business does. I'll pick a few and diagnose them publicly."
 - **Close:** "What would you automate first?"
 - **Note:** The "audit" CTA is the real test: it measures intent, feeds H5-5, and uncovers real business problems. Carousel version later for the trust track.
 
@@ -406,7 +407,7 @@ Every H3 post uses the same scorecard: **Opportunity → Market → Skill → Di
   3. Diagnosis: where it breaks on the ladder (Presence → Sales → Optimization → Automation → Data → Scale).
   4. Reality check: the one thing they're doing wrong or overlooking.
   5. The first 3 actions, in order.
-- **Close:** "Want your business diagnosed next? Send 'audit' to my `[channel]`."
+- **Close:** "Want your business diagnosed next? Send 'audit' to my `[channel — set up first]`."
 - **Note:** Your natural Diagnosis + Reality Check role as a repeatable format. Needs "audit" requests from H5-1 and H5-4 first. Get the owner's permission before posting.
 
 ---
