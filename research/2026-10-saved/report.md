@@ -10,7 +10,7 @@ October 2026. Read-only research from the `@oro_platform` account, 13 October 20
 
 ## 1. Executive summary: 10 findings
 
-1. **Your saves lean to one topic: AI-built websites, design and motion.** 12 of 21 posts are about building sites, UI or motion graphics with Claude and similar tools. Only 3 are about business automation or lead generation, 2 about careers, 2 about SEO or Instagram selling, 1 about AI mindset and 1 is a computer-vision demo. ORO's current menu is mostly automation, business systems and career. Check that "my field" here means the same thing in both places (see section 5).
+1. **Your saves lean to one topic: AI-built websites, design and motion.** 12 of 21 posts are about building sites, UI or motion graphics with Claude and similar tools. Only 3 are about business automation or lead generation, 2 about careers, 2 about SEO or Instagram selling, 1 about AI mindset and 1 is a computer-vision demo. ORO's current menu is mostly automation, business systems and career. The owner has since confirmed website and design is not the field, but is worth a test (see section 5).
 2. **The saves are mostly breakouts, not average posts.** Of the 12 posts with known views, 9 meet the viral definition. Their multiples run from 6.7× to 116.5×, median 14.2×. Three do not: post 1 (143K views, 2.3× the median, below the 193K followers), post 10 (3.3× but 34.1K is below 83K followers) and post 13 (2.2×).
 3. **Small accounts are the most useful ones.** All 6 saves from accounts under 10K followers that have known views are viral: cog._mind 156K on 6.8K followers (56× median), zeyneb.ux 132K on 1.4K, cevox__ 60.6K on 2.7K, aiarenalab 918K on 3.6K (116×), diyano.agency 12.9K on 3.9K, jainsta_com 7.4K on 1.2K. Each of these accounts has one or two hits against a low normal, so a single hit is luck-prone, not a method.
 4. **The keyword gate is almost universal.** 14 of 21 captions say "comment WORD". It fills comment counts (posts 1, 2, 3, 5, 6, 13, 16, 17 have more comments than likes) and says little about interest. One commenter writes that the prompt never arrived. This matches the earlier round (59 of 96).
@@ -120,7 +120,7 @@ Income claims are rare in this set. The pattern is "comment for the free thing".
 
 ## 5. The gap for you
 
-**Check first.** The saves are 57% AI website, design and motion posts, and many are saved from creators who sell web design. ORO's current round tests H3 opportunity, H4 building and H5 business systems. If the website and design topic is the field of `oro_platform`, ORO needs a plan for it. If it is not, the saves overstate it. This is the one decision I cannot make from the data.
+**Settled (13 Oct 2026, from the owner).** Website and design is not the field, but it is worth a test. So treat the website cluster as a test bet, not a new territory: run one or two posts from it (ideas 1, 2 and 6 in section 6.2) and judge them by the same median share-rate rule as the rest of round 1 (`plan.md` §10). The top-15 ranking in 6.1 still puts automation and business systems first.
 
 **Patterns you can use honestly**
 - A real build with time and cost shown (posts 7, 20).
