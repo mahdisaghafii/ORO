@@ -18,7 +18,7 @@ Planning and experiments for a practical technology personal brand on Instagram 
 - **Strategy**
   - [`strategy/brand-interview.md`](strategy/brand-interview.md): positioning, audience, voice and long-term direction, from the brand interview.
 - **Research**
-  - [`research/2026-10-saved/report.md`](research/2026-10-saved/report.md): second research round built on the 21 posts saved on `@oro_platform` (20 creators): what the saves have in common, how they score against each creator's normal, prices seen, a re-ranked top 15 and 20 Persian hook templates. Data files and the agreed `brief.md` sit next to it.
+  - [`research/2026-10-saved/report.md`](research/2026-10-saved/report.md): second research round built on the 21 posts saved on `@oro_platform` (20 creators): what the saves have in common, how they score against each creator's normal, prices seen, a re-ranked top 15 and 20 Persian hook templates. Data files and the agreed `brief.md` sit next to it, plus [`oro_platform_page.md`](research/2026-10-saved/oro_platform_page.md), a read-only review of the `@oro_platform` page itself (11 Reels, funnel, rules check, first fixes).
   - [`research/2026-10-instagram/report.md`](research/2026-10-instagram/report.md): what goes viral in the Persian tech, AI, money and business niche, what creators sell, what the audience asks for, and where the gap is. Data files sit next to it (accounts, 139 Reels, 36 offers, audience demand).
   - [`research/instagram-research-brief.md`](research/instagram-research-brief.md): the brief used to run that research (reusable for a later round).
 - **Experiment 01: acquisition test, round 1** ([`experiments/01-content-territory-test/`](experiments/01-content-territory-test/))

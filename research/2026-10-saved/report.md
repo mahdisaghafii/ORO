@@ -4,15 +4,15 @@ October 2026. Read-only research from the `@oro_platform` account, 13 October 20
 
 **Data files:** `saved_posts.csv` (21 posts as shown), `viral_reels.csv` (the same posts scored against each creator's baseline, with hook type, emotion and CTA), `accounts.csv` (20 creators), `offers.csv` (20 rows), `audience_demand.md`, `brief.md` (the agreed scope). The earlier round is in `../2026-10-instagram/`.
 
-**How to read the numbers.** Views are the counts on each creator's Reels grid on 13 October 2026. "×median" is a post's views divided by the median of that creator's visible non-pinned Reels (8 to 18 per account, not the ~30 the brief asked for, because the grid loads about 18 at a time). **Viral** follows the brief: views ≥ 3× the median and ≥ the follower count. Views were found for 12 of the 21 saved posts; the other 9 were not on the sampled part of the grid (older, or not Reels), so they are marked unknown and not guessed.
+**How to read the numbers.** Views are the counts on each creator's Reels grid on 13 October 2026. "×median" is a post's views divided by the median of that creator's visible non-pinned Reels (8 to 18 per account, not the ~30 the brief asked for, because the grid loads about 18 at a time). **Viral** follows the brief: views ≥ 3× the median and ≥ the follower count. Views were found for 17 of the 21 saved posts. A second pass a day later scrolled deeper into each grid to find the older ones, so a few values (for example post 1: 143K on the first pass, 152K later) grew a little in between; the table uses the first-pass value unless the post was found only in the second pass (posts 3, 4, 6, 8, 15). The other 4 (posts 5, 12, 14, 17) were not on the Reels tab after scrolling 54 to 96 Reels each, so they are probably not Reels, and their views are unknown rather than guessed.
 
 ---
 
 ## 1. Executive summary: 10 findings
 
 1. **Your saves lean to one topic: AI-built websites, design and motion.** 12 of 21 posts are about building sites, UI or motion graphics with Claude and similar tools. Only 3 are about business automation or lead generation, 2 about careers, 2 about SEO or Instagram selling, 1 about AI mindset and 1 is a computer-vision demo. ORO's current menu is mostly automation, business systems and career. The owner has since confirmed website and design is not the field, but is worth a test (see section 5).
-2. **The saves are mostly breakouts, not average posts.** Of the 12 posts with known views, 9 meet the viral definition. Their multiples run from 6.7× to 116.5×, median 14.2×. Three do not: post 1 (143K views, 2.3× the median, below the 193K followers), post 10 (3.3× but 34.1K is below 83K followers) and post 13 (2.2×).
-3. **Small accounts are the most useful ones.** All 6 saves from accounts under 10K followers that have known views are viral: cog._mind 156K on 6.8K followers (56× median), zeyneb.ux 132K on 1.4K, cevox__ 60.6K on 2.7K, aiarenalab 918K on 3.6K (116×), diyano.agency 12.9K on 3.9K, jainsta_com 7.4K on 1.2K. Each of these accounts has one or two hits against a low normal, so a single hit is luck-prone, not a method.
+2. **The saves are mostly breakouts, not average posts.** Of the 17 posts with known views, 13 meet the viral definition. Their multiples run from 6.7× to 116.5×, median 14.2×. Four do not: post 1 (143K views, 2.3× the median, below the 193K followers), post 3 (69.1K, 2.2×), post 10 (3.3× but 34.1K is below 83K followers) and post 13 (2.2×).
+3. **Small accounts are the most useful ones.** All 7 saves from accounts under 10K followers that have known views are viral: cog._mind 156K on 6.8K followers (56× median), zeyneb.ux 132K on 1.4K, cevox__ 60.6K on 2.7K, aiarenalab 918K on 3.6K (116×), diyano.agency 12.9K on 3.9K, jainsta_com 7.4K on 1.2K, webmotion_studio 12.2K on 1.8K (13.6×). Each of these accounts has one or two hits against a low normal, so a single hit is luck-prone, not a method.
 4. **The keyword gate is almost universal.** 14 of 21 captions say "comment WORD". It fills comment counts (posts 1, 2, 3, 5, 6, 13, 16, 17 have more comments than likes) and says little about interest. One commenter writes that the prompt never arrived. This matches the earlier round (59 of 96).
 5. **Four hook shapes carry the saves:** demo-first (a striking visual), contrarian reframe, a number or versus test, and a pain-point question. Details in section 2.2.
 6. **Showing real numbers pays.** Post 20 (cost per model, $15.21 vs $18.03) is the biggest hit in the set. Post 7 (build time 15 minutes, 6% of the 5-hour token use) got the most-liked real comment: thanks for not calling it free.
@@ -29,12 +29,12 @@ October 2026. Read-only research from the `@oro_platform` account, 13 October 20
 
 | Topic | Saved posts | Known views and ×median | Read |
 |---|---|---|---|
-| AI-built websites, UI, 3D, motion | 1, 6, 7, 10, 11, 13, 14, 15, 16, 18, 20, 21 | 7: 75.3K (9.4×); 11: 60.6K (18×); 18: 104K (12.6×); 21: 132K (40×); 20: 918K (116×); 16: 12.9K (7.9×); 1: 143K (2.3×); 10: 34.1K (3.3×); 13: 14.8K (2.2×) | The biggest cluster, and the widest range. Demos win when they look striking or come with a number |
+| AI-built websites, UI, 3D, motion | 1, 6, 7, 10, 11, 13, 14, 15, 16, 18, 20, 21 | 6: 375K (14.8×); 15: 12.2K (13.6×); 7: 75.3K (9.4×); 11: 60.6K (18×); 18: 104K (12.6×); 21: 132K (40×); 20: 918K (116×); 16: 12.9K (7.9×); 1: 143K (2.3×); 10: 34.1K (3.3×); 13: 14.8K (2.2×) | The biggest cluster, and the widest range. Demos win when they look striking or come with a number |
 | Business automation and agents | 9, 12, 17 | 9: 156K (56×) | Post 9 is a concrete build (Telegram, Gemini, Google Sheets) on a tiny account |
 | Career and CV | 2, 5 | 2: 272K (14.2×) | Income and emigration framing; the 272K post is that account's top non-pinned Reel |
-| SEO and Instagram selling | 3, 19 | 19: 7.4K (6.7×) | Pain-point question about stock questions |
-| AI mindset | 4 | not in sampled grid | 12.4K likes, highest likes-to-comments ratio in the set |
-| Computer-vision demo | 8 | not in sampled grid | Comments call the code fake |
+| SEO and Instagram selling | 3, 19 | 19: 7.4K (6.7×); 3: 69.1K (2.2×) | Pain-point question about stock questions |
+| AI mindset | 4 | 433K (7.1×) | 12.4K likes, highest likes-to-comments ratio in the set |
+| Computer-vision demo | 8 | 602K (110.8×) | Comments call the code fake, yet it reached 602K views: distrust in the comments did not stop reach |
 
 ### 2.2 Hook patterns (examples from the saves)
 
@@ -223,7 +223,7 @@ Keep the earlier plan: a 35 to 60 second Reel, face plus real proof on screen, P
 ## 8. Method and limits
 
 - **Sample:** 21 saved posts from 20 creators, chosen by whoever curated `@oro_platform`. This is a selection of what you valued, not of the whole niche. 11 of 21 are English-language posts, so patterns include non-Iranian audiences.
-- **Views:** baselines come from 8 to 18 non-pinned Reels per account on the grid (not ~30), read on 13 October 2026. Pinned Reels (shown with a pin on the grid) are excluded from every median and listed separately in `accounts.csv`. 9 of the 21 saved posts were not on the sampled grid, so their views are unknown. One (tessa.fairbrook) was not a Reel on the Reels tab and has 15 likes, so it was saved for its topic.
+- **Views:** baselines come from 8 to 18 non-pinned Reels per account on the grid (not ~30), read on 13 October 2026. Pinned Reels (shown with a pin on the grid) are excluded from every median and listed separately in `accounts.csv`. 4 of the 21 saved posts (5, 12, 14, 17) were not found on the Reels tab even after scrolling 54 to 96 Reels, so their views are unknown. One of them (post 12, tessa.fairbrook) has 15 likes and was probably saved for its topic. Instagram removes grid rows from the page as you scroll, so the deeper pass accumulated rows as it went; the baselines were not recomputed from the deeper samples, to keep every account on the same footing.
 - **Counters on a post page:** likes, comments and a third counter (reposts, inferred). Two posts showed only two counters, so which was which was not confirmed.
 - **Not done:** I did not watch the videos, so length, hook visuals and structure are from captions and thumbnails. I read only the first screenful of comments. The Telegram web preview for madadi_ai did not load as a feed, so its prices were not seen. No external site was signed up for or purchased from. I read three public sites (jainsta.ir, xflow.ir, toroobche.ir) and one Telegram preview with a plain page fetch.
 - **Bias:** the Instagram feed and the saved list are personalised to your account, and the creators who sell web design may have been saved because they sell it.
