@@ -4,7 +4,7 @@ Paste this into a new conversation so it knows the project.
 
 ## What ORO is
 
-ORO is the GitHub repo `mahdisaghafii/ORO` (formerly `Personal-Brand-Projects`). It holds the planning for **Mahdi Saghafi's** Instagram personal brand (`@mahdiisaghafi`) for an Iranian, Persian-speaking audience.
+ORO is the GitHub repo `mahdisaghafii/ORO` (formerly `Personal-Brand-Projects`). It holds the planning for **Mahdi Saghafi's** Instagram brand for an Iranian, Persian-speaking audience. Round 1 runs on the page **`@oro_platform`** (decided 15 Oct 2026), not on a personal `@mahdiisaghafi` page. Its Telegram channel is `t.me/oro_channel`.
 
 All current work is on the branch **`claude/practical-hamilton-vicsl6`**. `main` only has the first version.
 
@@ -81,11 +81,19 @@ Saved for later rounds (scripts in `scripts-saved.md`): "Just go Upwork" is bad 
 
 Elsewhere: `strategy/brand-interview.md` (full brand interview), `research/2026-10-instagram/report.md` (research report and data).
 
+## The live page (`@oro_platform`, 14 Oct 2026)
+
+- 148 followers, 11 Reels posted about daily since ~2 Oct. 10.4K views in 30 days, 88% from non-followers. Median share rate 0.62%, median follow rate 0.70%.
+- Best Reel: AI video editing (2,469 views, 41 follows, 77 saves). Reel 11 ("dollar income from translating videos") has the best share and follow rate (2.93%) but breaks the no-income-claims rule.
+- Leaks to fix: 4 Reels have no caption; the Reel 2 cover and hashtags make an income claim; nothing is pinned; the bio sends people to Telegram while captions send them to DMs (6 link taps from 312 profile visits; the channel has 6 subscribers).
+- Full review: `research/2026-10-saved/oro_platform_page.md` §7.
+
 ## Open items
 
+- Fix the live page's leaks (above) before the next post.
 - Do the builds and tests for posts 7, 8, 10 and 11, writing down real time, cost and what broke.
-- Decide whether to set up an owned channel (Telegram, Bale or both) once there's something to put in it.
-- Choose the Instagram bio. Suggested: «می‌سازم، تست می‌کنم، نتیجه‌ی واقعی رو نشون می‌دم. / هوش مصنوعی · اتوماسیون · کسب‌وکار، بدون هایپ / ۷+ سال مدیر محصول و ساخت تیم». Name field: «مهدی ثقفی | هوش مصنوعی و اتوماسیون».
+- Pick one door: the Telegram channel (`t.me/oro_channel`, link in captions too) or DMs. Decide whether the CV PDF in the channel should stay public.
+- Choose the `@oro_platform` bio. Current: «تکنولوژی برای آدم‌های عمل‌گرا» · «AI • طراحی • ابزار». Earlier suggestion, written for a personal page: «می‌سازم، تست می‌کنم، نتیجه‌ی واقعی رو نشون می‌دم. / هوش مصنوعی · اتوماسیون · کسب‌وکار، بدون هایپ / ۷+ سال مدیر محصول و ساخت تیم». Decide whether the page shows Mahdi's name and face or stays a brand.
 - Confirm personal claims used in scripts are accurate as worded (e.g. "7+ years", "I've hired for my teams").
 - Merge the branch into `main` so the files show on the repo's front page.
 

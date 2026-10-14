@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Planning, research and experiments for a Persian-language Instagram personal brand about practical technology for ambitious Iranians: **discover opportunities, understand technology, build things.** It holds no application code: everything is Markdown, CSV or plain text. There is no build, lint or test step.
+Planning, research and experiments for a Persian-language Instagram personal brand about practical technology for ambitious Iranians: **discover opportunities, understand technology, build things.** Round 1 posts from the Instagram page **`@oro_platform`** (Telegram: `t.me/oro_channel`); its review is `research/2026-10-saved/oro_platform_page.md`. It holds no application code: everything is Markdown, CSV or plain text. There is no build, lint or test step.
 
 The one mechanical check is that the CSVs still parse with a consistent column count. Run it after editing any CSV:
 
