@@ -24,6 +24,7 @@ All current work is on the branch **`claude/practical-hamilton-vicsl6`**. `main`
 - **Never:** fake income claims, get-rich-quick framing, generic AI hype, KYC circumvention / hiding identity / borrowed accounts, offering anything that doesn't exist yet.
 - **Audience:** mostly 18–27 (students, early-career employees) plus small business owners. They're lost among options, want to improve their situation, and distrust hype.
 - **Long-term business:** content → trust → discover audience problems → build small tools → SaaS / AI / B2B automation products. Instagram is the trust, research and distribution layer.
+- **Product being built:** **ORO-Accountant** (`D:\ORO-Accountant`, repo `mahdisaghafii/ORO-Accountant`). It's a Telegram and Bale bookkeeping bot for small Iranian businesses: send a bank SMS, receipt photo, card-to-card screenshot or voice note, and it becomes an approved, categorized transaction. Started 15 Oct 2026; slice 1a (core skeleton) is built, and the pilots are Chid plus three outside businesses. No content is planned around it yet. Its build happens in its own repo, not here.
 
 ## Iran context (October 2026)
 
