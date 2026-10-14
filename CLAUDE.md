@@ -24,7 +24,7 @@ strategy/brand-interview.md            source of truth: positioning, audience, v
         │     scripts.md               THE MENU: 11 posts with word-for-word Persian scripts (pick, record, post; no calendar)
         │     scripts-saved.md         scripts taken off the menu, kept for later rounds
         │     build-guides.md          step-by-step builds/tests that menu posts 7, 8, 10, 11 depend on
-        │     content-pool.md          idea pool (62 ideas), grouped by territory (H3/H4/H5/trust), ranked with the research
+        │     content-pool.md          idea pool (65 ideas), grouped by territory (H3/H4/H5/trust), ranked with the research
         │     plan.md                  hypotheses, rules for every post, how to pick, metrics, decision rules
         │     posts.md                 English outlines of the menu posts + older drafts
         │     tracker.csv              one row per post, filled in 72 hours after posting (imported into Google Sheets)

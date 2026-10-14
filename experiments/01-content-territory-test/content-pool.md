@@ -5,6 +5,7 @@ Every post idea in one place, **updated with the Instagram research** ([`researc
 - **Drafted** posts (full hook and outline) are in [`posts.md`](posts.md). Other ideas are one-line angles that get drafted once picked.
 - **★1–★15** = the research's top 15, in rank order. **⬇** = moved down by the research. **🆕** = new idea from the research.
 - 🔥 = tied to a current trend. ⏳ = needs audience input from an earlier post first.
+- 📱 = built on Mahdi's own app [Payment-recorder](https://github.com/Pargar-Tech/Payment-recorder) («تراکنش‌های من»): an offline Android app that reads Iranian bank SMS and shows every bank in one place. Built 14 Oct 2026 with Claude Code. Its commits record what broke. Time, cost and real-phone results are still `[fill in]`.
 
 ---
 
@@ -128,6 +129,7 @@ Twenty Persian hook templates are in section 6.3 of the report.
 | 🆕 **H4-14** | I built the Divar alert bot everyone keeps asking for, and here's the free version | Answers visible comment demand on a competitor's Reel, in the open, with no gate |
 | 🆕 **H4-15** | Free or paid? Works in Iran? I checked 10 tools people keep promoting | A feasibility table. Reel plus a carousel version for saves |
 | 🆕 **H4-16** | AI employee vs. AI tool: the difference in one example | Your version of the reframe that went viral for two competitors (73K, 262K), with a real build |
+| 📱 **H4-17** | I built an app that reads all my bank SMS and shows every bank in one place, with no internet | A real instance of H4-6 and the saves report's "build with time and cost" gap. What broke (from the commits): removing the phone's screen lock locked users out of the app for good, the app reopened unlocked after Android killed it, and one tap on "ignore sender" silently dropped a bank's SMS. Feasibility: free, no internet, no foreign card, Android only, sideloaded. **Don't offer the APK in this post**: there is no signed Release yet and a sideloaded SMS app is the classic scam shape (pair with H2-9). Use the demand line instead |
 
 ## H5 — Business systems
 
@@ -148,6 +150,7 @@ Twenty Persian hook templates are in section 6.3 of the report.
 | 🆕 **H5-13** | Why your "comment the word" DM never arrived | How keyword funnels work and fail. Honest and very shareable with creators and sellers |
 | 🆕 **H5-14** | One order, three departments, zero answers | A manager-scenario format that works for an ERP company (34–134K). Fixed with Sheets + automation for under $10/month |
 | 🆕 **H5-15** | The owner who couldn't take a day off: a diagnosis | Owner burnout (a 167K angle) told through systems and numbers |
+| 📱 **H5-16** | Every bank, personal and business apart, and the month's file for my accountant in one minute | Owner pain: several banks, no single view, no record of who paid. Shows the app's personal/business tags, payer notes and CSV export. Only claim what you've done on your own accounts |
 
 ## Trust (H1 / H2)
 
@@ -168,6 +171,7 @@ Twenty Persian hook templates are in section 6.3 of the report.
 | **H2-6** | How I run 4 products at the same time (my actual system) | From your experience |
 | **H2-7** | The dashboard that changed how we made decisions | Your data story `[fill in]` |
 | **H2-8** | What I learned working with international teams and partners | From your experience |
+| 📱 **H2-9** | An app that reads your bank SMS, even mine: check these 3 things before you install it | Trust and safety. Fake government and bank apps that steal SMS are a common scam in Iran. Builder's view of what to check: does it need internet permission, is the source public, where did the install file come from. Builds the trust H4-17 needs; a strong "send this to someone" post |
 
 ## Extras — niche memes (occasional, for reach)
 

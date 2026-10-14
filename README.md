@@ -27,7 +27,7 @@ Planning and experiments for a practical technology personal brand on Instagram 
   - [`scripts-saved.md`](experiments/01-content-territory-test/scripts-saved.md): full scripts taken off the menu, kept for later rounds.
   - [`build-guides.md`](experiments/01-content-territory-test/build-guides.md): step-by-step guides for the builds and tests, and where to find ready-made versions.
   - [`posts.md`](experiments/01-content-territory-test/posts.md): the 11 posts on the menu (English outlines with Persian hook drafts), plus earlier drafts kept for later rounds.
-  - [`content-pool.md`](experiments/01-content-territory-test/content-pool.md): all 62 post ideas, ranked with the research.
+  - [`content-pool.md`](experiments/01-content-territory-test/content-pool.md): all 65 post ideas, ranked with the research.
   - [`tracker.csv`](experiments/01-content-territory-test/tracker.csv): fill in each post's numbers 72 hours after posting (import into Google Sheets).
 
 ## Tracker rates

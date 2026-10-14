@@ -76,7 +76,7 @@ Saved for later rounds (scripts in `scripts-saved.md`): "Just go Upwork" is bad 
 - `build-guides.md` — step-by-step builds and tests for posts 7, 8, 10, 11, plus customer and pricing sheets
 - `tracker.csv` — one row per post; fill in numbers after 72 hours
 - `plan.md` — rules, metrics, how to decide at the end of the round
-- `content-pool.md` — all 62 post ideas, ranked with the research
+- `content-pool.md` — all 65 post ideas, ranked with the research
 - `posts.md` — English outlines and older drafts
 
 Elsewhere: `strategy/brand-interview.md` (full brand interview), `research/2026-10-instagram/report.md` (research report and data).
