@@ -29,6 +29,8 @@ Planning and experiments for a practical technology personal brand on Instagram 
   - [`posts.md`](experiments/01-content-territory-test/posts.md): the 11 posts on the menu (English outlines with Persian hook drafts), plus earlier drafts kept for later rounds.
   - [`content-pool.md`](experiments/01-content-territory-test/content-pool.md): all 65 post ideas, ranked with the research.
   - [`tracker.csv`](experiments/01-content-territory-test/tracker.csv): fill in each post's numbers 72 hours after posting (import into Google Sheets).
+- **Tracking** (what is actually posted; updated by the `/refresh-oro` skill in `.claude/skills/refresh-oro/`)
+  - [`tracking/posts.csv`](tracking/posts.csv): one row per Reel per snapshot date (Insights numbers and rates). [`tracking/account.csv`](tracking/account.csv): page totals per snapshot. [`tracking/ideas.md`](tracking/ideas.md): ideas from the private Telegram channel (export dropped in `inbox/telegram/`, git-ignored). [`tracking/log.md`](tracking/log.md): what changed each run.
 
 ## Tracker rates
 
