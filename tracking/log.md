@@ -33,3 +33,6 @@ One entry per `/refresh-oro` run, newest at the bottom. Facts and deltas only.
 - Reviewed the 16 Oct Telegram ideas and filed them, rated A/B/C/Hold, in `content-pool.md` (section "From the Telegram ideas channel"). A: H4-18 (3 things before building an app), H4-20 ("X became free" format, with own test), H4-22 (AI agent on Iranian sites), H4-7 and H4-10 upgrades. Hold (need your answer): «وردست», «جمنای با ۱۰ هزار تومن» (borrowed-account risk if a reseller).
 - Corrected an earlier slip: the CV-tips Reel has 329 views and 0 follows.
 - Not verified: none of the forwarded tools were run; model names, benchmarks and licences are the original posters' claims.
+
+## 2026-10-16 (Gemini idea clarified)
+- Owner explained «جمنای با ۱۰ هزار تومن»: Gemini Pro bought from a Telegram provider (about 600,000 toman), 5 people invited to share it, owner has tried it. Rating changed from Hold to C as stated: promoting the buy route conflicts with the content rules. Added reframes H4-9 + Gemini (A) and H2-11 (B) in `content-pool.md`. Numbers in the claim don't match (600,000 / 6 is about 100,000).
