@@ -22,3 +22,6 @@ One entry per `/refresh-oro` run, newest at the bottom. Facts and deltas only.
 ## 2026-10-16 (Telegram export filed)
 - Read `ChatExport_2026-10-16` (private channel "Oro instagram ideas", 36 messages, ids 1 to 40; copy kept in git-ignored `inbox/telegram/result.json`). Filed 8 own ideas, link-only saves (artifacts, YouTube, repos) and 11 forwarded Linuxor posts as one-line pointers into `ideas.md`. `.telegram-seen` = 40.
 - Look at: your own notes are mostly one-line titles («فلان چیز رایگان شد», «جمنای با ۱۰ هزار تومن»); the forwarded posts are almost all free or open-source tools, with Iran-specific ones (Torob MCP, awesome-iran-mcp, Mizan-4B).
+
+## 2026-10-16 (decision)
+- Skip rate and average watch time are dropped from `posts.csv` (phone-app only; the owner chose not to collect them). Share, follow and save rates stay the measures.

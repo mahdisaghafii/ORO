@@ -34,7 +34,7 @@ Column order is the header of each CSV. Match it exactly.
 1. **Today's date and prior state.** Read the last rows of `tracking/posts.csv` and `tracking/account.csv`.
 2. **Instagram, built-in browser (or Claude in Chrome if the user prefers).** Open `https://www.instagram.com/oro_platform/`. If not signed in, stop and ask the user to sign in; never enter credentials.
    - Account: followers, following, posts. Then from Insights (account, last 30 days): views, viewers, non-follower share, profile visits, link taps. Append one row to `account.csv`.
-   - Reels grid: list every Reel (id = the shortcode in its URL). For each, open it and, from its Insights, read views, non-follower %, reach, likes, comments, saves, shares, follows, skip rate and average watch time where shown. Read the first caption line and the post date if visible.
+   - Reels grid: list every Reel (id = the shortcode in its URL). For each, open it and, from its Insights, read views, non-follower %, reach, likes, comments, saves, shares and follows. Skip rate and watch time are phone-app only and are deliberately not collected. Read the first caption line and the post date if visible.
    - Compute share, follow and save rates as `count ÷ reach × 100`, 2 decimals (definitions: `plan.md` §6).
    - Append one row per Reel to `posts.csv`. Fill `posted_date` from the latest earlier row for the same `post_id` if you can't see it now.
    - New `post_id` not seen before = a new post. Put a plain-words topic in `topic`, taken from the Reel itself, not guessed.
