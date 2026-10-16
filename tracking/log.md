@@ -25,3 +25,6 @@ One entry per `/refresh-oro` run, newest at the bottom. Facts and deltas only.
 
 ## 2026-10-16 (decision)
 - Skip rate and average watch time are dropped from `posts.csv` (phone-app only; the owner chose not to collect them). Share, follow and save rates stay the measures.
+
+## 2026-10-16 (correction)
+- Telegram channel `oro_channel` has 26 subscribers (6 on 14 Oct), read from the public `t.me/oro_channel` page. Filled into the signed-in 16 Oct row of `account.csv`.
