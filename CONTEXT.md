@@ -42,6 +42,8 @@ All current work is on the branch **`claude/practical-hamilton-vicsl6`**. `main`
 
 ## Current experiment (round 1)
 
+> As of 16 Oct the owner is not posting from the menu below. What is actually posted is tracked in `tracking/`; the menu is kept as reference.
+
 - **Goal:** find which content group brings the most new people in. **H3** opportunity analysis, **H4** building with AI and tools, **H5** business systems, plus **trust** posts that turn visitors into followers.
 - **No calendar.** Mahdi picks a post from a menu, records it and posts it. Four rules:
   1. Don't post the same group twice in a row.
@@ -70,6 +72,11 @@ All current work is on the branch **`claude/practical-hamilton-vicsl6`**. `main`
 
 Saved for later rounds (scripts in `scripts-saved.md`): "Just go Upwork" is bad advice · "Build and sell AI agents": real? · Pricing under inflation · A product mistake that cost us (needs Mahdi's real story).
 
+## Tracking (`tracking/`, `inbox/telegram/`)
+
+- `posts.csv`: one row per Reel per snapshot date. `account.csv`: page totals per snapshot. `ideas.md`: ideas from the private Telegram channel. `log.md`: what changed each run.
+- Telegram ideas arrive as a Telegram Desktop JSON export dropped in `inbox/telegram/` (git-ignored).
+
 ## Repo files (`experiments/01-content-territory-test/`)
 
 - `scripts.md` — **the menu** and all Persian scripts (spoken lines, on-screen text, captions)
@@ -82,16 +89,21 @@ Saved for later rounds (scripts in `scripts-saved.md`): "Just go Upwork" is bad 
 
 Elsewhere: `strategy/brand-interview.md` (full brand interview), `research/2026-10-instagram/report.md` (research report and data).
 
-## The live page (`@oro_platform`, 14 Oct 2026)
+## The live page (`@oro_platform`, 16 Oct 2026)
 
-- 148 followers, 11 Reels posted about daily since ~2 Oct. 10.4K views in 30 days, 88% from non-followers. Median share rate 0.62%, median follow rate 0.70%.
-- Best Reel: AI video editing (2,469 views, 41 follows, 77 saves). Reel 11 ("dollar income from translating videos") has the best share and follow rate (2.93%) but breaks the no-income-claims rule.
-- Leaks to fix: 4 Reels have no caption; the Reel 2 cover and hashtags make an income claim; nothing is pinned; the bio sends people to Telegram while captions send them to DMs (6 link taps from 312 profile visits; the channel has 6 subscribers).
-- Full review: `research/2026-10-saved/oro_platform_page.md` §7.
+Numbers are tracked in `tracking/` (`posts.csv`, `account.csv`, `log.md`), refreshed on demand with the `/refresh-oro` skill (read-only Instagram Insights through Claude in Chrome, plus the Telegram export in `inbox/telegram/`).
+
+- 1,275 followers (148 on 14 Oct). Last 30 days: 48,248 views, 95.2% from non-followers, 691 profile visits, 47 link taps (6 on 14 Oct).
+- 14 Reels on the grid plus 2 off-grid Reels dated 15 Oct, probably Trial Reels (inferred, not confirmed).
+- Best Reel: OpenCode with free DeepSeek, a bank-transaction app built in about 3 hours (41,894 views, 2,485 saves, 923 shares, 864 follows, keyword «مدل»). Still under 72 hours old on 16 Oct.
+- An off-grid Reel of the same bank-app build has 6,850 views and 69 follows.
+- Reels with a real build and result lead on saves, shares and follows; news-style and income-style Reels trail. The income wording on the website Reel (cover «۵ میلیون روزانه», #درآمد_اینترنتی) still conflicts with the no-income-claims rule.
+- Skip rate and watch time are phone-app only and are not collected.
+- Earlier review of the first 11 Reels: `research/2026-10-saved/oro_platform_page.md`.
 
 ## Open items
 
-- Fix the live page's leaks (above) before the next post.
+- Recheck the 14 Oct page leaks (uncaptioned Reels, income claims on the website Reel, nothing pinned, two doors: Telegram vs DMs) against the current page.
 - Do the builds and tests for posts 7, 8, 10 and 11, writing down real time, cost and what broke.
 - Pick one door: the Telegram channel (`t.me/oro_channel`, link in captions too) or DMs. Decide whether the CV PDF in the channel should stay public.
 - Choose the `@oro_platform` bio. Current: «تکنولوژی برای آدم‌های عمل‌گرا» · «AI • طراحی • ابزار». Earlier suggestion, written for a personal page: «می‌سازم، تست می‌کنم، نتیجه‌ی واقعی رو نشون می‌دم. / هوش مصنوعی · اتوماسیون · کسب‌وکار، بدون هایپ / ۷+ سال مدیر محصول و ساخت تیم». Decide whether the page shows Mahdi's name and face or stays a brand.
