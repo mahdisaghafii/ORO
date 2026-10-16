@@ -28,3 +28,8 @@ One entry per `/refresh-oro` run, newest at the bottom. Facts and deltas only.
 
 ## 2026-10-16 (correction)
 - Telegram channel `oro_channel` has 26 subscribers (6 on 14 Oct), read from the public `t.me/oro_channel` page. Filled into the signed-in 16 Oct row of `account.csv`.
+
+## 2026-10-16 (ideas reviewed and rated)
+- Reviewed the 16 Oct Telegram ideas and filed them, rated A/B/C/Hold, in `content-pool.md` (section "From the Telegram ideas channel"). A: H4-18 (3 things before building an app), H4-20 ("X became free" format, with own test), H4-22 (AI agent on Iranian sites), H4-7 and H4-10 upgrades. Hold (need your answer): «وردست», «جمنای با ۱۰ هزار تومن» (borrowed-account risk if a reseller).
+- Corrected an earlier slip: the CV-tips Reel has 329 views and 0 follows.
+- Not verified: none of the forwarded tools were run; model names, benchmarks and licences are the original posters' claims.

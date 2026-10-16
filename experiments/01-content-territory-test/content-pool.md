@@ -173,6 +173,44 @@ Twenty Persian hook templates are in section 6.3 of the report.
 | **H2-8** | What I learned working with international teams and partners | From your experience |
 | 📱 **H2-9** | An app that reads your bank SMS, even mine: check these 3 things before you install it | Trust and safety. Fake government and bank apps that steal SMS are a common scam in Iran. Builder's view of what to check: does it need internet permission, is the source public, where did the install file come from. Builds the trust H4-17 needs; a strong "send this to someone" post |
 
+## From the Telegram ideas channel (reviewed and rated 16 Oct 2026)
+
+Source: the export of the private channel, filed raw in [`tracking/ideas.md`](../../tracking/ideas.md) (tg # = message id). 📨 marks these. IDs continue each territory's numbering.
+
+**Rating.** **A** = record next: your own numbers or the research back it, it is feasible in Iran, it breaks no content rule, and it needs only your true details. **B** = good, but run a test or reframe first. **C** = low priority: niche, risky or weak evidence. **Hold** = I can't tell what the idea is; your answer is needed.
+
+**Evidence from your own page** (Insights, 16 Oct 2026, [`tracking/posts.csv`](../../tracking/posts.csv)): Reels that show a real build with a result lead on saves, shares and follows. The OpenCode + free DeepSeek bank-app Reel has 41,894 views and 864 follows; the AI video editing Reel 3,079 views and 50 follows; the website-from-a-phone Reel 1,360 views and 12 follows. Generic or news-style Reels trail: the CV-tips Reel has 329 views and 0 follows, "AI is an opportunity" 453 views and 1 follow, the Google update 1,884 views and 9 follows.
+
+### Your own ideas
+
+| ID | Idea (your wording) | Territory | Rating | Why, and what it needs |
+|---|---|---|---|---|
+| 📨 **H4-18** | «سه تا کار که حتما قبل ساخت یه اپلیکیشن با هوش مصنوعی باید انجام بدی» + «2 تا محتوا» (tg #4) | H4 / H1 | **A** | Follows the build-with-a-result pattern that won, and "how do I start building" is what viewers ask. The three things must come from your own build (the commits of the bank-SMS app record what broke): `[fill in]`. «2 تا محتوا» is unclear to me (two pieces, such as a Reel plus a carousel?) |
+| 📨 **H4-19** | «یه سایت و رزومه شخصی خفن از خودم» (tg #33) | H4 | **B** | Same family as the website Reel (1,360 views, 12 follows), so it needs a stronger angle than before: your own real CV and site, with real time, cost and what broke. State Iran access for Claude up front. The saved resume page is a demo for a fictional student, so don't show it as a real result |
+| 📨 **H3-16** | «امتیاز دهیی رزومه با laya» (tg #31) | H3 / H4 | **B** | Fits H3-15 and the CV pain point, but the one CV Reel got 329 views and 0 follows, so a plain CV tip doesn't carry. A real test does: score a few CVs, show where the tool is wrong. Use your own CV only; never a stranger's. The "laya" model is only a name in the forwarded posts and I haven't verified it exists |
+| 📨 **H4-20** | «فلان چیز رایگان شد» (tg #39) | H4 | **A**, as a format | The top Reel is exactly this (a free tool plus a build). Each one must include your own test, an Iran-access line and the limits, or it becomes the crowded news-list format the research moved down (H4-4) |
+| 📨 **H3-17** | «کارای پر درامد کم سرمایه» (tg #37) | H3 | **C** until reframed | "High-income" wording is the income framing the rules and research flag as the most distrusted. Reframe as "low-capital opportunities, with the real cost, time and barriers for each", tested like H3-14. Needs real numbers, none invented |
+| 📨 **H3-18** | «برنامه نویسی رو بنداز کنار اینا شغلای این هذاس» (tg #32) | H3 | **C** | As worded it is the "drop X" claim the brand avoids, and the typo makes me unsure of the meaning (my guess: jobs of this era). Merge into H3-12 (junior developer with AI) and H3-9 (skills that keep value), with sources for any job claim |
+| 📨 **H4-21** | «جمنای با 10 هزار تومن» (tg #40) | H4 | **Hold** | If this is a reseller or shared account, it hits the rule against borrowed accounts and KYC circumvention, and I won't draft it. If it is an official, legal price or a free tier, it is a strong "free or paid, works in Iran" post. Which is it? |
+| 📨 **—** | «وردست» (tg #38) | ? | **Hold** | One word (assistant or helper). I can't tell if it is a post, a product name or a series. Tell me what you meant |
+
+### Tools forwarded from other channels
+
+Their claims (benchmarks, sizes, licences) are the original poster's. I haven't run or verified any of these. Check each before quoting on camera, and never run a repo you haven't read.
+
+| ID | Source | Territory | Rating | Why, and what it needs |
+|---|---|---|---|---|
+| 📨 **H4-22** | Torob MCP (tg #19) and awesome-iran-mcp (tg #35) | H4 | **A** | The one thing nobody else covers: an AI agent that works with Iranian sites (price comparison, flights, bookings). Matches the flight-bot pattern (★10 H4-2, 85K) and answers "does it work in Iran?" by design. Test first: does it run, how long, what breaks, does the agent tool itself work in Iran. Read the repo's licence and what it does to those sites |
+| 📨 **H4-7 upgrade** | Persian decision-model posts (tg #18, #26, #27, #28) | H4 | **A** | Strengthens menu post 7 (run AI on a laptop with no internet): a small Persian model on 2.5 to 4 GB of RAM. Needs your own run on a normal laptop and a check of the claimed accuracy |
+| 📨 **H4-10 upgrade** | Unlimited OCR (tg #25) | H4 | **A-** | Local OCR for whole PDFs feeds post 8 (invoices to a spreadsheet, ★2). The unknown is Persian: the post says "multiple languages", so test on real Persian invoices before promising anything |
+| 📨 **H4-23** | AI video tools: Claude Video Editor blueprint, HyperFrames, Remotion, a motion-graphics tutorial (tg #11, #16, #17; saved artifact by Jason Cooperson) | H4 | **A-** | Your AI video editing Reel is your best older Reel (3,079 views, 50 follows), so "how I make my Reels with AI, with real time and cost" has your own evidence. Credit the third-party blueprint; don't call it yours. Check each tool's Iran access and licence |
+| 📨 **H2-10** | Your own field guides: Project Setup Field Guide (public channel post) and Claude Route Map (artifact, tg #20) | H2 | **B** | Real work and real numbers (slices, tests), good for trust. But the audience is mostly not developers, so frame it as "how I build things safely with AI", not a tool tour |
+| 📨 **—** | Archify skill (tg #22), Docker AI skills (tg #21) | H4 | **C** | Developer tools with a narrow audience; no evidence they reach your 18 to 27 viewers. Keep as production reading |
+| 📨 **—** | OpenWA, unofficial WhatsApp API (tg #29) | H5 | **C** | Unofficial WhatsApp automation risks account bans and breaks WhatsApp's terms, and its status inside Iran needs checking. Poor advice for small shops unless it is verified |
+| 📨 **—** | Free Office alternatives (tg #34), PersonaPlex-7B voice model (tg #30) | H4 | **C** | The Office download comes from an unverified site: don't point viewers at an installer you haven't checked. The voice model needs a GPU most viewers don't have |
+
+**Links saved without a note** (tg #7 to #14, #16, #20, #24): the six Claude artifacts are your demo sites and guides (a resume page, two shop storefronts "Raj Studio" and "Sofaline", the video blueprint, the route map). They are source material for H4-19 and H4-23, not ideas on their own. Say "demo" on screen: the shop pages have no real checkout or orders. Three YouTube links: one title read (motion graphics with an AI model); I couldn't read the other two.
+
 ## Extras — niche memes (occasional, for reach)
 
 The cheapest breakout for a small account in the research was a relatable meme for a specific group (a researcher meme got 151K on a 7.8K account). Use occasionally, not as a pillar.
