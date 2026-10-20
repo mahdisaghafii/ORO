@@ -213,6 +213,41 @@ Their claims (benchmarks, sizes, licences) are the original poster's. I haven't 
 
 **Links saved without a note** (tg #7 to #14, #16, #20, #24): the six Claude artifacts are your demo sites and guides (a resume page, two shop storefronts "Raj Studio" and "Sofaline", the video blueprint, the route map). They are source material for H4-19 and H4-23, not ideas on their own. Say "demo" on screen: the shop pages have no real checkout or orders. Three YouTube links: one title read (motion graphics with an AI model); I couldn't read the other two.
 
+## From the Telegram ideas channel — 20 Oct batch (pasted in chat; messages dated 16–19 Oct)
+
+Not an export. Searched and verified on 20 Oct 2026. GitHub star counts are as of that day; Instagram numbers are public likes/comments only, not Insights.
+
+### Tools and repos
+
+| ID | Idea (your wording) | Territory | Rating | Why, and what it needs |
+|---|---|---|---|---|
+| 📨 **H4-25** | Agency Agents — «۱۶۰ هزار ستاره» role-based agent collection, github.com/msitarzewski/agency-agents | H4 | **A-** | The 160k claim is true (162,014 stars on 20 Oct, MIT). It is a prompt/personality library, not a model; installs into Claude Code, Codex, Cursor and OpenCode. Test 3 roles on one real task and show where the output is still generic. OpenCode currently registers only ~119 agents, which is a good "what broke" beat. Needs ~2–3 h |
+| 📨 **H4-28** | LTX V2.5 — the free AI video model in the reel (DdjTNJcop25) | H4 | **B** | The model is real (LTX-2.5, open weights, free under $10M ARR), but the reel's "100% free" and "18 million installs" are not verified; hosted versions may charge, and local needs a GPU. Test one 10-second Persian clip: time, watermark, cost, Iran access. Fits H4-23 and your best older AI-video Reel. ~1–2 h |
+| 📨 **H3-19** | AI job-search framework built on Claude Code, github.com/MadsLorentzen/ai-job-search | H3 / H4 | **B** | 59,271 stars, MIT, active. Claude Code has no free tier, so it needs a paid plan or API credits; the default portals are Danish, with LinkedIn and Freehire country-agnostic. The author's 69 applications / 20 interviews / 1 job are self-reported. The honest post: "It writes the application; it doesn't get you the visa." Ties to H3-8, H3-15 and ORO Survey. Test 5 real postings, ~3–5 h |
+| 📨 **H4-24** | Context Mode — context-window optimization for coding agents, github.com/mksglu/context-mode | H4 | **B** | 31,259 stars, active, supports OpenCode. The 98% claim is tool-output sandboxing, not total context; the licence is ELv2 (source-available, not OSI open source), and it switched from MIT after launch. The post is "why your AI coding session gets dumber after 30 minutes", with a real token count before/after. Builder audience; ~2–3 h |
+| 📨 **H4-26** | ComfyUI — local image/video generation, github.com/Comfy-Org/ComfyUI | H4 | **B** (supporting) | 140,385 stars, GPL-3.0, free, no card. Needs a real GPU and a large download. Better as the local/free option inside H4-23 than as its own post. If you do it standalone, show the hardware floor before promising anything |
+| 📨 **H4-27** | ruflo — agent meta-harness, github.com/ruvnet/ruflo | H4 | **C** | 77,543 stars, MIT, active, but it is a 100+ agent/swarm harness with 314 MCP tools and mods that run with your account's permissions, not sandboxed. Too complex and too niche for the 18–27 audience; keep as production reading, not a post |
+| 📨 **H3-20** | Kronos — financial-markets foundation model, github.com/shiyu-coder/Kronos | H3 / H4 | **C / avoid** | 42,073 stars, MIT, but the last push was April 2026 and its own README says the backtest is a demo, not a production trading system. Money-prediction content is the most distrusted, and you are not positioned as an investing expert. Only usable as a "this does not predict the market" reality check, with no return claims |
+
+### Instagram reels (public page only; no Insights)
+
+| Reel | Account (followers) | What it is | Public likes / comments | Verdict |
+|---|---|---|---|---|
+| DcWjEEoIPHd | hooshyar.school (197K) | Posted 22 Aug; caption only «کلمه مکس رو کامنت کنید»; the video's claim is not visible | 13K / 14.9K | **Hold** — unidentified; likely a Claude Max claim. Do not repeat it without watching |
+| DdjTNJcop25 | webmastermentor (384K) | LTX V2.5 free AI video; comment «ltx» | 9.4K / 28.9K | Seen; folded into **H4-28** |
+| DejY7mSBykA | mohamadesfehaniyan (625K) | «۴ تا مسیر درآمدزایی با هوش مصنوعی» | 28.8K / 31.2K | **Avoid** — income framing |
+| DdTmmIyM6FY | hadid.dev (114K) | Free 7-day Claude PDF; comment «کلاد» | 9.9K / 16K | **C** — gated, unverifiable asset; not yours to stand behind |
+| DcCA_R1x_fd | hossein.sedighiiii (785K) | «۱۳ سایت برای فعالیت آنلاین روزانه» | 16.1K / 26.4K | **Duplicate of H3-14** — evidence the format is alive, not a new idea |
+| Dc0xARGCgZZ | iraiacademy (31K) | «۷ کد مخفی ChatGPT» | 21.7K / 24.2K | **Avoid** — "secret codes" is on the avoid list |
+| Dc6eHvau8In | uniseif_ (36K) | No caption; AI-generated profile; comments «طلایی»; posted 5 Sep | 49.4K / 52.3K | **Ignore** — unidentified entertainment/meme |
+
+**The pattern:** every reel uses a comment-word gate, and comments are equal to or higher than likes — the LTX one is 3×. That is the "my link never came" funnel the research flagged, not a model to copy. It is evidence for H5-13.
+
+### Not filed as a content idea
+
+- **«شبیه سازی مصاحبه / شبیه سازی تست شخصیت / شببه سازی آزمون زبان»** — this is the ORO Survey product brainstorm, not a post. On 17 Oct it converged to the career tool: resume v0 → interview practice #2 → voice #3; personality and IELTS were parked. Revisit when flow #2 exists.
+- **«هوش مصنوعی برای معلما، قصابا، جلادا»** — a meme, not a tool. The "executioner" line is edgy; as stated **C**. If reframed as "AI for every job" with three real jobs and what it actually does, it can be **M-2** (**B as a meme**, not a full post).
+
 ## Extras — niche memes (occasional, for reach)
 
 The cheapest breakout for a small account in the research was a relatable meme for a specific group (a researcher meme got 151K on a 7.8K account). Use occasionally, not as a pillar.
@@ -220,6 +255,7 @@ The cheapest breakout for a small account in the research was a relatable meme f
 | ID | Topic | Angle |
 |---|---|---|
 | 🆕 **M-1** | PM meme: what the client said vs. what we shipped | For product people, developers and owners. "Send this to your PM" |
+| 🆕 **M-2** | "AI for every job" (teachers, butchers, …) | Satire of the "AI for X" list format. Keep it light and specific: three real jobs and what AI actually does for each. Drop the executioner line, which reads badly. |
 
 ---
 

@@ -36,3 +36,19 @@ One entry per `/refresh-oro` run, newest at the bottom. Facts and deltas only.
 
 ## 2026-10-16 (Gemini idea clarified)
 - Owner explained «جمنای با ۱۰ هزار تومن»: Gemini Pro bought from a Telegram provider (about 600,000 toman), 5 people invited to share it, owner has tried it. Rating changed from Hold to C as stated: promoting the buy route conflicts with the content rules. Added reframes H4-9 + Gemini (A) and H2-11 (B) in `content-pool.md`. Numbers in the claim don't match (600,000 / 6 is about 100,000).
+
+## 2026-10-20 (public read only; Instagram skipped)
+- Three new Reels since 16 Oct: **DekFA-Hzr07** (16 Oct, «با ۱۰۰ هزار تومن ۱۸ ماه اشتراک گوگل گرفتم», keyword «600»), **Dem0wb-IMgb** (17 Oct, «وردست», free Iranian AI tool for DMs/comments, keyword «وردست»), **Depf3SxoKoE** (18 Oct, OpenCode, keyword «opencode»; 1.6K likes, 2.1K comments as displayed).
+- **Followers 3,256** (1,275 on 16 Oct), 42 following, 19 posts. Meta description showed 2,539 (stale).
+- Insights not read: the built-in browser is logged out, and the owner chose to skip Instagram rather than sign in. Views, saves, shares and follows for the three new posts are unknown, so no rates were computed.
+- The 17 Oct caption opens in the first person about a shop's support team ("we were three people, 8 hours a day"). Whether that is the owner's own experience is not confirmed.
+- No new Telegram export (`result.json` unchanged, `.telegram-seen` = 40); no ideas filed.
+- Look at: all three new captions use the "comment WORD" funnel, and the Gemini one promotes a reseller and a shared account — both conflict with the rules in `CLAUDE.md` and `content-pool.md`.
+
+## 2026-10-20 (new ideas pasted in chat, searched and filed)
+- Owner pasted 15 messages dated 16–19 Oct (not an export): 6 GitHub/tool links, 7 Instagram reel links, and 2 one-line ideas. Filed raw in `ideas.md`; rated in `content-pool.md` under the "20 Oct batch".
+- Verified: Agency Agents 162,014 stars (the «۱۶۰ هزار» claim is true), MIT; ai-job-search 59,271, MIT, needs paid Claude Code; Context Mode 31,259, ELv2 (not OSI; switched from MIT), the 98% is tool-output only; ComfyUI 140,385, GPL-3.0; ruflo 77,543, MIT; Kronos 42,073, MIT but last push April 2026.
+- Reels: public caption/likes/comments only (no Insights). All 7 use comment-word gating; comments ≥ likes, LTX 3×. No views, saves or shares, so none of it is comparable to `posts.csv`.
+- Filed as content: H4-25 Agency Agents (A-), H4-28 LTX (B), H3-19 ai-job-search (B), H4-24 Context Mode (B), H4-26 ComfyUI (B, supporting), H4-27 ruflo (C), H3-20 Kronos (C/avoid), M-2 "AI for every job" (B as a meme).
+- Not filed: 13-sites reel (duplicate of H3-14), 7-secret-codes and 4-income-paths reels (rule conflicts), free Claude PDF (C, gated asset), hooshyar "مکس" and uniseif reels (unidentified).
+- Product note: the interview/personality/language-test message is the ORO Survey brainstorm, already resolved on 17 Oct (resume v0 → interview #2 → voice #3); not a content idea.

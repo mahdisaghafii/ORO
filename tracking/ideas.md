@@ -34,3 +34,25 @@ Forwarded from the Linuxor channel (their posts; one-line pointers, see the sour
 - [2026-10-13] awesome-iran-mcp: MCP servers for Iranian sites (Digikala, Snapp, Bale and others), github.com/sepehr071/awesome-iran-mcp (tg #35)
 
 Skipped: service messages and 3 messages with no text (#15, #36, and the photo-only caption parts). Nothing tagged H3/H4/H5/trust; the owner's ideas are too short to tag without guessing.
+
+## Filed 2026-10-20 (pasted in chat; messages dated 16–19 Oct)
+
+Not from an export. The owner pasted these in the OpenCode session; wording kept as written, links as sent.
+
+- [2026-10-16] Context Mode: context-window optimization for coding agents, github.com/mksglu/context-mode (forwarded from Linuxor)
+- [2026-10-16] Instagram reel DcWjEEoIPHd (hooshyar.school, 197K): caption only «کلمه مکس رو کامنت کنید»
+- [2026-10-16] Instagram reel DdjTNJcop25 (webmastermentor, 384K): «LTX V2.5 is 100% free, 18 million installs», comment «ltx»
+- [2026-10-17] Instagram reel DejY7mSBykA (mohamadesfehaniyan, 625K): «۴ تا مسیر درآمدزایی با هوش مصنوعی»
+- [2026-10-17] «شبیه سازی مصاحبه / شبیه سازی تست شخصیت / شببه سازی آزمون زبان»
+- [2026-10-17] Instagram reel DdTmmIyM6FY (hadid.dev, 114K): free 7-day Claude PDF, comment «کلاد»
+- [2026-10-17] Instagram reel DcCA_R1x_fd (hossein.sedighiiii, 785K): «۱۳ سایت برای فعالیت آنلاین روزانه», comment «سایت»
+- [2026-10-17] Instagram reel Dc0xARGCgZZ (iraiacademy, 31K): «۷ کد مخفی ChatGPT», comment «لیست»
+- [2026-10-17] Instagram reel Dc6eHvau8In (uniseif_, 36K): no caption; AI-generated profile; comments «طلایی»
+- [2026-10-17] «هوش مصنوعی برای معلما، قصابا، جلادا»
+- [2026-10-19] AI job-search framework built on Claude Code, github.com/MadsLorentzen/ai-job-search
+- [2026-10-19] ComfyUI, local diffusion GUI, github.com/Comfy-Org/ComfyUI
+- [2026-10-19] ruflo, agent meta-harness, github.com/ruvnet/ruflo
+- [2026-10-19] Kronos, financial-markets foundation model, github.com/shiyu-coder/Kronos
+- [2026-10-19] Agency Agents, role-based agent collection, github.com/msitarzewski/agency-agents («۱۶۰ هزار ستاره»)
+
+Skipped: the two photo-caption messages are summarised above (Context Mode, Agency Agents); no other text was lost.
