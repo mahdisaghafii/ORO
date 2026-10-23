@@ -34,7 +34,7 @@ Planning and experiments for a practical technology personal brand on Instagram 
 - **Tracking** (what is actually posted; updated by the `/refresh-oro` skill in `.claude/skills/refresh-oro/`)
   - [`tracking/posts.csv`](tracking/posts.csv): one row per Reel per snapshot date (Insights numbers and rates). [`tracking/account.csv`](tracking/account.csv): page totals per snapshot. [`tracking/ideas.md`](tracking/ideas.md): ideas from the private Telegram channel (export dropped in `inbox/telegram/`, git-ignored). [`tracking/log.md`](tracking/log.md): what changed each run.
 - **Prototypes**
-  - [`prototypes/live-portfolio/BRIEF.md`](prototypes/live-portfolio/BRIEF.md): agreed brief for Mahdi's live portfolio (a 3D motion page for three flagship works, shown as real-product replays) and the assets it still needs. `concepts.html` next to it is the rejected first round of story-game concepts.
+  - [`prototypes/live-portfolio/BRIEF.md`](prototypes/live-portfolio/BRIEF.md): agreed brief for Mahdi's live portfolio (a 3D motion page for three flagship works, shown as real-product replays) and the assets it still needs. [`showcase.html`](prototypes/live-portfolio/showcase.html) is the first prototype of that direction (placeholder screens). `concepts.html` is the rejected first round of story-game concepts.
 
 ## Tracker rates
 
