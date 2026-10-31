@@ -39,6 +39,8 @@ ORO followers: mostly Iranians aged 18–27 (students, early-career) plus some s
 - Led development of in-house marketing automation, Arena Battle, an in-game token revenue system and the Treasure Island feature line; organized global tournaments with 2,000+ participants each.
 - The product passed an independent smart-contract security audit and got third-party press coverage (AP News, Seeking Alpha, Benzinga, Morningstar).
 - Redesigned Agile/Scrum for a fully remote team across time zones.
+- How it's played (from the game's site): a fantasy strategy game in the browser. You build a realm, mine stone and iron, develop your village, and collect heroes and troops; then fight in dungeons and adventures, sail to Treasure Islands for rare items, and battle other players with friends in Arena Battle; guilds and a marketplace let players share and trade. [confirm: whether Arena Battle is turn by turn and live, and whether Treasure Island is PvE or PvP]
+- Careful: the press coverage may have been a press release carried by those outlets. If so, say "featured in", not "covered by". Call the token revenue system "the in-game economy", or leave it out.
 
 **Qeleq / قلق** (algorithmic copy-trading platform at Pargar, a technology accelerator in Mashhad; Feb 2025 to now; subtitle in the product: «دستیار هوشمند بازارهای مالی»)
 - Architected it end to end: the copy-trade engine, order-lifecycle reconciliation, and a JSON-based configuration schema for trading strategies.
@@ -46,13 +48,22 @@ ORO followers: mostly Iranians aged 18–27 (students, early-career) plus some s
 - 2,500 registered users, 1,200 active subscribers; infrastructure built for 10,000+ concurrent copy-trade users.
 - Risk controls and data safeguards to protect users' funds and personal data across brokers; a backtest and strategy-scoring pipeline to validate strategies before they go live.
 - At Pargar I built an 8-person cross-functional team from zero and own four products at once.
+- Plain-language explanation: Qeleq links your own brokerage account to a trading strategy, so when the strategy opens or closes a trade, the same trade is placed in your account automatically; each trade gets a stop loss and a size based on how much you're willing to risk.
+- What to highlight, in this order: (1) no strategy goes live without passing the backtest and scoring pipeline; (2) the reconciliation and risk safeguards that keep orders correct across brokers and protect users' money and data; (3) the first integration with that broker in Iran, chosen after evaluating global options (MetaAPI/CopyFactory, cTrader Open API). Don't use indicator names (ADX, RSI, Heikin Ashi). "10,000+ concurrent" is designed capacity, not usage, so label it that way or drop it.
+- [confirm: that "first in Iran" holds up as worded]
 
-**Chid / چید** (chidstudio.ir; interior design)
-- See your home's design before you build it: swap floors, kitchen cabinets and furniture and compare combinations; real projects are designed on photos of your own home.
-- Six named design styles (two of them: «مدرن و گرم», «مینیمال خالص»).
-- Three-stage service: initial design, then revisions with 360-degree space design, then architectural documents for final handover.
-- The site's button: «تخمین هزینه طراحی».
-- My role at Chid: [fill in: ask me].
+**Chid / چید** (chidstudio.ir; an AI interior and architecture design product for Iran; the repo is named "Chidar AI", so they are the same product)
+- Live on chidstudio.ir since 10 Sep 2026, with real online payments (Zarinpal) since 17 Sep 2026.
+- What a customer can do today: get an instant price quote; sign a contract and buy the first design step online; upload photos of their own space, write a short note and pick a mood, material and colour tone; get AI designs of their actual room; ask for more versions, edit a chosen design, and lock the one they like. A free trial through a code; a public gallery of designs.
+- A human checks every AI design: on paid projects, staff review each first design (the request and the result) before the customer sees it, with a 48-hour promise for the first design.
+- A paid consultation: a call with an architect who has studied the customer's photos and measurements.
+- A Telegram bot that takes Instagram visitors through a home-type quiz or a quick "home check", sells the consultation, and hands them to support.
+- Not fully live yet: phases 2–3 (a licensed partner engineer turns the locked AI design into stamped, buildable drawings; the booking and payment screens exist, the work is done by people) [confirm: being delivered to real customers yet?]; an adaptive AI interview (designed, paused).
+- My role: I built the product end to end. I wrote the product requirements, build spec, user flow, policies, pricing model and 9 architecture decision records; designed the user journey (quote, contract, buying design steps directly, the AI design loop, the human phases), the AI workflow (turning answers into a prompt, generation, automatic retry, two-stage human review) and the consultation offer. I'm the only author of its 562 commits (30 Jun to 24 Oct 2026). [confirm: built "with AI coding agents I supervise"? did anyone else write code? who does the design review and who are the partner architects?]
+- Built for Iran: Iranian hosting, Iranian payments and SMS login, Persian-first, phone-first.
+- No usage numbers yet. [fill in: a real number from the analytics dashboard, e.g. paid projects or designs delivered, or none]
+- This may be the strongest ORO story on the page: one product person, with AI coding agents, built and shipped a paid AI product in about four months. Use that only if it's true as worded.
+- Never mention the AI provider or model names, server details or spending limits.
 
 **Smaller things I built** (one line each)
 - Matrix: trading-simulation game used as the way into Qeleq and the Academy; 8,000 of its 10,000 users became customers.
@@ -79,9 +90,9 @@ Current drafts are shown so you can see the intent. Rewrite them freely.
 | qeleq.eyebrow | category and years | 30 | پلتفرم کپی‌ترید · از ۲۰۲۵ |
 | qeleq.stat1 / stat2 / stat3 | labels under 2,500 / 1,200 / 10,000+ | 22 each | کاربر ثبت‌نامی / مشترک فعال / کاربر هم‌زمان، ظرفیت زیرساخت |
 | qeleq.role | what I did, 1–2 sentences, systems not profit | 200 | موتور کپی‌ترید، تطبیق سفارش‌ها بین کارگزارها و کنترل ریسک رو از صفر طراحی کردم. بدون جعبه‌ی سیاه و بدون وعده‌ی سود. |
-| chid.eyebrow | category | 30 | طراحی داخلی · chidstudio.ir |
-| chid.stat1 / stat2 / stat3 | three short facts (no invented numbers) | 22 each | طراحی روی خونه‌ی خودت / ۶ سبک طراحی / ۳ مرحله تا نقشه‌ی اجرایی |
-| chid.role | what Chid does + my role | 200 | خونه رو قبل از ساختن ببین… [fill in: my role] |
+| chid.eyebrow | category | 30 | طراحی داخلی با AI · chidstudio.ir |
+| chid.stat1 / stat2 / stat3 | three short facts (no invented numbers; a real usage number only if I give one) | 22 each | طراحی AI روی عکس خونه‌ی خودت / بازبینی انسانی هر طراحی / پرداخت آنلاین واقعی |
+| chid.role | what Chid does + my role (built it end to end) | 200 | خونه رو قبل از ساختن ببین… [rewrite from the Chid facts] |
 | also.eyebrow | small label | 20 | کوچیک‌ترها |
 | also.h2 | heading for the smaller projects | 30 | اینا هم ساخته شد. |
 | also.matrix / eima / imagebot / automation / shaparo / accountant | one line each | 55 each | (see facts) |
@@ -93,7 +104,7 @@ Current drafts are shown so you can see the intent. Rewrite them freely.
 ## How to work with me
 1. **First, ask me your questions in one numbered list**, each with your recommended answer. At minimum:
    (1) the register: conversational written Persian (محاوره‌ی نوشتاری) or clean standard Persian, with one sample hero line in each so I can feel the difference;
-   (2) my role at Chid;
+   (2) the [confirm] and [fill in] items in the facts, one by one;
    (3) the Qeleq broker name;
    (4) anything in the facts that sounds like an overclaim to a skeptical 22-year-old.
 2. Then give me **three genuinely different options for intro.h1 + intro.lede** (for example: plain-factual, quietly confident, curiosity) and recommend one with a one-line reason.
