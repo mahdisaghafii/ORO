@@ -1,4 +1,12 @@
-<title>Built From Zero</title>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مهدی ثقفی؛ محصول‌هایی که ساختم</title>
+<meta name="description" content="من مهدی‌ام؛ این‌جا چندتا از محصول‌هایی رو می‌بینی که ساختم.">
+<meta property="og:title" content="مهدی ثقفی؛ محصول‌هایی که ساختم">
+<meta property="og:description" content="من مهدی‌ام؛ این‌جا چندتا از محصول‌هایی رو می‌بینی که ساختم.">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +25,7 @@
   --font: 'Vazirmatn', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
   color-scheme: dark;
 }
-html, body { background: var(--bg); color: var(--ink); }
+html, body { background: var(--bg); color: var(--ink); margin: 0; }
 body { font-family: var(--font); font-size: 16px; line-height: 1.75; overflow-x: hidden; }
 #gl { position: fixed; inset: 0; width: 100%; height: 100%; display: block; z-index: 0; touch-action: pan-y; }
 .proto { position: fixed; z-index: 3; top: calc(env(safe-area-inset-top, 0px) + 10px); left: max(12px, env(safe-area-inset-left, 0px)); font-size: 11px; letter-spacing: .06em; color: var(--mute); background: rgba(7, 8, 12, .7); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; pointer-events: none; direction: ltr; }
@@ -46,9 +54,9 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
 .stats div { display: grid; gap: 0; padding-block: 10px; }
 .stats b { font-size: clamp(22px, 5.4vw, 30px); font-weight: 800; line-height: 1.2; color: var(--acc); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .stats span { font-size: 12.5px; color: var(--mute); line-height: 1.5; }
+.stats .word b { font-size: clamp(17px, 4.2vw, 21px); white-space: normal; line-height: 1.35; }
 .role { font-size: 16px; color: var(--ink); }
 .role em { font-style: normal; display: block; font-size: 12px; color: var(--mute); letter-spacing: .04em; }
-.fill { color: #ffcf7a; background: rgba(255, 207, 122, .1); border-radius: 6px; padding: 0 6px; }
 .ph { font-size: 12px; color: var(--mute); display: flex; gap: 8px; align-items: center; }
 .ph::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--acc); box-shadow: 0 0 10px var(--acc); flex: none; }
 .sec[data-k="1"] { --acc: var(--col); }
@@ -79,7 +87,8 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
 }
 @media (prefers-reduced-motion: reduce) { .txt > * { transition: none; opacity: 1; transform: none; } }
 </style>
-
+</head>
+<body>
 <canvas id="gl" aria-hidden="true"></canvas>
 <div class="proto">PROTOTYPE · placeholder screens</div>
 
@@ -87,65 +96,65 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
   <section class="sec intro on" data-k="0">
     <div class="txt">
       <p class="eyebrow">مهدی ثقفی · پشت ORO</p>
-      <h1>اینا رو<br>از صفر ساختم.</h1>
-      <p class="lede">سه محصول اصلی، همون‌طور که واقعاً کار می‌کنن. حرف نه، خودِ محصول.</p>
-      <p class="hint">اسکرول کن · گوشی رو با انگشت بچرخون</p>
+      <h1>من کارم ساختن محصوله.</h1>
+      <p class="lede">از بازی‌ای با صدها هزار کاربر تا پلتفرم معاملاتی و طراحی داخلی؛ این‌ها رو ساختم.</p>
+      <p class="hint">اسکرول کن؛ گوشی رو بچرخون</p>
     </div>
   </section>
 
   <section class="sec" data-k="1">
     <div class="txt">
-      <p class="eyebrow">بازی Web3 · ۲۰۲۱ تا ۲۰۲۵</p>
+      <p class="eyebrow">بازی آنلاین · ۲۰۲۱ تا ۲۰۲۵</p>
       <h2 dir="ltr">Chain of Legends</h2>
       <div class="stats">
         <div><b data-to="300000" data-suf="+">۳۰۰٬۰۰۰+</b><span>کاربر</span></div>
         <div><b data-to="10" data-suf="+">۱۰+</b><span>کشور</span></div>
         <div><b data-to="2000" data-suf="+">۲٬۰۰۰+</b><span>بازیکن در هر تورنمنت</span></div>
       </div>
-      <p class="role"><em>کار من</em>تیم فنی شرکت رو از صفر ساختم و محصول رو تا ۳۰۰ هزار کاربر بردم: Arena Battle، Treasure Island و سیستم بازاریابی خودکار. قرارداد هوشمندش ممیزی امنیتی مستقل رو پاس کرد.</p>
+      <p class="role"><em>کار من</em>تیم فنی رو از صفر ساختم و فرایندهای توسعه رو برای یک تیم کاملاً دورکار در چند منطقه‌ی زمانی شکل دادم. محصول هم ممیزی امنیتی مستقل قرارداد هوشمند رو با موفقیت پشت سر گذاشت.</p>
       <p class="ph">نمونه‌ی موقت · ویدیوی واقعی بازی جای این صفحه میاد</p>
     </div>
   </section>
 
   <section class="sec" data-k="2">
     <div class="txt">
-      <p class="eyebrow">پلتفرم کپی‌ترید · از ۲۰۲۵</p>
+      <p class="eyebrow">کپی‌ترید · از ۲۰۲۵</p>
       <h2>قلق <span style="font-weight:300;color:var(--mute)" dir="ltr">Qeleq</span></h2>
       <div class="stats">
         <div><b data-to="2500">۲٬۵۰۰</b><span>کاربر ثبت‌نامی</span></div>
         <div><b data-to="1200">۱٬۲۰۰</b><span>مشترک فعال</span></div>
-        <div><b data-to="10000" data-suf="+">۱۰٬۰۰۰+</b><span>کاربر هم‌زمان، ظرفیت زیرساخت</span></div>
+        <div><b data-to="10000" data-suf="+">۱۰٬۰۰۰+</b><span>ظرفیت هم‌زمان زیرساخت</span></div>
       </div>
-      <p class="role"><em>کار من</em>موتور کپی‌ترید، تطبیق سفارش‌ها بین کارگزارها و کنترل ریسک رو از صفر طراحی کردم. بدون جعبه‌ی سیاه و بدون وعده‌ی سود.</p>
+      <p class="role"><em>کار من</em>معماری قلق، سازوکار تطبیق سفارش‌ها و کنترل‌های ریسک رو طراحی کردم. استراتژی‌ها قبل از فعال‌شدن بک‌تست می‌شن و اولین اتصال کپی‌ترید با کارگزار Mazene در ایران رو راه انداختم.</p>
       <p class="ph">نمونه‌ی موقت · ضبط صفحه از داخل قلق جای این میاد</p>
     </div>
   </section>
 
   <section class="sec" data-k="3">
     <div class="txt">
-      <p class="eyebrow">طراحی داخلی · chidstudio.ir</p>
+      <p class="eyebrow">طراحی داخلی با AI · chidstudio.ir</p>
       <h2>چید</h2>
       <div class="stats">
-        <div><b>عکس</b><span>طراحی روی خونه‌ی خودت</span></div>
-        <div><b data-to="6">۶</b><span>سبک طراحی</span></div>
-        <div><b data-to="3">۳</b><span>مرحله تا نقشه‌ی اجرایی</span></div>
+        <div class="word"><b>شهریور ۱۴۰۵</b><span>فعال شد</span></div>
+        <div class="word"><b>بازبینی انسانی</b><span>هر طرح</span></div>
+        <div class="word"><b>پرداخت آنلاین</b><span>فعاله</span></div>
       </div>
-      <p class="role"><em>کار من</em>خونه رو قبل از ساختن ببین: کفپوش، کابینت و مبلمان رو عوض کن و همون لحظه نتیجه رو ببین. <span class="fill">[نقش دقیق خودت در چید رو اینجا بنویس]</span></p>
+      <p class="role"><em>کار من</em>چید رو از صفر تا انتشار ساختم؛ از مسیر کاربر و منطق طراحی تا پرداخت و گردش‌کار تولید تصویر. با کمک ایجنت‌های کدنویسی و زیر نظر خودم توسعه‌ش دادم و تیم داخلی هم خروجی‌ها رو بازبینی می‌کنه.</p>
       <p class="ph">نمونه‌ی موقت · ضبط تعویض واقعی یه اتاق جای این میاد</p>
     </div>
   </section>
 
   <section class="sec" data-k="4">
     <div class="txt">
-      <p class="eyebrow">کوچیک‌ترها</p>
-      <h2>اینا هم ساخته شد.</h2>
+      <p class="eyebrow">پروژه‌های دیگه</p>
+      <h2>چندتا کار دیگه هم هست.</h2>
       <div class="also">
-        <div><b>Matrix</b><span>شبیه‌ساز معامله؛ ۸ هزار از ۱۰ هزار کاربر مشتری شدن</span></div>
-        <div><b>Eima</b><span>۱۶۰ هزار کاربر ماهانه؛ خودم تصمیم به تعطیلی گرفتم</span></div>
-        <div><b>ربات تصویرساز AI</b><span>روی تلگرام، با سیستم اعتبار</span></div>
-        <div><b>اتوماسیون تیم</b><span>تلگرام به ترلو با n8n</span></div>
-        <div><b>Shaparo</b><span>سایت‌ساز بدون کد؛ ۱٬۰۰۰+ مشتری</span></div>
-        <div class="now"><b>ORO-Accountant</b><span>در حال ساخت، همین الان</span></div>
+        <div><b>Matrix</b><span>از ۱۰٬۰۰۰ کاربر، ۸٬۰۰۰ نفر به مشتری قلق تبدیل شدن.</span></div>
+        <div><b>Eima</b><span>۱۶۰ هزار کاربر ماهانه؛ با تحریم و قطعی اینترنت، متوقفش کردم.</span></div>
+        <div><b>ربات تصویرساز AI</b><span>ربات تلگرامی تولید و ویرایش تصویر با هوش مصنوعی.</span></div>
+        <div><b>اتوماسیون تیم</b><span>اتوماسیون تیم با n8n و Node-RED؛ از تلگرام تا Trello.</span></div>
+        <div><b>Shaparo</b><span>سایت‌ساز بدون کد با بیش از ۱٬۰۰۰ مشتری فعال.</span></div>
+        <div class="now"><b>ORO-Accountant</b><span>ربات حسابداری برای تلگرام و بله؛ در حال ساخت.</span></div>
       </div>
     </div>
   </section>
@@ -154,7 +163,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
     <div class="txt">
       <p class="eyebrow">ORO</p>
       <h2>من مهدی‌ام.</h2>
-      <p class="lede">هر چی می‌سازم و تست می‌کنم رو با نتیجه‌ی واقعی توی ORO نشون می‌دم.</p>
+      <p class="lede">توی ORO هم از چیزهایی می‌گم که می‌سازم، امتحان می‌کنم و از تجربه‌شون یاد می‌گیرم.</p>
       <div class="cta">
         <a class="main" href="https://instagram.com/oro_platform" target="_blank" rel="noopener">ORO در اینستاگرام</a>
         <a href="https://t.me/oro_channel" target="_blank" rel="noopener">کانال تلگرام</a>
@@ -568,3 +577,5 @@ measure();
 requestAnimationFrame(tick);
 })();
 </script>
+</body>
+</html>
