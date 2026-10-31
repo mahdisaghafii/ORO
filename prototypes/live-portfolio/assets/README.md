@@ -26,9 +26,10 @@ Everything on the page must be real. Drop files here using the names below, and 
 - **Hide every balance, P&L and profit figure.** The page shows the system, never returns.
 
 ## Chid / چید
-- [ ] `chid-01-swap.mp4`: a room changing floor, cabinets and style while you tap. *The hero clip.*
-- [ ] `chid-02-before.jpg` + `chid-02-after.jpg`: one real before/after pair from a real home (client permission needed).
-- [ ] `chid-03-360.mp4`: optional, the 360-degree view.
+- [ ] `chid-01-design.mp4`: the core flow on a phone: upload a photo of a real room, write the short note and pick mood, material and colour, then the AI designs of that same room appear. *The hero clip.* Use your own room or a test project, not a customer's.
+- [ ] `chid-02-edit.mp4`: editing a chosen design, then locking it.
+- [ ] `chid-03-before.jpg` + `chid-03-after.jpg`: one real room photo and its finished design, side by side (yours, or with the customer's written permission).
+- [ ] `chid-04-review.png`: optional, the staff review screen (approve / regenerate), with customer details hidden. It proves "a human checks the designs".
 - [ ] `chid-logo.svg`
 
 ## Smaller projects (one still each, phone screenshot)
@@ -41,11 +42,11 @@ Everything on the page must be real. Drop files here using the names below, and 
 
 ## You
 - [ ] `mahdi.jpg`: a real photo, good light, looking at the camera. Or decide to stay faceless: ________
-- [ ] Your own one-line answer per project: "what *I* did there" (feeds the ChatGPT copy session).
 
 ## Confirm before publishing
 - [ ] Broker name and spelling for Qeleq's first integration: ________
-- [ ] Is "Chidar AI" the same as Chid? ________ Your role at Chid: ________
+- [ ] Human review covers paying customers' designs only, not free-trial designs: keep «بازبینی انسانی هر طرح» or narrow it? ________
+- [ ] A real Chid usage number from the analytics dashboard, if you want one on the page: ________
 - [ ] Allowed to publish Chain of Legends footage: yes / no
 - [ ] Allowed to publish Qeleq footage: yes / no
 - [ ] Allowed to publish Chid client photos: yes / no
