@@ -28,9 +28,22 @@
 html, body { background: var(--bg); color: var(--ink); margin: 0; }
 body { font-family: var(--font); font-size: 16px; line-height: 1.75; overflow-x: hidden; }
 #gl { position: fixed; inset: 0; width: 100%; height: 100%; display: block; z-index: 0; touch-action: pan-y; }
+/* Ambient glow: a tiny copy of the playing clip, stretched to the whole screen, so the background takes each product's real colours. */
+#amb { position: fixed; inset: 0; width: 100%; height: 100%; display: block; z-index: 0; pointer-events: none; }
+/* One chapter per swipe, so a fast thumb still stops on each product. */
+html { scroll-snap-type: y mandatory; }
+/* Full-screen replay: tap the phone to see the real recording at its own resolution. */
+.viewer { position: fixed; inset: 0; z-index: 10; display: none; align-items: center; justify-content: center; padding: 16px; background: rgba(4, 4, 6, .94); }
+.viewer.open { display: flex; }
+.viewer video { max-width: 100%; max-height: calc(100svh - 96px); border-radius: 18px; background: #000; }
+.viewer.rot video { width: calc(100svh - 96px); max-width: none; max-height: calc(100vw - 32px); transform: rotate(90deg); }
+.viewer .vl { position: absolute; bottom: calc(env(safe-area-inset-bottom, 0px) + 14px); inset-inline: 0; text-align: center; font-size: 12px; color: var(--mute); margin: 0; }
+.viewer button { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 12px); right: 12px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: rgba(243, 239, 231, .08); color: var(--ink); font-size: 20px; line-height: 1; cursor: pointer; }
+.viewer button:focus-visible { outline: 2px solid var(--acc); outline-offset: 3px; }
 .proto { position: fixed; z-index: 3; top: calc(env(safe-area-inset-top, 0px) + 10px); left: max(12px, env(safe-area-inset-left, 0px)); font-size: 11px; letter-spacing: .06em; color: var(--mute); background: rgba(7, 8, 12, .7); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; pointer-events: none; direction: ltr; }
 main { position: relative; z-index: 1; pointer-events: none; }
 .sec {
+  scroll-snap-align: start; scroll-snap-stop: always;
   min-height: 100vh; min-height: 100svh;
   display: flex; align-items: center; justify-content: flex-start;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
@@ -81,6 +94,8 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
 @media (max-width: 899px) {
   .sec { align-items: flex-end; padding-block: 0 6vh; }
   .sec .txt { background: linear-gradient(180deg, rgba(7, 8, 12, 0) 0%, rgba(7, 8, 12, .82) 22%, rgba(7, 8, 12, .92) 100%); padding-top: 48px; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); width: auto; }
+  .sec:not(.intro):not(.end) .txt { gap: 10px; padding-top: 36px; }
+  .role { font-size: 15px; line-height: 1.65; }
   .sec.intro { align-items: flex-end; }
   .sec.intro .txt { background: none; }
   .sec.end { align-items: flex-end; }
@@ -89,7 +104,13 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
 </style>
 </head>
 <body>
+<canvas id="amb" aria-hidden="true"></canvas>
 <canvas id="gl" aria-hidden="true"></canvas>
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="بازپخش تمام‌صفحه" dir="rtl" lang="fa">
+  <button type="button" id="vclose" aria-label="بستن">✕</button>
+  <video id="vvid" muted playsinline loop></video>
+  <p class="vl">بازپخش از محصول واقعی</p>
+</div>
 <div class="proto">PROTOTYPE · real recordings</div>
 
 <main dir="rtl" lang="fa">
@@ -112,7 +133,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
         <div><b data-to="2000" data-suf="+">۲٬۰۰۰+</b><span>بازیکن در هر تورنمنت</span></div>
       </div>
       <p class="role"><em>کار من</em>تیم فنی رو از صفر ساختم و فرایندهای توسعه رو برای یک تیم کاملاً دورکار در چند منطقه‌ی زمانی شکل دادم. محصول هم ممیزی امنیتی مستقل قرارداد هوشمند رو با موفقیت پشت سر گذاشت.</p>
-      <p class="ph">بازپخش از محصول واقعی · نبرد Arena، ضبط‌شده از داخل بازی</p>
+      <p class="ph">بازپخش از محصول واقعی · نبرد Arena، ضبط‌شده از داخل بازی · روی گوشی بزن تا بزرگ ببینی</p>
     </div>
   </section>
 
@@ -126,7 +147,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
         <div><b data-to="10000" data-suf="+">۱۰٬۰۰۰+</b><span>ظرفیت هم‌زمان زیرساخت</span></div>
       </div>
       <p class="role"><em>کار من</em>معماری قلق، سازوکار تطبیق سفارش‌ها و کنترل‌های ریسک رو طراحی کردم. استراتژی‌ها قبل از فعال‌شدن بک‌تست می‌شن و اولین اتصال کپی‌ترید با کارگزار مظنه ۲۴ در ایران رو راه انداختم.</p>
-      <p class="ph">بازپخش از محصول واقعی · نسخه‌ی دمو؛ سود و زیان محو شده</p>
+      <p class="ph">بازپخش از محصول واقعی · نسخه‌ی دمو؛ سود و زیان محو شده · روی گوشی بزن تا بزرگ ببینی</p>
     </div>
   </section>
 
@@ -140,7 +161,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
         <div class="word"><b>پرداخت آنلاین</b><span>فعاله</span></div>
       </div>
       <p class="role"><em>کار من</em>چید رو از صفر تا انتشار ساختم؛ از مسیر کاربر و منطق طراحی تا پرداخت و گردش‌کار تولید تصویر. با کمک ایجنت‌های کدنویسی و زیر نظر خودم توسعه‌ش دادم و تیم داخلی هم خروجی‌ها رو بازبینی می‌کنه.</p>
-      <p class="ph">بازپخش از محصول واقعی · طراحی اتاق کار خودم روی چید</p>
+      <p class="ph">بازپخش از محصول واقعی · طراحی اتاق کار خودم روی چید · روی گوشی بزن تا بزرگ ببینی</p>
     </div>
   </section>
 
@@ -183,7 +204,7 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
 let R;
 try {
-  R = new THREE.WebGLRenderer({ canvas, antialias: true });
+  R = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 } catch (e) { canvas.remove(); return; }
 R.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
 R.outputEncoding = THREE.sRGBEncoding;
@@ -191,7 +212,9 @@ R.toneMapping = THREE.ACESFilmicToneMapping;
 R.toneMappingExposure = 1.05;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#07080c');
+// The 3D canvas is transparent; the chapter colour and the ambient glow are painted on #amb behind it.
+R.setClearColor(0x000000, 0);
+const bgCol = new THREE.Color('#07080c');
 const cam = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
 cam.position.set(0, 0, 5);
 
@@ -548,15 +571,17 @@ function pose(k) {
     const visH = 2 * cam.position.z * Math.tan(cam.fov * Math.PI / 360);
     const s = Math.min(0.74, (visH * 0.42) / 2.08);
     const y = visH / 2 - 0.3 - 1.04 * s;
-    p = [{ x: 0, y, ry: 0.4, rx: -0.05, s }, { x: 0, y, ry: 0.22, rx: -0.04, s }, { x: 0, y, ry: -0.22, rx: -0.04, s }, { x: 0, y, ry: 0.22, rx: -0.04, s }, { x: 0, y: y + 0.1, ry: 0, rx: 0, s: s * 0.8 }, { x: 0, y, ry: 0.2, rx: -0.05, s }][k];
+    // Product chapters (1–3): a bigger phone (half the screen height) that faces the viewer, so the recording reads.
+    const sb = Math.min(1.05, (visH * 0.5) / 2.08), yb = visH / 2 - 0.22 - 1.04 * sb;
+    p = [{ x: 0, y, ry: 0.4, rx: -0.05, s }, { x: 0, y: yb, ry: 0.05, rx: -0.02, s: sb }, { x: 0, y: yb, ry: -0.05, rx: -0.02, s: sb }, { x: 0, y: yb, ry: 0.05, rx: -0.02, s: sb }, { x: 0, y: y + 0.1, ry: 0, rx: 0, s: s * 0.8 }, { x: 0, y, ry: 0.2, rx: -0.05, s }][k];
     if (k === LAND) {
-      const visW = visH * cam.aspect, sl = Math.min(1, (visW * 0.8) / 2.08); // 0.8: room for the sway and tilt
-      p = { ...p, s: sl, ry: 0.12 }; // same centre as the portrait phone
+      const visW = visH * cam.aspect, sl = Math.min(1.1, (visW * 0.88) / 2.08); // 0.88: room for the sway
+      p = { ...p, s: sl, ry: 0.03 }; // same centre as the big portrait phone
     }
   } else {
     const x = -Math.min(1.7, 0.78 * W / H);
-    p = [{ x, y: 0, ry: 0.55, rx: -0.06, s: 1 }, { x, y: 0, ry: 0.32, rx: -0.04, s: 1 }, { x, y: 0, ry: -0.3, rx: -0.04, s: 1 }, { x, y: 0, ry: 0.3, rx: -0.04, s: 1 }, { x, y: 0.05, ry: 0.1, rx: 0, s: 0.8 }, { x: 0, y: 0.35, ry: 0.2, rx: -0.05, s: 0.75 }][k];
-    if (k === LAND) p = { ...p, ry: 0.22 };
+    p = [{ x, y: 0, ry: 0.55, rx: -0.06, s: 1 }, { x, y: 0, ry: 0.12, rx: -0.02, s: 1.05 }, { x, y: 0, ry: -0.12, rx: -0.02, s: 1.05 }, { x, y: 0, ry: 0.12, rx: -0.02, s: 1.05 }, { x, y: 0.05, ry: 0.1, rx: 0, s: 0.8 }, { x: 0, y: 0.35, ry: 0.2, rx: -0.05, s: 0.75 }][k];
+    if (k === LAND) p = { ...p, ry: 0.08 };
   }
   return { ...p, rz: k === LAND ? Math.PI / 2 : 0 };
 }
@@ -579,9 +604,45 @@ function runCounters(sec) {
   });
 }
 
-/* drag to turn the phone */
-let drag = 0, dragV = 0, dragging = false, lastX = 0, mx = 0, my = 0;
-canvas.addEventListener('pointerdown', e => { dragging = true; lastX = e.clientX; });
+/* ambient glow: the screen blurred inside a small 90×180 canvas (cheap), then stretched over the page with no CSS filter */
+const amb = document.getElementById('amb'), ax = amb.getContext('2d'), AW = 90, AH = 180;
+amb.width = AW; amb.height = AH;
+const BLUR = 'filter' in ax;
+function paintAmb(src) {
+  ax.filter = 'none'; ax.globalAlpha = 1; ax.fillStyle = '#' + bgCol.getHexString(); ax.fillRect(0, 0, AW, AH);
+  if (BLUR) ax.filter = 'blur(9px) saturate(1.3)';
+  ax.globalAlpha = 0.5; ax.drawImage(src, -12, -12, AW + 24, AH + 24);
+  ax.filter = 'none';
+  const v = ax.createRadialGradient(AW / 2, AH * 0.33, 6, AW / 2, AH * 0.45, AH * 0.62);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.72)');
+  ax.globalAlpha = 1; ax.fillStyle = v; ax.fillRect(0, 0, AW, AH);
+}
+
+/* tap the phone: full-screen replay of the clip on it */
+const viewer = document.getElementById('viewer'), vvid = document.getElementById('vvid'), vclose = document.getElementById('vclose');
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+function openViewer(m) {
+  const i = m.vid ? m.i : 0, at = m.vid ? m.vid.currentTime : 0;
+  vvid.poster = m.poster; vvid.src = m.clips[i];
+  vvid.addEventListener('loadedmetadata', () => { try { vvid.currentTime = at; } catch (e) {} }, { once: true });
+  viewer.classList.toggle('rot', !!m.land && innerHeight > innerWidth);
+  viewer.classList.add('open');
+  vvid.play().catch(() => {});
+  vclose.focus();
+}
+function closeViewer() { viewer.classList.remove('open'); vvid.pause(); vvid.removeAttribute('src'); vvid.load(); }
+vclose.addEventListener('click', closeViewer);
+viewer.addEventListener('click', e => { if (e.target === viewer) closeViewer(); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && viewer.classList.contains('open')) closeViewer(); });
+function tapAt(x, y) {
+  ndc.set((x / W) * 2 - 1, -(y / H) * 2 + 1); ray.setFromCamera(ndc, cam);
+  if (ray.intersectObject(screen).length && MEDIA[curTex]) openViewer(MEDIA[curTex]);
+}
+
+/* drag to turn the phone (a short, still press is a tap instead) */
+let drag = 0, dragV = 0, dragging = false, lastX = 0, mx = 0, my = 0, downX = 0, downY = 0, downT = 0;
+canvas.addEventListener('pointerdown', e => { dragging = true; lastX = downX = e.clientX; downY = e.clientY; downT = performance.now(); });
+canvas.addEventListener('pointerup', e => { if (Math.hypot(e.clientX - downX, e.clientY - downY) < 10 && performance.now() - downT < 350) tapAt(e.clientX, e.clientY); });
 addEventListener('pointermove', e => {
   mx = (e.clientX / W) * 2 - 1; my = (e.clientY / H) * 2 - 1;
   if (dragging) { const dx = e.clientX - lastX; lastX = e.clientX; drag += dx * 0.012; dragV = dx * 0.012; }
@@ -608,7 +669,7 @@ function tick(now) {
   const s = lerp(A.s, B.s, pf); phone.scale.setScalar(s);
   phone.rotation.set(lerp(A.rx, B.rx, pf) + my * 0.06, lerp(A.ry, B.ry, pf) + spin + sway + drag + mx * 0.12, lerp(A.rz, B.rz, pf) + Math.sin(t * 0.6) * 0.015);
 
-  cA.set(CH[i].bg); cB.set(CH[j].bg); scene.background.copy(cA).lerp(cB, pf);
+  cA.set(CH[i].bg); cB.set(CH[j].bg); bgCol.copy(cA).lerp(cB, pf);
   cA.set(CH[i].acc); cB.set(CH[j].acc); cA.lerp(cB, pf);
   rim.color.copy(cA); rim2.color.copy(cA); halo.material.color.copy(cA); floorGlow.material.color.copy(cA); dust.material.color.copy(cA);
   halo.position.x = phone.position.x; halo.position.y = phone.position.y;
@@ -622,7 +683,7 @@ function tick(now) {
   syncMedia(gs, texKey);
   const scr = screens[texKey];
   if (curTex !== texKey) { screenMat.map = scr.tex; screenMat.needsUpdate = true; curTex = texKey; }
-  if (frame % 2 === 0 || REDUCED) { painters[texKey](scr.ctx, t); scr.tex.needsUpdate = true; }
+  if (frame % 2 === 0 || REDUCED) { painters[texKey](scr.ctx, t); scr.tex.needsUpdate = true; paintAmb(scr.c); }
 
   R.render(scene, cam);
   requestAnimationFrame(tick);

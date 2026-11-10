@@ -180,3 +180,13 @@ Mahdi confirmed in chat that **the page copy is right as written**, so questions
 - Chain of Legends: 300,000+ users and the product-manager role stay.
 
 Two checked sources still disagree, and are kept here for the record: chainoflegends.com shows **283,245** players (11 Nov), and the QeleQ notes (13–15 Oct) plus demo («حساب مظنه ۲۴ وصل نیست») show the «مظنه ۲۴» copy-trade not yet live. The broker's name on the page still needs fixing from "Mazene" to «مظنه ۲۴» (question 3's spelling part): that's a spelling correction, not a claim.
+
+## Correction: capture resolution (11 Nov 2026, later)
+The phone recordings in slices 2–3 were **not** captured at 1170×2532, despite what this file said above. Chrome's headless capture stream (`Page.startScreencast`) delivered **390×844** frames even though the page rendered at 3× (single screenshots really were 1170 px, which hid the problem). The 720 px web clips were therefore upscaled from 390 px and looked soft. The fix is to launch Chrome with `--force-device-scale-factor=3`, after which the stream delivers true 1170×2532 frames.
+
+Re-recorded at a true 1170×2532 (read-only, nothing changed on either site):
+- **`chid-01-design.mp4`** (27 s, 720 px, 1.4 MB, master 1170 px). Because «اتاق کار» is now locked, the take ends on **version 9** (the approved Scandinavian edit) with «این طراحی نهایی است!» instead of v8.
+- **`qeleq-01-signal.mp4`** (24 s, 720 px, 1.9 MB, master 1170 px). Same content as before.
+- Their posters and stills are refreshed (full-res PNG at 1170 px, JPG at 720 px).
+
+**Still at 390 px:** `chid-02-edit.mp4` and its master. It can't be re-recorded without repeating real actions on prod (another edit generation, another admin approval, and a lock on a different space), because «اتاق کار» is already locked. Unaffected: `col-01` (1920 px source), `oro-profile` (Mahdi's own 1080 px phone recording) and every still taken with a screenshot (`chid-04`, `qeleq-03`, `qeleq-04`, the `col-*` stills).
