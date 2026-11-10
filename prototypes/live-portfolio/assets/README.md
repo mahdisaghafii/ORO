@@ -10,27 +10,27 @@ Everything on the page must be real. Drop files here using the names below, and 
 - **Rights:** only send what you're allowed to publish. Confirm per product in the last section.
 
 ## Chain of Legends
-- [ ] `col-01-arena.mp4`: an Arena Battle from start to a hit or win. *The hero clip.*
+- [x] `col-01-arena.mp4` (landscape 1280×720; also `col-01-arena-portrait.mp4`, a centre crop): an Arena Battle from start to a hit or win. *The hero clip.*
 - [ ] `col-02-treasure.mp4`: Treasure Island in action.
 - [ ] `col-03-tournament.mp4` or `.png`: a tournament screen (bracket, leaderboard or announcement) showing scale.
-- [ ] `col-logo.svg` (or transparent PNG)
-- [ ] Optional proof: the audit report's cover page and press logos (AP News, Seeking Alpha, Benzinga, Morningstar), only if you're allowed to show them.
-- [ ] Optional proof: an analytics screenshot showing the user count (numbers visible, everything else cropped).
+- [x] `col-logo.svg` (or transparent PNG): `col-logo.png`, 301×325, from chainoflegends.com
+- [x] Optional proof (press logos only, as `col-press.png` from the site's MEDIA strip; no audit cover): the audit report's cover page and press logos (AP News, Seeking Alpha, Benzinga, Morningstar), only if you're allowed to show them.
+- [x] Optional proof (`col-stat-players.png`, the public site's «Total Players 283,245» card, not an analytics dashboard): an analytics screenshot showing the user count (numbers visible, everything else cropped).
 
 ## Qeleq / قلق
-- [ ] `qeleq-01-signal.mp4`: a signal arriving with its stop loss and take profit set. *The hero clip.*
+- [x] `qeleq-01-signal.mp4` (a recorded trade's levels and SL history, not a live arrival; see FINDINGS): a signal arriving with its stop loss and take profit set. *The hero clip.*
 - [ ] `qeleq-02-copy.mp4`: a copy-trade going through to subscribers (status, reconciliation).
-- [ ] `qeleq-03-risk.png`: the risk-control view or settings.
-- [ ] `qeleq-04-backtest.png`: a backtest / strategy-score report (SQN, RDD and so on). It shows the engineering.
+- [x] `qeleq-03-risk.png`: the risk-control view or settings.
+- [x] `qeleq-04-backtest.png`: a backtest / strategy-score report (SQN, RDD and so on). It shows the engineering.
 - [ ] `qeleq-logo.svg`
 - **Hide every balance, P&L and profit figure.** The page shows the system, never returns.
 
 ## Chid / چید
-- [ ] `chid-01-design.mp4`: the core flow on a phone: upload a photo of a real room, write the short note and pick mood, material and colour, then the AI designs of that same room appear. *The hero clip.* Use your own room or a test project, not a customer's.
-- [ ] `chid-02-edit.mp4`: editing a chosen design, then locking it.
+- [x] `chid-01-design.mp4` (an existing room's before/after and versions, not a live upload; see FINDINGS): the core flow on a phone: upload a photo of a real room, write the short note and pick mood, material and colour, then the AI designs of that same room appear. *The hero clip.* Use your own room or a test project, not a customer's.
+- [x] `chid-02-edit.mp4`: editing a chosen design, then locking it.
 - [ ] `chid-03-before.jpg` + `chid-03-after.jpg`: one real room photo and its finished design, side by side (yours, or with the customer's written permission).
-- [ ] `chid-04-review.png`: optional, the staff review screen (approve / regenerate), with customer details hidden. It proves "a human checks the designs".
-- [ ] `chid-logo.svg`
+- [x] `chid-04-review.png`: optional, the staff review screen (approve / regenerate), with customer details hidden. It proves "a human checks the designs".
+- [x] `chid-logo.svg`: no SVG exists; `chid-logo.png` (white) and `chid-logo-terracotta.png`
 
 ## Smaller projects (one still each, phone screenshot)
 - [ ] `also-matrix.png`
@@ -44,7 +44,7 @@ Everything on the page must be real. Drop files here using the names below, and 
 - [ ] `mahdi.jpg`: a real photo, good light, looking at the camera. Or decide to stay faceless: ________
 
 ## Confirm before publishing
-- [ ] Broker name and spelling for Qeleq's first integration: ________
+- [x] Broker name and spelling for Qeleq's first integration: «مظنه ۲۴» (as Qeleq's own UI writes it; Latin `mazaneh24`). Mahdi to confirm the English spelling for the page.
 - [ ] Human review covers paying customers' designs only, not free-trial designs: keep «بازبینی انسانی هر طرح» or narrow it? ________
 - [ ] A real Chid usage number from the analytics dashboard, if you want one on the page: ________
 - [ ] Allowed to publish Chain of Legends footage: yes / no
