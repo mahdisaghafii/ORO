@@ -172,3 +172,11 @@ All of this was in Mahdi's own account, with his go-ahead in chat on 11 Nov: one
 12. **The smaller projects:** send screenshots (or the repos) for Matrix, Eima, the image bot, the n8n flow and Shaparo. Should ORO-Accountant stay in "also built" while it has no UI?
 13. **Your photo**, or the decision to stay faceless.
 14. **Ops, not portfolio:** 6 Chid first-concept results from 8 Nov were still in the review queue on 11 Nov. Worth a look.
+
+## Owner's decision, 11 Nov 2026
+Mahdi confirmed in chat that **the page copy is right as written**, so questions 3, 4, 5, 8 and 9 above are closed as "keep the copy":
+- Qeleq: «اولین اتصال کپی‌ترید با کارگزار … در ایران رو راه انداختم» stays, and 2,500 / 1,200 / 10,000+ stay.
+- Chid: «بازبینی انسانی / هر طرح» stays.
+- Chain of Legends: 300,000+ users and the product-manager role stay.
+
+Two checked sources still disagree, and are kept here for the record: chainoflegends.com shows **283,245** players (11 Nov), and the QeleQ notes (13–15 Oct) plus demo («حساب مظنه ۲۴ وصل نیست») show the «مظنه ۲۴» copy-trade not yet live. The broker's name on the page still needs fixing from "Mazene" to «مظنه ۲۴» (question 3's spelling part): that's a spelling correction, not a claim.
