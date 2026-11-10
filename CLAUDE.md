@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Planning, research and experiments for a Persian-language Instagram personal brand about practical technology for ambitious Iranians: **discover opportunities, understand technology, build things.** Round 1 posts from the Instagram page **`@oro_platform`** (Telegram: `t.me/oro_channel`); its review is `research/2026-10-saved/oro_platform_page.md`. It holds no application code: everything is Markdown, CSV or plain text. There is no build, lint or test step.
+Planning, research and experiments for a Persian-language Instagram personal brand about practical technology for ambitious Iranians: **discover opportunities, understand technology, build things.** Round 1 posts from the Instagram page **`@oro_platform`** (Telegram: `t.me/oro_channel`); its review is `research/2026-10-saved/oro_platform_page.md`. It is almost all Markdown, CSV or plain text, with no build, lint or test step. The one exception is the live portfolio page in `prototypes/live-portfolio/` (HTML, three.js and video), which has its own gate; see **Definition of Done**.
 
 The one mechanical check is that the CSVs still parse with a consistent column count. Run it after editing any CSV:
 
@@ -14,6 +14,30 @@ for f in sorted(glob.glob('**/*.csv',recursive=True)):
     r=list(csv.reader(open(f,encoding='utf-8'))); bad=[i+1 for i,x in enumerate(r) if len(x)!=len(r[0])]
     print(f, len(r)-1, 'rows', 'BAD lines:' if bad else 'ok', bad or '')"
 ```
+
+## Definition of Done
+
+A change is done when the gate for what it touched is green, it's committed on the working branch, and the README's **Contents** list is in step.
+
+- **CSV files:** the CSV check above prints `ok` for every file.
+- **Anything in `prototypes/live-portfolio/`** (the page, its assets, `vendor/`, `build.py`): run the page's gate. The gate is headless Chromium as a phone (390×844 at 3×, touch), driven by `tools/check.mjs`. It checks that:
+  - every chapter shows its text and plays its own clip (and no other);
+  - tapping the phone opens the full-screen replay;
+  - the Vazirmatn font is in use;
+  - the text layout matches `tools/baseline/layout.json`;
+  - the console shows no errors.
+
+  ```bash
+  cd prototypes/live-portfolio/tools
+  npm ci && npx playwright install chromium   # once per checkout
+  npm run gate
+  ```
+
+  - `npm run gate` runs every mode the page must currently pass. Each mode prints `N passed, M failed`; report those counts.
+  - Each slice of `docs/plans/live-portfolio-build.md` adds its mode to the `gate` script when it lands (`--local-only`, `--no-webgl`, `--budget`, and the `dist/` build). The gate only grows.
+  - If a layout change is intended, rewrite the baseline with `node check.mjs --update-baseline` and say so in the commit message. Never rewrite it to make a failing run pass.
+  - Screenshots of every chapter land in `tools/out/` (git-ignored); look at them for any visual change.
+- **Copy:** the page's Persian text is approved as written (`assets/FINDINGS.md`, "Owner's decision"). A change to it needs the owner's OK first.
 
 ## How the documents depend on each other
 

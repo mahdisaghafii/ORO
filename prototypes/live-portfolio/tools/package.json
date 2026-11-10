@@ -1,0 +1,13 @@
+{
+  "name": "live-portfolio-tools",
+  "private": true,
+  "description": "Verification gate for the live portfolio page (see BUILD_PLAN in docs/plans).",
+  "type": "module",
+  "scripts": {
+    "check": "node check.mjs",
+    "gate": "node check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}
