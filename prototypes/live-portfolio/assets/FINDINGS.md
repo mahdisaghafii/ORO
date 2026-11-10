@@ -190,3 +190,10 @@ Re-recorded at a true 1170×2532 (read-only, nothing changed on either site):
 - Their posters and stills are refreshed (full-res PNG at 1170 px, JPG at 720 px).
 
 **Still at 390 px:** `chid-02-edit.mp4` and its master. It can't be re-recorded without repeating real actions on prod (another edit generation, another admin approval, and a lock on a different space), because «اتاق کار» is already locked. Unaffected: `col-01` (1920 px source), `oro-profile` (Mahdi's own 1080 px phone recording) and every still taken with a screenshot (`chid-04`, `qeleq-03`, `qeleq-04`, the `col-*` stills).
+
+## Recut for impact (11 Nov 2026, later)
+Mahdi found the clips slow, with their best moments buried. Each is now about 10 s and opens on its surprise. All read-only; nothing changed on either site.
+- **`chid-01-design.mp4`** (9.7 s, real time, 1170 px master): opens on the original | design split, snaps to the full design, then flips through five real designs of the same room (v4 green arch → v5 green lounge → v6 brick library → v7 dark industrial → v8 teal) and ends on the locked v9 «این طراحی نهایی است!». Images were pre-loaded so each flip is instant. The person in the original stays hidden (the split only sweeps toward the design side).
+- **`qeleq-01-signal.mp4`** (10.3 s, real time): a trade opens straight to its price levels, flings down to the stop-loss history table (the trailing stop at work), then cross-fades to the backtest score cards (SQN 8.26, PF 1.47, 3,614 trades), with money and the equity chart blurred. The «سود»/«ضرر» badges are now blurred too: the earlier filter missed them when the word shared an element with an icon, so the previous Qeleq clip showed the word «سود» (no figure).
+- **`col-01-arena.mp4`** (10 s): the arena fly-in (2.5 s, real speed), then the clash at **1.6× speed**. The page label says so («با سرعت ۱٫۶ برابر»). Names and the FPS overlay are still blurred.
+- **`chid-02-edit.mp4`** is no longer played on the page. It's still in the repo at 390 px.
