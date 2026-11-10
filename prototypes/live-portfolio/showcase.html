@@ -478,6 +478,8 @@ Object.keys(painters).forEach(k => { screens[k] = makeScreen(); });
    Each chapter shows its poster at once, loads its clip only when the chapter is near, and plays
    only while it's on the phone. The drawn placeholder stays as the fallback until the poster lands. */
 const MEDIA = {
+  // the real @oro_platform profile (intro, "also built" and end share this screen); plays down the grid and back up, so it loops without a jump
+  oro: { clips: ['assets/oro-profile.mp4'], poster: 'assets/oro-profile-poster.jpg' },
   col: { clips: ['assets/col-01-arena.mp4'], poster: 'assets/col-01-arena-poster.jpg', land: true },
   qeleq: { clips: ['assets/qeleq-01-signal.mp4'], poster: 'assets/qeleq-01-signal-poster.jpg' },
   chid: { clips: ['assets/chid-01-design.mp4', 'assets/chid-02-edit.mp4'], poster: 'assets/chid-01-design-poster.jpg' },
