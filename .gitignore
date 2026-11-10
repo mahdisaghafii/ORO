@@ -1,2 +1,40 @@
 inbox/telegram/*
 !inbox/telegram/README.md
+
+# >>> claude-project: written by project.py write; edit outside this block >>>
+# Claude Code's machine-local files. Never commit them.
+.claude/settings.local.json
+.claude/.credentials.json
+.claude/sessions/
+.claude/session-env/
+.claude/shell-snapshots/
+.claude/file-history/
+.claude/projects/
+.claude/todos/
+.claude/statsig/
+.claude/telemetry/
+.claude/ide/
+.claude/backups/
+.claude/*-cache.json
+.claude/.last-cleanup
+
+# Committed on purpose, so not ignored: .claude/skills/, .claude/agents/,
+# .claude/settings.json, .claude/project.toml and CLAUDE.md.
+
+# Worktrees of a multi-repo Project live under <root>/wt/ (design doc 3).
+/wt/
+
+# Environment files and secrets: never committed (.env, .env.*, and *.env such as prod.env).
+# Example-style names stay (the names project.py check does not count as env files). Git
+# matches these case-sensitively unless core.ignorecase is on.
+.env
+.env.*
+*.env
+!.env.example
+!.env.sample
+!.env.template
+!.env.dist
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+# <<< claude-project <<<

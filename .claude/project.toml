@@ -1,0 +1,9 @@
+name  = "ORO"
+parts = ["gate", "worktree", "plans"]
+
+[[repo]]
+path = "."
+base = "claude/practical-hamilton-vicsl6"
+kind = "product"
+gate = "cd prototypes/live-portfolio/tools && npm run gate"
+shared_dirs = ["prototypes/live-portfolio/tools/node_modules"]
