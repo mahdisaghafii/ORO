@@ -90,7 +90,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
 </head>
 <body>
 <canvas id="gl" aria-hidden="true"></canvas>
-<div class="proto">PROTOTYPE · placeholder screens</div>
+<div class="proto">PROTOTYPE · real recordings</div>
 
 <main dir="rtl" lang="fa">
   <section class="sec intro on" data-k="0">
@@ -112,7 +112,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
         <div><b data-to="2000" data-suf="+">۲٬۰۰۰+</b><span>بازیکن در هر تورنمنت</span></div>
       </div>
       <p class="role"><em>کار من</em>تیم فنی رو از صفر ساختم و فرایندهای توسعه رو برای یک تیم کاملاً دورکار در چند منطقه‌ی زمانی شکل دادم. محصول هم ممیزی امنیتی مستقل قرارداد هوشمند رو با موفقیت پشت سر گذاشت.</p>
-      <p class="ph">نمونه‌ی موقت · ویدیوی واقعی بازی جای این صفحه میاد</p>
+      <p class="ph">بازپخش از محصول واقعی · نبرد Arena، ضبط‌شده از داخل بازی</p>
     </div>
   </section>
 
@@ -126,7 +126,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
         <div><b data-to="10000" data-suf="+">۱۰٬۰۰۰+</b><span>ظرفیت هم‌زمان زیرساخت</span></div>
       </div>
       <p class="role"><em>کار من</em>معماری قلق، سازوکار تطبیق سفارش‌ها و کنترل‌های ریسک رو طراحی کردم. استراتژی‌ها قبل از فعال‌شدن بک‌تست می‌شن و اولین اتصال کپی‌ترید با کارگزار مظنه ۲۴ در ایران رو راه انداختم.</p>
-      <p class="ph">نمونه‌ی موقت · ضبط صفحه از داخل قلق جای این میاد</p>
+      <p class="ph">بازپخش از محصول واقعی · نسخه‌ی دمو؛ سود و زیان محو شده</p>
     </div>
   </section>
 
@@ -140,7 +140,7 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
         <div class="word"><b>پرداخت آنلاین</b><span>فعاله</span></div>
       </div>
       <p class="role"><em>کار من</em>چید رو از صفر تا انتشار ساختم؛ از مسیر کاربر و منطق طراحی تا پرداخت و گردش‌کار تولید تصویر. با کمک ایجنت‌های کدنویسی و زیر نظر خودم توسعه‌ش دادم و تیم داخلی هم خروجی‌ها رو بازبینی می‌کنه.</p>
-      <p class="ph">نمونه‌ی موقت · ضبط تعویض واقعی یه اتاق جای این میاد</p>
+      <p class="ph">بازپخش از محصول واقعی · طراحی اتاق کار خودم روی چید</p>
     </div>
   </section>
 
@@ -474,6 +474,50 @@ function paintOro(c, t) {
 const painters = { oro: paintOro, col: paintCol, qeleq: paintQeleq, chid: paintChid };
 Object.keys(painters).forEach(k => { screens[k] = makeScreen(); });
 
+/* ---------- real recordings (labeled replays) ----------
+   Each chapter shows its poster at once, loads its clip only when the chapter is near, and plays
+   only while it's on the phone. The drawn placeholder stays as the fallback until the poster lands. */
+const MEDIA = {
+  col: { clips: ['assets/col-01-arena.mp4'], poster: 'assets/col-01-arena-poster.jpg', land: true },
+  qeleq: { clips: ['assets/qeleq-01-signal.mp4'], poster: 'assets/qeleq-01-signal-poster.jpg' },
+  chid: { clips: ['assets/chid-01-design.mp4', 'assets/chid-02-edit.mp4'], poster: 'assets/chid-01-design-poster.jpg' },
+};
+Object.entries(MEDIA).forEach(([k, m]) => {
+  m.img = new Image(); m.img.src = m.poster;
+  m.i = 0; m.vid = null; m.fallback = painters[k];
+  painters[k] = (c, t) => paintMedia(c, t, m);
+});
+// Fill the screen (cover). A landscape clip is drawn turned 90°, because its chapter turns the phone sideways.
+function cover(c, src, sw, sh, land) {
+  c.fillStyle = '#000'; c.fillRect(0, 0, SW, SH);
+  c.save();
+  if (land) { c.translate(SW / 2, SH / 2); c.rotate(Math.PI / 2); const s = Math.max(SH / sw, SW / sh); c.drawImage(src, -sw * s / 2, -sh * s / 2, sw * s, sh * s); }
+  else { const s = Math.max(SW / sw, SH / sh); c.drawImage(src, (SW - sw * s) / 2, (SH - sh * s) / 2, sw * s, sh * s); }
+  c.restore();
+}
+function paintMedia(c, t, m) {
+  const v = m.vid;
+  if (v && v.readyState >= 2 && v.videoWidth) cover(c, v, v.videoWidth, v.videoHeight, m.land);
+  else if (m.img.complete && m.img.naturalWidth) cover(c, m.img, m.img.naturalWidth, m.img.naturalHeight, m.land);
+  else m.fallback(c, t);
+}
+function ensureVideo(m) {
+  if (m.vid) return;
+  const v = document.createElement('video');
+  v.muted = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('webkit-playsinline', ''); v.preload = 'auto';
+  v.loop = m.clips.length === 1;
+  v.addEventListener('ended', () => { m.i = (m.i + 1) % m.clips.length; v.src = m.clips[m.i]; v.play().catch(() => {}); });
+  v.src = m.clips[0]; m.vid = v;
+}
+function syncMedia(pos, texKey) {
+  CH.forEach((ch, k) => { const m = MEDIA[ch.tex]; if (m && Math.abs(pos - k) < 1.2) ensureVideo(m); });
+  Object.entries(MEDIA).forEach(([k, m]) => {
+    if (!m.vid) return;
+    if (k === texKey) { if (m.vid.paused) m.vid.play().catch(() => {}); }
+    else if (!m.vid.paused) m.vid.pause();
+  });
+}
+
 /* ---------- chapters ---------- */
 const CH = [
   { bg: '#07080c', acc: '#e9e2d0', tex: 'oro' },
@@ -494,15 +538,25 @@ function measure() {
   cam.updateProjectionMatrix();
   centers = sections.map(s => { const r = s.getBoundingClientRect(); return r.top + scrollY + r.height / 2; });
 }
+// Chapter 1 (Chain of Legends) turns the phone sideways: its clip is landscape, as the game is played.
+const LAND = 1;
 function pose(k) {
+  let p;
   if (mobile) {
     const visH = 2 * cam.position.z * Math.tan(cam.fov * Math.PI / 360);
     const s = Math.min(0.74, (visH * 0.42) / 2.08);
     const y = visH / 2 - 0.3 - 1.04 * s;
-    return [{ x: 0, y, ry: 0.4, rx: -0.05, s }, { x: 0, y, ry: 0.22, rx: -0.04, s }, { x: 0, y, ry: -0.22, rx: -0.04, s }, { x: 0, y, ry: 0.22, rx: -0.04, s }, { x: 0, y: y + 0.1, ry: 0, rx: 0, s: s * 0.8 }, { x: 0, y, ry: 0.2, rx: -0.05, s }][k];
+    p = [{ x: 0, y, ry: 0.4, rx: -0.05, s }, { x: 0, y, ry: 0.22, rx: -0.04, s }, { x: 0, y, ry: -0.22, rx: -0.04, s }, { x: 0, y, ry: 0.22, rx: -0.04, s }, { x: 0, y: y + 0.1, ry: 0, rx: 0, s: s * 0.8 }, { x: 0, y, ry: 0.2, rx: -0.05, s }][k];
+    if (k === LAND) {
+      const visW = visH * cam.aspect, sl = Math.min(1, (visW * 0.8) / 2.08); // 0.8: room for the sway and tilt
+      p = { ...p, s: sl, ry: 0.12 }; // same centre as the portrait phone
+    }
+  } else {
+    const x = -Math.min(1.7, 0.78 * W / H);
+    p = [{ x, y: 0, ry: 0.55, rx: -0.06, s: 1 }, { x, y: 0, ry: 0.32, rx: -0.04, s: 1 }, { x, y: 0, ry: -0.3, rx: -0.04, s: 1 }, { x, y: 0, ry: 0.3, rx: -0.04, s: 1 }, { x, y: 0.05, ry: 0.1, rx: 0, s: 0.8 }, { x: 0, y: 0.35, ry: 0.2, rx: -0.05, s: 0.75 }][k];
+    if (k === LAND) p = { ...p, ry: 0.22 };
   }
-  const x = -Math.min(1.7, 0.78 * W / H);
-  return [{ x, y: 0, ry: 0.55, rx: -0.06, s: 1 }, { x, y: 0, ry: 0.32, rx: -0.04, s: 1 }, { x, y: 0, ry: -0.3, rx: -0.04, s: 1 }, { x, y: 0, ry: 0.3, rx: -0.04, s: 1 }, { x, y: 0.05, ry: 0.1, rx: 0, s: 0.8 }, { x: 0, y: 0.35, ry: 0.2, rx: -0.05, s: 0.75 }][k];
+  return { ...p, rz: k === LAND ? Math.PI / 2 : 0 };
 }
 function chapterAt() {
   const v = scrollY + H / 2;
@@ -550,7 +604,7 @@ function tick(now) {
   const bob = REDUCED ? 0 : Math.sin(t * 1.1) * 0.035;
   phone.position.set(lerp(A.x, B.x, pf), lerp(A.y, B.y, pf) + bob, 0);
   const s = lerp(A.s, B.s, pf); phone.scale.setScalar(s);
-  phone.rotation.set(lerp(A.rx, B.rx, pf) + my * 0.06, lerp(A.ry, B.ry, pf) + spin + sway + drag + mx * 0.12, Math.sin(t * 0.6) * 0.015);
+  phone.rotation.set(lerp(A.rx, B.rx, pf) + my * 0.06, lerp(A.ry, B.ry, pf) + spin + sway + drag + mx * 0.12, lerp(A.rz, B.rz, pf) + Math.sin(t * 0.6) * 0.015);
 
   cA.set(CH[i].bg); cB.set(CH[j].bg); scene.background.copy(cA).lerp(cB, pf);
   cA.set(CH[i].acc); cB.set(CH[j].acc); cA.lerp(cB, pf);
@@ -563,6 +617,7 @@ function tick(now) {
   for (let k = 0; k < DN; k++) { let y = pa.getY(k) + ds[k] * dt; if (y > 4) y = -4; pa.setY(k, y); }
   pa.needsUpdate = true;
 
+  syncMedia(gs, texKey);
   const scr = screens[texKey];
   if (curTex !== texKey) { screenMat.map = scr.tex; screenMat.needsUpdate = true; curTex = texKey; }
   if (frame % 2 === 0 || REDUCED) { painters[texKey](scr.ctx, t); scr.tex.needsUpdate = true; }

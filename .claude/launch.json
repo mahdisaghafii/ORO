@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "live-portfolio",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8765", "--directory", "prototypes/live-portfolio"],
+      "port": 8765
+    }
+  ]
+}
