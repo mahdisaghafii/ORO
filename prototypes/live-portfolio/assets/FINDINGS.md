@@ -56,7 +56,7 @@ Recorded on **production** (`chidstudio.ir`), in Mahdi's own account, with his e
 - **`chid-01-design.mp4` (done, 22 s, 720×1558, 1.1 MB, no audio).** Master: `master/chid-01-design-1170.mp4`. Posters: `chid-01-design-poster.png`, `chid-01-design-still2.png`. Source: project «نشیمن، آشپزخانه و ۱۱ فضای دیگر» › space «اتاق کار» (8 AI versions). The take starts on version 4 with the before/after slider (original photo vs. AI redesign: green arch, art), sweeps to the full design, then steps through the furnishing versions 5–8 and ends with a short sweep on v8. Nothing was generated or changed; it only switches which version is shown.
   - **Different from the shot list:** it isn't "upload → designs appear". On prod a new first design is held for staff review (prompt up to 24 h, result up to 48 h), so it can't appear live on camera. I didn't splice in another room's designs to fake it.
   - **Privacy:** the original photo of this room has **a person sitting at the table**, right of centre. The final take only sweeps toward the design side, so the person never shows (checked frame by frame on a 2 fps contact sheet). The first take showed him and was discarded.
-  - **Ownership not yet confirmed:** that this room is Mahdi's own space and not a customer's.
+  - **Ownership confirmed:** Mahdi confirmed in chat on 11 Nov that «اتاق کار» is his own space.
   - Money is kept out: the project page shows the contract total, so the clip starts inside the space page.
 - **`chid-02-edit.mp4` (done, 22 s, 720 px, 1.8 MB).** Master: `master/chid-02-edit-1170.mp4`. Posters: `chid-02-edit-poster.png` (locked design), `chid-02-edit-still2.png`. With Mahdi's go-ahead (11 Nov), on «اتاق کار» v8:
   1. A **real edit**: «لوازم» → «لوازم اسکاندیناوی چوب روشن» → «اعمال تغییر». It costs one model call; the admin shows a "chain cost $0.04".
@@ -158,7 +158,7 @@ On 11 Nov Mahdi sent his own material (two screencasts, two links) and then **co
 All of this was in Mahdi's own account, with his go-ahead in chat on 11 Nov: one edit generation on «اتاق کار» (cost $0.04); that edit approved in `/admin/reviews`; «اتاق کار» v9 **locked as private** (can't be undone). Nothing else was submitted, paid, toggled or sent.
 
 ## Questions only Mahdi can answer
-1. **Is «اتاق کار» (the meeting room with the round table and green chairs) your own space, not a customer's?** The Chid clips and stills (`chid-01`, `chid-02`, `chid-04`) show it, so they **aren't committed** until you say yes.
+1. ~~Is «اتاق کار» your own space?~~ **Answered 11 Nov: yes, it's Mahdi's.** The Chid clips are committed.
 2. **The person in that room's original photo:** OK to show a cropped "before" for `chid-03`, or will you shoot another room of your own?
 3. **Qeleq "first copy-trade connection with مظنه ۲۴ in Iran, launched":** the notes say it wasn't completing orders as of mid-October, and demo shows it unconnected. Has it gone live since? If not, the line should say "designed", not "launched". Also, how do you want «مظنه ۲۴» written in Latin on the page ("Mazaneh24"?).
 4. **Qeleq numbers:** are 2,500 registered / 1,200 active / 10,000+ capacity current? I found no source for them on this PC.
