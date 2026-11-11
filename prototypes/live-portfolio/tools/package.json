@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "check": "node check.mjs",
-    "gate": "node check.mjs"
+    "gate": "node check.mjs --local-only"
   },
   "devDependencies": {
     "playwright": "1.65.0"

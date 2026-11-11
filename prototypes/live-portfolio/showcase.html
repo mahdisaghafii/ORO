@@ -8,10 +8,16 @@
 <meta property="og:title" content="مهدی ثقفی؛ محصول‌هایی که ساختم">
 <meta property="og:description" content="من مهدی‌ام؛ این‌جا چندتا از محصول‌هایی رو می‌بینی که ساختم.">
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&display=swap">
+<link rel="preload" href="vendor/fonts/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="vendor/fonts/Vazirmatn-Black.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* Vazirmatn (OFL), self-hosted: see vendor/README.md */
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 300; font-display: swap; src: url('vendor/fonts/Vazirmatn-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 400; font-display: swap; src: url('vendor/fonts/Vazirmatn-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 500; font-display: swap; src: url('vendor/fonts/Vazirmatn-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 700; font-display: swap; src: url('vendor/fonts/Vazirmatn-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 800; font-display: swap; src: url('vendor/fonts/Vazirmatn-ExtraBold.woff2') format('woff2'); }
+@font-face { font-family: 'Vazirmatn'; font-style: normal; font-weight: 900; font-display: swap; src: url('vendor/fonts/Vazirmatn-Black.woff2') format('woff2'); }
 /* Layout: a fixed 3D stage behind a scroll of full-height chapters. Phone left / text right on wide screens; phone top / text bottom on phones. */
 :root {
   --bg: #07080c;
@@ -193,9 +199,10 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
   </section>
 </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="vendor/three.min.js" defer></script>
 <script>
-(() => {
+// three.js is deferred, so the page script waits for DOMContentLoaded (deferred scripts run before it).
+addEventListener('DOMContentLoaded', () => {
 const canvas = document.getElementById('gl');
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const lerp = (a, b, t) => a + (b - a) * t;
@@ -693,7 +700,7 @@ addEventListener('resize', measure);
 measure();
 (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(measure);
 requestAnimationFrame(tick);
-})();
+});
 </script>
 </body>
 </html>
