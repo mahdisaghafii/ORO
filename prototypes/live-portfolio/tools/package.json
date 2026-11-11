@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "check": "node check.mjs",
-    "gate": "node check.mjs --local-only && node check.mjs --no-webgl --local-only"
+    "gate": "node check.mjs --local-only && node check.mjs --no-webgl --local-only && node check.mjs --budget --local-only",
+    "assets": "node make-assets.mjs"
   },
   "devDependencies": {
     "playwright": "1.65.0"

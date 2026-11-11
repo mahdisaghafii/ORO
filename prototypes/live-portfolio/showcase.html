@@ -7,6 +7,9 @@
 <meta name="description" content="من مهدی‌ام؛ این‌جا چندتا از محصول‌هایی رو می‌بینی که ساختم.">
 <meta property="og:title" content="مهدی ثقفی؛ محصول‌هایی که ساختم">
 <meta property="og:description" content="من مهدی‌ام؛ این‌جا چندتا از محصول‌هایی رو می‌بینی که ساختم.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.jpg"><!-- relative here; build.py makes it absolute (crawlers need a full URL) -->
+<meta name="twitter:card" content="summary_large_image">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preload" href="vendor/fonts/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="vendor/fonts/Vazirmatn-Black.woff2" as="font" type="font/woff2" crossorigin>
@@ -224,27 +227,38 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
   </section>
 </main>
 
-<script src="vendor/three.min.js" defer></script>
 <script>
-// three.js is deferred, so the page script waits for DOMContentLoaded (deferred scripts run before it).
-addEventListener('DOMContentLoaded', () => {
+// three.js (600 KB) is not in the page's script list on purpose: it is fetched only on the 3D path, after the page has loaded, so it never
+// competes with the first screen. Everything before "let R" (text, posters, flat fallback) runs without it.
+addEventListener('DOMContentLoaded', async () => {
 const canvas = document.getElementById('gl');
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const lerp = (a, b, t) => a + (b - a) * t;
 const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const fa = n => Math.round(n).toLocaleString('fa-IR');
-const loadedAt = performance.now();
+let loadedAt = performance.now();
 
 /* ---------- what each chapter shows: one table for the 3D page and the flat fallback ---------- */
+// Every poster comes as a WebP (at most 60% of the JPG, made by tools/make-assets.mjs) and as the JPG it was made from, for browsers that can't decode WebP.
 const MEDIA = {
   // the real @oro_platform profile (intro, "also built" and end share this screen); plays down the grid and back up, so it loops without a jump
-  oro: { clips: ['assets/oro-profile.mp4'], poster: 'assets/oro-profile-poster.jpg' },
-  col: { clips: ['assets/col-01-teaser.mp4'], poster: 'assets/col-01-teaser-poster.jpg', land: true },
-  qeleq: { clips: ['assets/qeleq-01-signal.mp4'], poster: 'assets/qeleq-01-signal-poster.jpg' },
-  chid: { clips: ['assets/chid-01-design.mp4'], poster: 'assets/chid-01-design-poster.jpg' },
+  oro: { clips: ['assets/oro-profile.mp4'], poster: 'assets/oro-profile-poster.jpg', webp: 'assets/oro-profile-poster.webp' },
+  col: { clips: ['assets/col-01-teaser.mp4'], poster: 'assets/col-01-teaser-poster.jpg', webp: 'assets/col-01-teaser-poster.webp', land: true },
+  qeleq: { clips: ['assets/qeleq-01-signal.mp4'], poster: 'assets/qeleq-01-signal-poster.jpg', webp: 'assets/qeleq-01-signal-poster.webp' },
+  chid: { clips: ['assets/chid-01-design.mp4'], poster: 'assets/chid-01-design-poster.jpg', webp: 'assets/chid-01-design-poster.webp' },
 };
 Object.values(MEDIA).forEach(m => { m.i = 0; m.vid = null; });
+// One decision for every use of a poster (the 3D screen's Image, the flat frame's poster, the replay's poster): can this browser decode WebP?
+// A 1x1 lossless WebP either decodes or errors; posters are only assigned once the answer is in.
+let useWebp = false;
+const posterOf = m => useWebp ? m.webp : m.poster;
+const posterChoice = new Promise(done => {
+  const t = new Image();
+  t.onload = () => { useWebp = t.width === 1 && t.height === 1; done(); };
+  t.onerror = () => done();
+  t.src = 'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==';
+});
 const CH = [
   { bg: '#07080c', acc: '#e9e2d0', tex: 'oro' },
   { bg: '#110a1f', acc: '#b48cff', tex: 'col' },
@@ -288,7 +302,7 @@ let viewerFrom = null; // what had focus before the replay opened, so ✕ hands 
 function openViewer(m, v = m.vid) {
   viewerFrom = document.activeElement;
   const i = v ? m.i : 0, at = v ? v.currentTime : 0;
-  vvid.poster = m.poster; vvid.src = m.clips[i];
+  vvid.poster = posterOf(m); vvid.src = m.clips[i];
   vvid.addEventListener('loadedmetadata', () => { try { vvid.currentTime = at; } catch (e) {} }, { once: true });
   viewer.classList.toggle('rot', !!m.land && innerHeight > innerWidth);
   viewer.classList.add('open');
@@ -312,7 +326,7 @@ function useClip(f) { if (f.v.hasAttribute('src')) return; f.v.src = f.m.clips[0
 function addFrame(sec, m) {
   const wrap = document.createElement('div'), fr = document.createElement('div'), v = newClipVideo(m);
   wrap.className = 'pfw'; fr.className = 'pf' + (m.land ? ' land' : '');
-  v.poster = m.poster; v.preload = 'none';
+  v.preload = 'none'; posterChoice.then(() => { v.poster = posterOf(m); });
   fr.setAttribute('data-replay', ''); fr.setAttribute('role', 'button'); fr.tabIndex = 0;
   fr.setAttribute('aria-label', (sec.querySelector('.ph') || viewer.querySelector('.vl')).textContent.trim()); // the chapter's own label
   const open = () => openViewer(m, v);
@@ -341,6 +355,18 @@ function goFlat(why) {
 const forceFlat = new URLSearchParams(location.search).get('mode') === 'flat';
 const weakPhone = navigator.deviceMemory <= 2 && navigator.hardwareConcurrency <= 4;
 if (forceFlat || weakPhone) { goFlat(forceFlat ? 'forced by ?mode=flat' : 'weak phone: little memory, few cores'); return; }
+
+// A phone with no WebGL would download three.js (600 KB) only to fail: ask a throwaway canvas first (the page's own canvas must stay untouched,
+// three.js makes its context with its own settings). The try/catch around the renderer below stays as the second line of defence.
+const probe = document.createElement('canvas');
+const probeGl = probe.getContext('webgl') || probe.getContext('experimental-webgl');
+if (!probeGl) { goFlat('WebGL is not available'); return; }
+const loseProbe = probeGl.getExtension('WEBGL_lose_context'); if (loseProbe) loseProbe.loseContext(); // free the probe's context at once
+// Only now fetch three.js: after the page's own load, so it never competes with the first screen.
+const loadThree = () => new Promise((ok, no) => { const s = document.createElement('script'); s.src = 'vendor/three.min.js'; s.onload = ok; s.onerror = no; document.head.append(s); });
+if (document.readyState !== 'complete') await new Promise(ok => addEventListener('load', ok, { once: true }));
+try { await loadThree(); } catch (e) { goFlat('three.js did not load'); return; }
+loadedAt = performance.now(); // the weak-phone clock starts when 3D does
 
 let R;
 try {
@@ -641,7 +667,7 @@ Object.keys(painters).forEach(k => { screens[k] = makeScreen(); });
    Each chapter shows its poster at once, loads its clip only when the chapter is near, and plays
    only while it's on the phone. The drawn placeholder stays as the fallback until the poster lands. */
 Object.entries(MEDIA).forEach(([k, m]) => {
-  m.img = new Image(); m.img.src = m.poster;
+  m.img = new Image(); posterChoice.then(() => { m.img.src = posterOf(m); });
   m.fallback = painters[k];
   painters[k] = (c, t) => paintMedia(c, t, m);
 });

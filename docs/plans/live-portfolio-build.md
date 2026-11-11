@@ -153,7 +153,34 @@ Already done, no work needed:
 - Read every claim on the live page one last time, then pin it or put it in the bio.
 
 ## Measurements
-_(slice 3 fills this in)_
+
+Slice 3, 11 Nov 2026. Headless Chromium as a phone, "Fast 3G" (150 ms RTT, 1.6 Mbps down), the gate's local server (**no compression**, so the byte counts are what a server without gzip would send). `node check.mjs --budget --local-only`.
+
+| What | Limit | Measured |
+|---|---|---|
+| First paint, 3D page | 3000 ms | 952 to 1288 ms across runs (1060 ms in the last run) |
+| First paint, flat path (`--no-webgl --budget`) | 3000 ms | 984 to 1084 ms |
+| Bytes finished before first paint | 400 KB | 56 to 156 KB across runs (the HTML is 56 KB; the two preloaded fonts, 100 KB, sometimes land just before the paint) |
+| `three.js` (603 KB) requested | after first paint | at the page's `load` event (about 2.8 s in) against a first paint near 1 s, and it finishes about 5.7 s in. The check tests the request time, and was shown to fail when the old `<script defer>` is put back (requested at 631 ms, first paint at 936 ms). It is never fetched on `?mode=flat`, on a weak phone, or when a throwaway canvas finds no WebGL; `--no-webgl --budget` and `?mode=flat --budget` check that |
+| Page script starts (DOMContentLoaded) | n/a | 0.88 s; it was 6.3 s before this slice, because the deferred three.js held it back |
+| Clips loading at the top of the page | only the first chapter and the next | `oro-profile.mp4` and `col-01-teaser.mp4`; the Qeleq and Chid clips stay unrequested |
+| Largest inlined item | 14 KB | none: no `data:` URI over 14 KB in the HTML (the only one is the 1x1 WebP probe, 60 bytes) |
+
+Posters (WebP from `tools/make-assets.mjs`; the JPG is the fallback):
+
+| Poster | JPG | WebP | Ratio |
+|---|---|---|---|
+| `oro-profile-poster` | 206,647 B | 122,122 B | 59% |
+| `chid-01-design-poster` | 133,549 B | 78,232 B | 59% |
+| `qeleq-01-signal-poster` | 88,157 B | 52,268 B | 59% |
+| `col-01-teaser-poster` | 25,107 B | 13,770 B | 55% |
+
+In Chromium both paths request only the WebP posters. The fallback was checked once by making the WebP probe fail: both paths then asked for the JPGs. `assets/og.jpg` is 1200x630, 68,507 B.
+
+Notes:
+- "Inline nothing larger than 14 KB" was read as: no inlined binary (`data:` URI) over 14 KB. The ~40 KB inline `<script>` stays inline (supervisor decision: first paint is about 1 s against a 3 s limit, and `build.py` copies a single HTML file); the `<style>` is 9.8 KB.
+- The Vazirmatn fonts stay as the full static WOFF2 files (about 51 KB each, two preloaded): the budget is met with room to spare, so nothing was subset.
+- On this throttled, uncompressed run the 3D phone appears at about 9 s: it waits for three.js (done at about 6 to 7 s), then for its poster. Text and the first paint don't wait. A server that gzips will cut the three.js wait; that is for slice 5's phone test to confirm, not measured here.
 
 ## Run log
 
