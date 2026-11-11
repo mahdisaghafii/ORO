@@ -113,7 +113,7 @@ Already done, no work needed:
   - fails if the output HTML contains an `http(s)://` URL anywhere except `og:`/`twitter:` meta tags and plain `<a href>` links;
   - prints the file count and total size.
 - Add `dist/` to `prototypes/live-portfolio/.gitignore`.
-- **Gate:** add `npm run gate:dist` = `python ../build.py && node check.mjs --root ../dist --page index.html --local-only --no-webgl && node check.mjs --root ../dist --page index.html --local-only --budget`, and append it to `gate`. The 3D baseline must match on `dist/` too: removing the badge must not move text.
+- **Gate:** add `npm run gate:dist` = `python3 ../build.py --out out/dist && node check.mjs --root out/dist --page index.html --local-only --no-webgl && node check.mjs --root out/dist --page index.html --local-only --budget`, and append it to `gate`. It builds into the git-ignored `tools/out/dist`, so the gate never overwrites `dist/`, which stays Mahdi's upload folder. The 3D baseline must match on `dist/` too: removing the badge must not move text.
 - **`prototypes/live-portfolio/DEPLOY.md`** for Mahdi, short and in plain words:
   - Upload `dist/` as one folder.
   - The server must:
@@ -153,6 +153,38 @@ Already done, no work needed:
 - Read every claim on the live page one last time, then pin it or put it in the bio.
 
 ## Measurements
-_(slice 3 fills this in)_
+
+Slice 3, 11 Nov 2026. Headless Chromium as a phone, "Fast 3G" (150 ms RTT, 1.6 Mbps down), the gate's local server (**no compression**, so the byte counts are what a server without gzip would send). `node check.mjs --budget --local-only`.
+
+| What | Limit | Measured |
+|---|---|---|
+| First paint, 3D page | 3000 ms | 952 to 1288 ms across runs (1060 ms in the last run) |
+| First paint, flat path (`--no-webgl --budget`) | 3000 ms | 984 to 1084 ms |
+| Bytes finished before first paint | 400 KB | 56 to 156 KB across runs (the HTML is 56 KB; the two preloaded fonts, 100 KB, sometimes land just before the paint) |
+| `three.js` (603 KB) requested | after first paint | at the page's `load` event (about 2.8 s in) against a first paint near 1 s, and it finishes about 5.7 s in. The check tests the request time, and was shown to fail when the old `<script defer>` is put back (requested at 631 ms, first paint at 936 ms). It is never fetched on `?mode=flat`, on a weak phone, or when a throwaway canvas finds no WebGL; `--no-webgl --budget` and `?mode=flat --budget` check that |
+| Page script starts (DOMContentLoaded) | n/a | 0.88 s; it was 6.3 s before this slice, because the deferred three.js held it back |
+| Clips loading at the top of the page | only the first chapter and the next | `oro-profile.mp4` and `col-01-teaser.mp4`; the Qeleq and Chid clips stay unrequested |
+| Largest inlined item | 14 KB | none: no `data:` URI over 14 KB in the HTML (the only one is the 1x1 WebP probe, 60 bytes) |
+
+Posters (WebP from `tools/make-assets.mjs`; the JPG is the fallback):
+
+| Poster | JPG | WebP | Ratio |
+|---|---|---|---|
+| `oro-profile-poster` | 206,647 B | 122,122 B | 59% |
+| `chid-01-design-poster` | 133,549 B | 78,232 B | 59% |
+| `qeleq-01-signal-poster` | 88,157 B | 52,268 B | 59% |
+| `col-01-teaser-poster` | 25,107 B | 13,770 B | 55% |
+
+In Chromium both paths request only the WebP posters. The fallback was checked once by making the WebP probe fail: both paths then asked for the JPGs. `assets/og.jpg` is 1200x630, 68,507 B.
+
+Notes:
+- "Inline nothing larger than 14 KB" was read as: no inlined binary (`data:` URI) over 14 KB. The ~40 KB inline `<script>` stays inline (supervisor decision: first paint is about 1 s against a 3 s limit, and `build.py` copies a single HTML file); the `<style>` is 9.8 KB.
+- The Vazirmatn fonts stay as the full static WOFF2 files (about 51 KB each, two preloaded): the budget is met with room to spare, so nothing was subset.
+- On this throttled, uncompressed run the 3D phone appears at about 9 s: it waits for three.js (done at about 6 to 7 s), then for its poster. Text and the first paint don't wait. A server that gzips will cut the three.js wait; that is for slice 5's phone test to confirm, not measured here.
 
 ## Run log
+
+- Slice 1 — self-contained page: dc5d5e6 · gate 26 passed / 0 failed (--local-only), plain 3D 25/0 · review clean (1 round, 1 nit fixed) · decisions: gate = `node check.mjs --local-only` alone, since it already runs every 3D check; Vazirmatn v33.003 full static WOFF2 (not subset) — revisit in slice 3 if the budget is tight
+- Slice 2 — fallback when 3D can't run: 13543ab · gate 27/0 (--local-only) + 27/0 (--no-webgl --local-only); plain 3D 26/0; ?mode=flat 26/0 · review clean (1 round, 2 nits fixed, 1 declined) · decisions: fps rule also skipped under navigator.webdriver (headless software WebGL runs ~5 fps, so the 2 s guard alone flipped the gate's 3D run to flat; real browsers unaffected) — the slow-phone switch is therefore verified by a one-off probe, not the gate; flat frames on chapters 0/4/5 (ORO profile) carry no «بازپخش» label, matching 3D; added one gate check (the logged path matches the expected path)
+- Slice 3 — slow connections and link previews: 6e0438e · gate 27/0 + 27/0 + 35/0 (--budget); plain 3D 26/0; ?mode=flat 26/0 · first paint ~1.0 s, 57 KB before it (Fast 3G) · review fix → clean (2 rounds: 1 high — the three.js-out-of-first-paint check could never fail, now tests request time and was proven by mutation — plus 3 nits fixed) · decisions: og:title/og:description keep the existing owner-approved preview texts instead of the h1/lede (they already existed; only og:image/og:type/twitter:card added); the ~40 KB inline script stays inline (14 KB rule read as binary/data: inlining); three.js is injected after load and skipped entirely on ?mode=flat, weak phones and no-WebGL (cheap probe); WebP posters ≤60% with a ≥36 dB quality floor; only the 4 posters the page uses get WebPs
+- Slice 4 — release build and hand-over notes: 31cf05f · gate 27/0 + 27/0 + 35/0 + gate:dist 27/0 + 35/0; plain 3D 26/0; ?mode=flat 26/0; by-hand --base-url https://example.test/portfolio/ build 27/0 + 35/0 · dist 22 files / 6.4 MB (23 / 6.5 MB with a base URL) · review fix → clean (2 rounds: 1 high — DEPLOY's phone checklist claimed every recording carries «بازپخش», now quotes the three real labels — plus 6 nits fixed) · decisions: gate:dist builds into tools/out/dist via build.py --out so the gate never overwrites Mahdi's dist/; python3 not python; og.jpg copied only when --base-url is given (no og:image otherwise); --out wipes only a folder that looks like a previous build; strict --base-url validation; protocol-relative //host loads rejected at build time

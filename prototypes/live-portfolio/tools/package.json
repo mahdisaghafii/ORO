@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "check": "node check.mjs",
-    "gate": "node check.mjs"
+    "gate:dist": "python3 ../build.py --out out/dist && node check.mjs --root out/dist --page index.html --local-only --no-webgl && node check.mjs --root out/dist --page index.html --local-only --budget",
+    "gate": "node check.mjs --local-only && node check.mjs --no-webgl --local-only && node check.mjs --budget --local-only && npm run gate:dist",
+    "assets": "node make-assets.mjs"
   },
   "devDependencies": {
     "playwright": "1.65.0"
