@@ -113,7 +113,7 @@ Already done, no work needed:
   - fails if the output HTML contains an `http(s)://` URL anywhere except `og:`/`twitter:` meta tags and plain `<a href>` links;
   - prints the file count and total size.
 - Add `dist/` to `prototypes/live-portfolio/.gitignore`.
-- **Gate:** add `npm run gate:dist` = `python ../build.py && node check.mjs --root ../dist --page index.html --local-only --no-webgl && node check.mjs --root ../dist --page index.html --local-only --budget`, and append it to `gate`. The 3D baseline must match on `dist/` too: removing the badge must not move text.
+- **Gate:** add `npm run gate:dist` = `python3 ../build.py --out out/dist && node check.mjs --root out/dist --page index.html --local-only --no-webgl && node check.mjs --root out/dist --page index.html --local-only --budget`, and append it to `gate`. It builds into the git-ignored `tools/out/dist`, so the gate never overwrites `dist/`, which stays Mahdi's upload folder. The 3D baseline must match on `dist/` too: removing the badge must not move text.
 - **`prototypes/live-portfolio/DEPLOY.md`** for Mahdi, short and in plain words:
   - Upload `dist/` as one folder.
   - The server must:

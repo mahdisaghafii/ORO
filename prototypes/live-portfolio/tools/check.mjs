@@ -131,19 +131,32 @@ function staticBudgetChecks() {
   const big = [...html.matchAll(/data:[a-z/+.-]+;base64,[A-Za-z0-9+/=]+/g)].filter((m) => m[0].length * 3 / 4 > INLINE_MAX_BYTES);
   big.length ? fail('budget: nothing inlined over 14 KB', `${big.length} data: URI(s), largest ${Math.round(Math.max(...big.map((m) => m[0].length)) * 3 / 4 / 1024)} KB`) : pass('budget: nothing inlined over 14 KB');
   // Link preview: the tags a chat app reads, the approved text, and a card image of the right size.
+  // og:image/og:url need an absolute URL, which only a build given --base-url can write. The source page keeps a relative og:image and has no og:url;
+  // a release build (no showcase.html beside it) made without a base URL has neither, and that is allowed. Either way the rest must be there.
   const meta = (attr, name) => (new RegExp(`<meta\\s+${attr}="${name}"\\s+content="([^"]*)"`).exec(html) || [])[1];
   const need = { title: meta('property', 'og:title'), description: meta('property', 'og:description'), image: meta('property', 'og:image'), type: meta('property', 'og:type'), card: meta('name', 'twitter:card') };
-  const miss = Object.entries(need).filter(([, v]) => !v).map(([k]) => k);
+  const ogUrl = meta('property', 'og:url'), release = !fs.existsSync(path.join(ROOT, 'showcase.html'));
+  const noBase = release && !need.image && !ogUrl;
+  const miss = Object.entries(need).filter(([k, v]) => !v && !(noBase && k === 'image')).map(([k]) => k);
   const pageTitle = (/<title>([^<]*)<\/title>/.exec(html) || [])[1], pageDesc = meta('name', 'description');
   const problems = [...miss.map((k) => `no ${k}`)];
   if (need.type && need.type !== 'website') problems.push(`og:type is ${need.type}`);
   if (need.card && need.card !== 'summary_large_image') problems.push(`twitter:card is ${need.card}`);
   if (need.title && need.title !== pageTitle) problems.push('og:title differs from the <title>');
   if (need.description && need.description !== pageDesc) problems.push('og:description differs from the description');
+  if (ogUrl && !need.image) problems.push('og:url without og:image');
   if (need.image) {
-    const img = path.join(ROOT, need.image.replace(/^https?:\/\/[^/]+\//, '')), dim = fs.existsSync(img) ? jpegSize(img) : null;
-    if (!dim) problems.push(`og:image ${need.image} is missing or not a JPEG`); else if (dim.w !== 1200 || dim.h !== 630) problems.push(`og:image is ${dim.w}x${dim.h}, not 1200x630`);
+    // A relative og:image is a path from the page's folder. An absolute one is the page's own address (og:url) plus that path: find the file by what follows it.
+    let rel = need.image;
+    if (/^https?:\/\//.test(need.image)) {
+      if (!ogUrl) problems.push('og:image is absolute but there is no og:url');
+      else if (!need.image.startsWith(ogUrl)) problems.push(`og:image ${need.image} is not under og:url ${ogUrl}`);
+      else rel = need.image.slice(ogUrl.length);
+    }
+    const img = path.join(ROOT, rel), dim = fs.existsSync(img) ? jpegSize(img) : null;
+    if (!dim) problems.push(`og:image ${need.image} is missing or not a JPEG (looked for ${rel})`); else if (dim.w !== 1200 || dim.h !== 630) problems.push(`og:image is ${dim.w}x${dim.h}, not 1200x630`);
   }
+  noBase && !problems.length ? pass('preview: link-preview tags (release build without a base URL: no og:image, no og:url)') :
   problems.length ? fail('preview: link-preview tags and og.jpg', problems.join('; ')) : pass('preview: link-preview tags and og.jpg', `og:image ${need.image}, 1200x630`);
 }
 
