@@ -156,3 +156,5 @@ Already done, no work needed:
 _(slice 3 fills this in)_
 
 ## Run log
+
+- Slice 1 — self-contained page: dc5d5e6 · gate 26 passed / 0 failed (--local-only), plain 3D 25/0 · review clean (1 round, 1 nit fixed) · decisions: gate = `node check.mjs --local-only` alone, since it already runs every 3D check; Vazirmatn v33.003 full static WOFF2 (not subset) — revisit in slice 3 if the budget is tight
