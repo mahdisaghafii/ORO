@@ -107,6 +107,31 @@ h2[dir="ltr"] { letter-spacing: -.02em; }
   .sec.end { align-items: flex-end; }
 }
 @media (prefers-reduced-motion: reduce) { .txt > * { transition: none; opacity: 1; transform: none; } }
+/* Flat fallback (body.flat; see goFlat): a plain phone frame per chapter in place of the 3D phone. The text keeps its place from the 3D layout. */
+.pfw { display: none; }
+.flat .pfw { display: block; position: relative; flex: 1 1 0; min-height: 240px; }
+.pf { position: absolute; top: 52px; bottom: 12px; left: 50%; transform: translateX(-50%); aspect-ratio: 9 / 19.5; border-radius: 30px; overflow: hidden; background: #000; border: 5px solid #17181d; pointer-events: auto; cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(243, 239, 231, .16), 0 22px 50px rgba(0, 0, 0, .55), 0 0 60px color-mix(in srgb, var(--acc) 24%, transparent); }
+.pf.land { top: 50%; bottom: auto; aspect-ratio: 16 / 9; width: min(100%, 440px); border-radius: 22px; transform: translate(-50%, -50%); }
+.pf video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.pf:focus-visible { outline: 2px solid var(--acc); outline-offset: 4px; }
+.flat .sec { position: relative; background: radial-gradient(70% 38% at 50% 30%, color-mix(in srgb, var(--acc) 16%, transparent), transparent), var(--chbg, var(--bg)); }
+.flat .sec .txt, .flat .sec:not(.intro):not(.end) .txt { background: none; padding-top: 0; }
+@media (max-width: 899px) {
+  .flat .sec { flex-direction: column; align-items: stretch; justify-content: flex-end; }
+  .flat .sec.end { align-items: center; }
+  .flat .pfw { order: -1; }
+  .flat .sec.end .pfw { align-self: stretch; }
+}
+@media (min-width: 900px) {
+  /* the chapter is taller than the screen (its padding is outside min-height), so size the frame to the screen, not the chapter */
+  .flat .sec:not(.end) .pfw { align-self: flex-start; height: 86svh; min-height: 0; margin-top: -5svh; }
+  .flat .sec:not(.end) .pf { top: 0; bottom: 0; }
+  .flat .sec:not(.end) .pf.land { top: 50%; bottom: auto; }
+  .flat .sec.end { flex-direction: column; align-items: center; justify-content: center; }
+  .flat .sec.end .pfw { order: -1; align-self: stretch; flex: 0 0 38svh; }
+  .flat .sec.end .pf { top: 0; bottom: 0; }
+}
 </style>
 </head>
 <body>
@@ -208,11 +233,120 @@ const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const lerp = (a, b, t) => a + (b - a) * t;
 const ease = t => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const fa = n => Math.round(n).toLocaleString('fa-IR');
+const loadedAt = performance.now();
+
+/* ---------- what each chapter shows: one table for the 3D page and the flat fallback ---------- */
+const MEDIA = {
+  // the real @oro_platform profile (intro, "also built" and end share this screen); plays down the grid and back up, so it loops without a jump
+  oro: { clips: ['assets/oro-profile.mp4'], poster: 'assets/oro-profile-poster.jpg' },
+  col: { clips: ['assets/col-01-teaser.mp4'], poster: 'assets/col-01-teaser-poster.jpg', land: true },
+  qeleq: { clips: ['assets/qeleq-01-signal.mp4'], poster: 'assets/qeleq-01-signal-poster.jpg' },
+  chid: { clips: ['assets/chid-01-design.mp4'], poster: 'assets/chid-01-design-poster.jpg' },
+};
+Object.values(MEDIA).forEach(m => { m.i = 0; m.vid = null; });
+const CH = [
+  { bg: '#07080c', acc: '#e9e2d0', tex: 'oro' },
+  { bg: '#110a1f', acc: '#b48cff', tex: 'col' },
+  { bg: '#0d0d0f', acc: '#f0b90b', tex: 'qeleq' },
+  { bg: '#160e09', acc: '#d0703f', tex: 'chid' },
+  { bg: '#090a10', acc: '#9fb3ff', tex: 'oro' },
+  { bg: '#07080c', acc: '#e9e2d0', tex: 'oro' },
+];
+const sections = [...document.querySelectorAll('.sec')];
+// A muted, inline, looping clip; the caller sets its src (the 3D page draws it into a texture, the flat page shows it in a frame).
+function newClipVideo(m) {
+  const v = document.createElement('video');
+  v.muted = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('webkit-playsinline', '');
+  v.loop = m.clips.length === 1;
+  v.addEventListener('ended', () => { m.i = (m.i + 1) % m.clips.length; v.src = m.clips[m.i]; v.play().catch(() => {}); });
+  return v;
+}
+
+/* counters */
+const counted = new Set();
+function runCounters(sec) {
+  if (counted.has(sec)) return; counted.add(sec);
+  sec.querySelectorAll('b[data-to]').forEach(b => {
+    const to = +b.dataset.to, suf = b.dataset.suf || '', t0 = performance.now();
+    if (REDUCED) return;
+    const step = now => { const p = clamp((now - t0) / 1400, 0, 1); b.textContent = fa(to * ease(p)) + suf; if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+}
+
+/* A chapter's text shows while the chapter crosses the middle of the screen. This runs on both paths, so the text never depends on three.js starting. */
+const chapterObserver = new IntersectionObserver(entries => entries.forEach(e => {
+  e.target.classList.toggle('on', e.isIntersecting);
+  if (e.isIntersecting) runCounters(e.target);
+}), { rootMargin: '-35% 0px -35% 0px' });
+sections.forEach(s => chapterObserver.observe(s));
+
+/* full-screen replay: tap the phone (3D) or its frame (flat) to see the real recording at its own resolution */
+const viewer = document.getElementById('viewer'), vvid = document.getElementById('vvid'), vclose = document.getElementById('vclose');
+let viewerFrom = null; // what had focus before the replay opened, so ✕ hands it back
+function openViewer(m, v = m.vid) {
+  viewerFrom = document.activeElement;
+  const i = v ? m.i : 0, at = v ? v.currentTime : 0;
+  vvid.poster = m.poster; vvid.src = m.clips[i];
+  vvid.addEventListener('loadedmetadata', () => { try { vvid.currentTime = at; } catch (e) {} }, { once: true });
+  viewer.classList.toggle('rot', !!m.land && innerHeight > innerWidth);
+  viewer.classList.add('open');
+  vvid.play().catch(() => {});
+  vclose.focus();
+}
+function closeViewer() {
+  viewer.classList.remove('open'); vvid.pause(); vvid.removeAttribute('src'); vvid.load();
+  if (viewerFrom && document.contains(viewerFrom)) viewerFrom.focus({ preventScroll: true });
+  viewerFrom = null;
+}
+vclose.addEventListener('click', closeViewer);
+viewer.addEventListener('click', e => { if (e.target === viewer) closeViewer(); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && viewer.classList.contains('open')) closeViewer(); });
+
+/* ---------- flat fallback: no WebGL, a weak phone, or ?mode=flat ----------
+   Each chapter gets a plain phone frame built from the same MEDIA table: the poster first, the clip loaded when the
+   chapter is near, and playing only while it's on screen. Text stays where it is; a tap opens the same replay. */
+const frames = new Map();
+function useClip(f) { if (f.v.hasAttribute('src')) return; f.v.src = f.m.clips[0]; f.v.preload = 'auto'; }
+function addFrame(sec, m) {
+  const wrap = document.createElement('div'), fr = document.createElement('div'), v = newClipVideo(m);
+  wrap.className = 'pfw'; fr.className = 'pf' + (m.land ? ' land' : '');
+  v.poster = m.poster; v.preload = 'none';
+  fr.setAttribute('data-replay', ''); fr.setAttribute('role', 'button'); fr.tabIndex = 0;
+  fr.setAttribute('aria-label', (sec.querySelector('.ph') || viewer.querySelector('.vl')).textContent.trim()); // the chapter's own label
+  const open = () => openViewer(m, v);
+  fr.addEventListener('click', open);
+  fr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  fr.append(v); wrap.append(fr); sec.append(wrap);
+  frames.set(fr, { m, v });
+}
+function goFlat(why) {
+  const at = scrollY, here = sections.find(s => s.offsetTop + s.offsetHeight > at) || sections[0], rel = (at - here.offsetTop) / here.offsetHeight;
+  console.info('[lp] mode:', 'flat', '(' + why + ')');
+  document.body.classList.add('flat');
+  canvas.remove();
+  const amb = document.getElementById('amb'); if (amb) amb.remove();
+  sections.forEach((sec, k) => { sec.style.setProperty('--chbg', CH[k].bg); addFrame(sec, MEDIA[CH[k].tex]); });
+  const near = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { useClip(frames.get(e.target)); near.unobserve(e.target); } }), { rootMargin: '100% 0px' });
+  const onScreen = new IntersectionObserver(es => es.forEach(e => {
+    const f = frames.get(e.target);
+    if (e.intersectionRatio >= 0.5) { useClip(f); f.v.play().catch(() => {}); } else if (!f.v.paused) f.v.pause();
+  }), { threshold: [0, 0.5] });
+  frames.forEach((f, fr) => { near.observe(fr); onScreen.observe(fr); });
+  // The frames can change a chapter's height; stay on the same spot in the same chapter.
+  if (at) scrollTo({ top: here.offsetTop + rel * here.offsetHeight, behavior: 'instant' });
+}
+
+const forceFlat = new URLSearchParams(location.search).get('mode') === 'flat';
+const weakPhone = navigator.deviceMemory <= 2 && navigator.hardwareConcurrency <= 4;
+if (forceFlat || weakPhone) { goFlat(forceFlat ? 'forced by ?mode=flat' : 'weak phone: little memory, few cores'); return; }
 
 let R;
 try {
   R = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-} catch (e) { canvas.remove(); return; }
+} catch (e) { goFlat('WebGL is not available'); return; }
+console.info('[lp] mode:', '3d');
 R.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
 R.outputEncoding = THREE.sRGBEncoding;
 R.toneMapping = THREE.ACESFilmicToneMapping;
@@ -321,7 +455,6 @@ function tag(c, dark) {
   rr(c, SW / 2 - 210, 72, 420, 42, 21); c.fillStyle = dark ? 'rgba(0,0,0,.45)' : 'rgba(0,0,0,.06)'; c.fill();
   text(c, 'نمونه‌ی موقت · ویدیوی واقعی اینجا میاد', SW / 2, 101, 20, 500, dark ? 'rgba(255,255,255,.75)' : 'rgba(0,0,0,.5)', 'center');
 }
-const fa = n => Math.round(n).toLocaleString('fa-IR');
 
 function paintCol(c, t) {
   let g = c.createLinearGradient(0, 0, 0, SH); g.addColorStop(0, '#2b1752'); g.addColorStop(0.55, '#150b2b'); g.addColorStop(1, '#0a0614');
@@ -507,16 +640,9 @@ Object.keys(painters).forEach(k => { screens[k] = makeScreen(); });
 /* ---------- real recordings (labeled replays) ----------
    Each chapter shows its poster at once, loads its clip only when the chapter is near, and plays
    only while it's on the phone. The drawn placeholder stays as the fallback until the poster lands. */
-const MEDIA = {
-  // the real @oro_platform profile (intro, "also built" and end share this screen); plays down the grid and back up, so it loops without a jump
-  oro: { clips: ['assets/oro-profile.mp4'], poster: 'assets/oro-profile-poster.jpg' },
-  col: { clips: ['assets/col-01-teaser.mp4'], poster: 'assets/col-01-teaser-poster.jpg', land: true },
-  qeleq: { clips: ['assets/qeleq-01-signal.mp4'], poster: 'assets/qeleq-01-signal-poster.jpg' },
-  chid: { clips: ['assets/chid-01-design.mp4'], poster: 'assets/chid-01-design-poster.jpg' },
-};
 Object.entries(MEDIA).forEach(([k, m]) => {
   m.img = new Image(); m.img.src = m.poster;
-  m.i = 0; m.vid = null; m.fallback = painters[k];
+  m.fallback = painters[k];
   painters[k] = (c, t) => paintMedia(c, t, m);
 });
 // Fill the screen (cover). A landscape clip is drawn turned 90°, because its chapter turns the phone sideways.
@@ -535,10 +661,7 @@ function paintMedia(c, t, m) {
 }
 function ensureVideo(m) {
   if (m.vid) return;
-  const v = document.createElement('video');
-  v.muted = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.setAttribute('webkit-playsinline', ''); v.preload = 'auto';
-  v.loop = m.clips.length === 1;
-  v.addEventListener('ended', () => { m.i = (m.i + 1) % m.clips.length; v.src = m.clips[m.i]; v.play().catch(() => {}); });
+  const v = newClipVideo(m); v.preload = 'auto';
   v.src = m.clips[0]; m.vid = v;
 }
 function syncMedia(pos, texKey) {
@@ -551,17 +674,9 @@ function syncMedia(pos, texKey) {
 }
 
 /* ---------- chapters ---------- */
-const CH = [
-  { bg: '#07080c', acc: '#e9e2d0', tex: 'oro' },
-  { bg: '#110a1f', acc: '#b48cff', tex: 'col' },
-  { bg: '#0d0d0f', acc: '#f0b90b', tex: 'qeleq' },
-  { bg: '#160e09', acc: '#d0703f', tex: 'chid' },
-  { bg: '#090a10', acc: '#9fb3ff', tex: 'oro' },
-  { bg: '#07080c', acc: '#e9e2d0', tex: 'oro' },
-];
-const sections = [...document.querySelectorAll('.sec')];
 let centers = [], W = 1, H = 1, mobile = false;
 function measure() {
+  if (stopped) return;
   W = innerWidth; H = innerHeight; mobile = W < 900;
   R.setSize(W, H, false);
   cam.aspect = W / H;
@@ -599,18 +714,6 @@ function chapterAt() {
   return centers.length - 1;
 }
 
-/* counters */
-const counted = new Set();
-function runCounters(sec) {
-  if (counted.has(sec)) return; counted.add(sec);
-  sec.querySelectorAll('b[data-to]').forEach(b => {
-    const to = +b.dataset.to, suf = b.dataset.suf || '', t0 = performance.now();
-    if (REDUCED) return;
-    const step = now => { const p = clamp((now - t0) / 1400, 0, 1); b.textContent = fa(to * ease(p)) + suf; if (p < 1) requestAnimationFrame(step); };
-    requestAnimationFrame(step);
-  });
-}
-
 /* ambient glow: the screen blurred inside a small 90×180 canvas (cheap), then stretched over the page with no CSS filter */
 const amb = document.getElementById('amb'), ax = amb.getContext('2d'), AW = 90, AH = 180;
 amb.width = AW; amb.height = AH;
@@ -625,22 +728,8 @@ function paintAmb(src) {
   ax.globalAlpha = 1; ax.fillStyle = v; ax.fillRect(0, 0, AW, AH);
 }
 
-/* tap the phone: full-screen replay of the clip on it */
-const viewer = document.getElementById('viewer'), vvid = document.getElementById('vvid'), vclose = document.getElementById('vclose');
+/* tap the phone: the replay (openViewer, above) of the clip on it */
 const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
-function openViewer(m) {
-  const i = m.vid ? m.i : 0, at = m.vid ? m.vid.currentTime : 0;
-  vvid.poster = m.poster; vvid.src = m.clips[i];
-  vvid.addEventListener('loadedmetadata', () => { try { vvid.currentTime = at; } catch (e) {} }, { once: true });
-  viewer.classList.toggle('rot', !!m.land && innerHeight > innerWidth);
-  viewer.classList.add('open');
-  vvid.play().catch(() => {});
-  vclose.focus();
-}
-function closeViewer() { viewer.classList.remove('open'); vvid.pause(); vvid.removeAttribute('src'); vvid.load(); }
-vclose.addEventListener('click', closeViewer);
-viewer.addEventListener('click', e => { if (e.target === viewer) closeViewer(); });
-addEventListener('keydown', e => { if (e.key === 'Escape' && viewer.classList.contains('open')) closeViewer(); });
 function tapAt(x, y) {
   ndc.set((x / W) * 2 - 1, -(y / H) * 2 + 1); ray.setFromCamera(ndc, cam);
   if (ray.intersectObject(screen).length && MEDIA[curTex]) openViewer(MEDIA[curTex]);
@@ -658,7 +747,27 @@ addEventListener('pointermove', e => {
 
 const cA = new THREE.Color(), cB = new THREE.Color();
 let g = 0, gs = 0, last = performance.now(), frame = 0, curTex = null;
+// A weak phone: if the first 90 frames average under 24 fps, swap to the flat page. Never before 2 s after load
+// (shaders compiling and the first clip decoding make the start slow on every phone), never on a tab that was hidden, and never
+// under automation: the gate's headless Chromium draws WebGL in software at ~5 fps, and it must stay on the 3D path to test it.
+const FPS_FRAMES = 90, FPS_MIN = 24, FPS_AFTER_MS = 2000;
+let fpsFrames = 0, fpsT0 = 0, fpsDone = !!navigator.webdriver, stopped = false;
+document.addEventListener('visibilitychange', () => { if (document.hidden) fpsDone = true; });
+function stop3D() {
+  stopped = true;
+  Object.values(MEDIA).forEach(m => { if (m.vid) { m.vid.pause(); m.vid.removeAttribute('src'); m.vid.load(); m.vid = null; } });
+  R.dispose(); R.forceContextLoss(); // r128's dispose() leaves the GPU context alive; free it for the weak phone
+}
 function tick(now) {
+  if (stopped) return;
+  if (!fpsDone) {
+    if (!fpsT0) fpsT0 = now;
+    if (++fpsFrames >= FPS_FRAMES && now - loadedAt >= FPS_AFTER_MS) {
+      fpsDone = true;
+      const fps = (fpsFrames - 1) / ((now - fpsT0) / 1000);
+      if (fps < FPS_MIN) { stop3D(); goFlat('slow: ' + Math.round(fps) + ' fps in the first ' + fpsFrames + ' frames'); return; }
+    }
+  }
   const dt = Math.min(0.05, (now - last) / 1000); last = now; const t = now / 1000; frame++;
   g = chapterAt(); gs += (g - gs) * Math.min(1, dt * 7);
   const i = clamp(Math.floor(gs), 0, CH.length - 1), j = Math.min(CH.length - 1, i + 1), f = gs - i;
@@ -666,8 +775,6 @@ function tick(now) {
   const A = pose(i), B = pose(j);
   const spin = CH[i].tex !== CH[j].tex ? pf * Math.PI * 2 * (i % 2 ? -1 : 1) : 0;
   const texKey = pf < 0.5 ? CH[i].tex : CH[j].tex;
-
-  sections.forEach((s, k) => { const on = Math.abs(g - k) < 0.42; s.classList.toggle('on', on || k === 0 && g < 0.42); if (on) runCounters(s); });
 
   if (!dragging) { drag *= Math.pow(0.04, dt); }
   const sway = REDUCED ? 0 : Math.sin(t * 0.8) * 0.06;

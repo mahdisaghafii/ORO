@@ -2,7 +2,8 @@
 // as a phone (390x844 at 3x, touch), and checks what a viewer would see. Exits 1 if any check fails.
 //
 //   node check.mjs                      3D page, every default check
-//   node check.mjs --no-webgl           the same checks with WebGL switched off (the fallback)
+//   node check.mjs --no-webgl           the same checks with WebGL switched off (the flat fallback)
+//   node check.mjs --page "showcase.html?mode=flat"     the same checks on the flat path forced by the URL (WebGL left on)
 //   node check.mjs --local-only         also fail on any request to a host other than this server
 //   node check.mjs --budget             also time the first screen on a throttled "Fast 3G" connection
 //   node check.mjs --root ../dist --page index.html     check the release build instead
@@ -11,6 +12,8 @@
 // Default checks: no page errors, no console errors, the Vazirmatn font is in use, every chapter plays its own
 // clip and no other, a tap on the phone opens the full-screen replay and ✕ closes it, and the text layout
 // matches baseline/layout.json (a font or CSS regression moves it). Screenshots of each chapter go to out/.
+// The page logs which path it took ("[lp] mode: 3d" or "[lp] mode: flat (...)"); the check expects the flat path with --no-webgl or
+// mode=flat in the page URL, the 3D path otherwise, and that the 3D canvas is gone exactly when flat.
 
 import { chromium } from 'playwright';
 import http from 'node:http';
@@ -29,7 +32,8 @@ const NO_WEBGL = flag('--no-webgl');
 const LOCAL_ONLY = flag('--local-only');
 const BUDGET = flag('--budget');
 const UPDATE = flag('--update-baseline');
-const OUT = path.join(HERE, 'out', NO_WEBGL ? 'no-webgl' : '3d');
+const FLAT = NO_WEBGL || /[?&]mode=flat\b/.test(PAGE); // the path the page must take
+const OUT = path.join(HERE, 'out', NO_WEBGL ? 'no-webgl' : FLAT ? 'flat' : '3d');
 const BASELINE = path.join(HERE, 'baseline', 'layout.json');
 
 // Which clip each chapter (section[data-k]) must be playing. Keep in step with MEDIA/CH in the page.
@@ -105,12 +109,15 @@ async function main() {
   await ctx.addInitScript(TRACK_VIDEOS);
   const page = await ctx.newPage();
 
-  const errors = [], hosts = new Map();
+  const errors = [], hosts = new Map(), modes = [];
   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
   // A failed load is reported by URL from the response below; the console's copy of it carries no URL.
   // With WebGL off, three.js logging that it couldn't make a context is the expected way into the fallback.
   const expected = (t) => /^Failed to load resource/.test(t) || (NO_WEBGL && /Error creating WebGL context/.test(t));
-  page.on('console', (m) => { if (m.type() === 'error' && !expected(m.text())) errors.push('console: ' + m.text()); });
+  page.on('console', (m) => {
+    if (m.type() === 'error' && !expected(m.text())) errors.push('console: ' + m.text());
+    if (m.type() === 'info' && /^\[lp\] mode:/.test(m.text())) modes.push(m.text());
+  });
   page.on('response', (r) => { if (r.status() >= 400 && !/\/favicon\.ico$/.test(r.url())) errors.push(`HTTP ${r.status()}: ${r.url()}`); });
   page.on('request', (r) => { const h = new URL(r.url()).host; if (!r.url().startsWith('data:')) hosts.set(h, (hosts.get(h) || 0) + 1); });
 
@@ -201,8 +208,10 @@ async function main() {
 
   // ---------- which path ran, errors, hosts ----------
   const has3d = await page.evaluate(() => !!document.getElementById('gl'));
-  NO_WEBGL ? (has3d ? fail('fallback: 3D canvas removed when WebGL is off') : pass('fallback: 3D canvas removed when WebGL is off'))
+  FLAT ? (has3d ? fail('fallback: 3D canvas removed on the flat path') : pass('fallback: 3D canvas removed on the flat path'))
     : (has3d ? pass('3D: canvas in use') : fail('3D: canvas in use', 'the 3D canvas was removed with WebGL on'));
+  const took = (modes.at(-1) || '').replace('[lp] mode: ', ''); // the last one: a later switch to flat counts
+  (FLAT ? /^flat\b/ : /^3d\b/).test(took) ? pass('path: the page took the ' + (FLAT ? 'flat' : '3D') + ' path', took) : fail('path: the page took the ' + (FLAT ? 'flat' : '3D') + ' path', took || 'it logged no [lp] mode line');
   errors.length ? fail('errors: none in console or page', errors.slice(0, 5).join(' | ')) : pass('errors: none in console or page');
   const local = new URL(base).host, foreign = [...hosts.keys()].filter((h) => h !== local);
   if (LOCAL_ONLY) foreign.length ? fail('requests: local server only', foreign.join(', ')) : pass('requests: local server only');
@@ -213,7 +222,7 @@ async function main() {
   for (const r of results) console.log(`${r.ok ? 'PASS' : 'FAIL'}  ${r.name}${r.detail ? '  (' + r.detail + ')' : ''}`);
   if (foreign.length && !LOCAL_ONLY) console.log(`note  requests to other hosts: ${foreign.join(', ')}`);
   const bad = results.filter((r) => !r.ok).length;
-  console.log(`\n${results.length - bad} passed, ${bad} failed  [${NO_WEBGL ? 'no-webgl' : '3d'}${LOCAL_ONLY ? ', local-only' : ''}${BUDGET ? ', budget' : ''}]  screenshots: ${path.relative(process.cwd(), OUT)}`);
+  console.log(`\n${results.length - bad} passed, ${bad} failed  [${NO_WEBGL ? 'no-webgl' : FLAT ? 'flat' : '3d'}${LOCAL_ONLY ? ', local-only' : ''}${BUDGET ? ', budget' : ''}]  screenshots: ${path.relative(process.cwd(), OUT)}`);
   process.exit(bad ? 1 : 0);
 }
 
