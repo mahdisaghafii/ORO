@@ -158,3 +158,4 @@ _(slice 3 fills this in)_
 ## Run log
 
 - Slice 1 — self-contained page: dc5d5e6 · gate 26 passed / 0 failed (--local-only), plain 3D 25/0 · review clean (1 round, 1 nit fixed) · decisions: gate = `node check.mjs --local-only` alone, since it already runs every 3D check; Vazirmatn v33.003 full static WOFF2 (not subset) — revisit in slice 3 if the budget is tight
+- Slice 2 — fallback when 3D can't run: 13543ab · gate 27/0 (--local-only) + 27/0 (--no-webgl --local-only); plain 3D 26/0; ?mode=flat 26/0 · review clean (1 round, 2 nits fixed, 1 declined) · decisions: fps rule also skipped under navigator.webdriver (headless software WebGL runs ~5 fps, so the 2 s guard alone flipped the gate's 3D run to flat; real browsers unaffected) — the slow-phone switch is therefore verified by a one-off probe, not the gate; flat frames on chapters 0/4/5 (ORO profile) carry no «بازپخش» label, matching 3D; added one gate check (the logged path matches the expected path)
